@@ -1,0 +1,53 @@
+{
+  "name": "pyrrho-little-moon-themes",
+  "displayName": "Little Moon Color Themes",
+  "description": "An interpretation of the Selenized color scheme; simple and readable",
+  "version": "0.0.1",
+  "publisher": "pyrrho",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Little Moon (dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/little-moon-dark-color-theme.json"
+      },
+      {
+        "label": "Little Moon (light)",
+        "uiTheme": "vs",
+        "path": "./themes/little-moon-light-color-theme.json"
+      }
+    ]
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#053d48",
+    "theme": "dark"
+  },
+  "keywords": [
+    "solarized",
+    "solarized dark",
+    "solarized light",
+    "selenized",
+    "selenized dark",
+    "selenized light"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/pyrrho/vscode-little-moon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pyrrho/vscode-little-moon.git"
+  },
+  "bugs": "https://github.com/pyrrho/vscode-little-moon/issues",
+  "packageManager": "pnpm@9.0.0+sha256.bdfc9a7b372b5c462176993e586492603e20da5864d2f8881edc2462482c76fa",
+  "scripts": {
+    "build": "pnpm dlx @11ty/eleventy",
+    "watch": "pnpm dlx @11ty/eleventy --watch",
+    "publish": "vsce publish"
+  }
+}

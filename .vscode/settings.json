@@ -1,0 +1,10 @@
+{
+  "cSpell.words": [
+    "selenized",
+    "solarzied"
+  ],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.vscodes": true
+  }
+}

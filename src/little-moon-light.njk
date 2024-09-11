@@ -1,0 +1,1454 @@
+---
+title: Little Moon (light)
+permalink: /little-moon-light-color-theme.json
+---
+{
+  "name": "Little Moon (light)",
+  "semanticHighlighting": {{ little_moon.semanticHighlighting }},
+  "type": "{{ little_moon.type.light }}",
+  "tokenColors": [
+    {
+      "name": "Comments",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.fg._2 }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "settings": {
+        "foreground": "{{ little_moon.light.fg._0 }}"
+      }
+    },
+    {
+      "name": "Keyword, Storage",
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.magenta }}"
+      }
+    },
+    {
+      "name": "Operator, Misc",
+      "scope": [
+        "keyword.operator",
+        "constant.other.color",
+        "punctuation",
+        "punctuation.definition.tag",
+        "punctuation.separator.inheritance.php",
+        "punctuation.definition.tag.html",
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html",
+        "punctuation.section.embedded",
+        "keyword.other.template",
+        "keyword.other.substitution"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.cyan }}"
+      }
+    },
+    {
+      "name": "Tag",
+      "scope": [
+        "entity.name.tag",
+        "meta.tag.sgml",
+        "markup.deleted.git_gutter"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.red }}"
+      }
+    },
+    {
+      "name": "Function, Special Method, Block Level",
+      "scope": [
+        "entity.name.function",
+        "meta.function-call",
+        "variable.function",
+        "support.function",
+        "keyword.other.special-method",
+        "meta.block-level"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.blue }}"
+      }
+    },
+    {
+      "name": "Other Variable, String Link",
+      "scope": [
+        "support.other.variable",
+        "string.other.link"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.red_1 }}"
+      }
+    },
+    {
+      "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "support.constant",
+        "constant.character",
+        "variable.parameter",
+        "keyword.other.unit"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.orange }}"
+      }
+    },
+    {
+      "name": "String, Symbols, Inherited Class, Markup Heading",
+      "scope": [
+        "string",
+        "constant.other.symbol",
+        "constant.other.key",
+        "entity.other.inherited-class",
+        "markup.heading",
+        "markup.inserted.git_gutter",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.green }}"
+      }
+    },
+    {
+      "name": "Class, Support",
+      "scope": [
+        "entity.name.class",
+        "entity.name.type.class",
+        "support.type",
+        "support.class",
+        "support.orther.namespace.use.php",
+        "meta.use.php",
+        "support.other.namespace.php",
+        "markup.changed.git_gutter"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.yellow }}"
+      }
+    },
+    {
+      "name": "Sub-methods",
+      "scope": [
+        "entity.name.module.js",
+        "variable.import.parameter.js",
+        "variable.other.class.js"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.red }}"
+      }
+    },
+    {
+      "name": "Language methods",
+      "scope": "variable.language",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "{{ little_moon.light.red }}"
+      }
+    },
+    {
+      "name": "entity.name.method.js",
+      "scope": "entity.name.method.js",
+      "settings": {
+        "foreground": "{{ little_moon.light.blue }}"
+      }
+    },
+    {
+      "name": "meta.method.js",
+      "scope": [
+        "meta.class-method.js entity.name.function.js",
+        "variable.function.constructor"
+      ],
+      "settings": {
+        "foreground": "{{ little_moon.light.blue }}"
+      }
+    },
+    {
+      "name": "Attributes",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "{{ little_moon.light.magenta_1 }}"
+      }
+    },
+    {
+      "name": "Inserted",
+      "scope": "markup.inserted",
+      "settings": {
+        "foreground": "{{ little_moon.light.green }}"
+      }
+    },
+    {
+      "name": "Deleted",
+      "scope": "markup.deleted",
+      "settings": {
+        "foreground": "{{ little_moon.light.red }}"
+      }
+    },
+    {
+      "name": "Changed",
+      "scope": "markup.changed",
+      "settings": {
+        "foreground": "{{ little_moon.light.magenta_1 }}"
+      }
+    },
+    {
+      "name": "Regular Expressions",
+      "scope": "string.regexp",
+      "settings": {
+        "foreground": "{{ little_moon.light.cyan }}"
+      }
+    },
+    {
+      "name": "Escape Characters",
+      "scope": "constant.character.escape",
+      "settings": {
+        "foreground": "{{ little_moon.light.cyan }}"
+      }
+    },
+    {
+      "name": "URL",
+      "scope": [
+        "*url*",
+        "*link*",
+        "*uri*"
+      ],
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Search Results Nums",
+      "scope": "constant.numeric.line-number.find-in-files - match",
+      "settings": {
+        "foreground": "{{ little_moon.light.orange_1 }}"
+      }
+    },
+    {
+      "name": "Search Results Lines",
+      "scope": "entity.name.filename.find-in-files",
+      "settings": {
+        "foreground": "{{ little_moon.light.green }}"
+      }
+    },
+    {
+      "name": "Decorators",
+      "scope": [
+        "tag.decorator.js entity.name.tag.js",
+        "tag.decorator.js punctuation.definition.tag.js"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "{{ little_moon.light.blue }}"
+      }
+    },
+    {
+      "name": "ES7 Bind Operator",
+      "scope": "source.js constant.other.object.key.js string.unquoted.label.js",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "{{ little_moon.light.red }}"
+      }
+    },
+    {
+      "scope": "token.info-token",
+      "settings": {
+        "foreground": "{{ little_moon.light.blue_1 }}"
+      }
+    },
+    {
+      "scope": "token.warn-token",
+      "settings": {
+        "foreground": "{{ little_moon.light.orange_1 }}"
+      }
+    },
+    {
+      "scope": "token.error-token",
+      "settings": {
+        "foreground": "{{ little_moon.light.red_1 }}"
+      }
+    },
+    {
+      "scope": "token.debug-token",
+      "settings": {
+        "foreground": "{{ little_moon.light.violet_1 }}"
+      }
+    },
+    {
+      "scope": "source.js entity.other.attribute-name.js",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "text.html.basic entity.other.attribute-name.html",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    }
+  ],
+  "colors": {
+    // Contrast
+    // https://code.visualstudio.com/api/references/theme-color#contrast-colors
+    // Skipped; not a high-contrast font
+
+
+    // Base
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#base-colors
+    "focusBorder": "{{ little_moon.light.border.em2 }}40",
+    "foreground": "{{ little_moon.light.fg._0 }}",
+    "disabledForeground": "{{ little_moon.light.fg._2 }}",
+    // widget.border: Border color of widgets such as Find/Replace inside the editor.
+    "widget.shadow": "{{ little_moon.light.shadow._0 }}",
+    "selection.background": "{{ little_moon.light.range.sel }}",
+    // descriptionForeground: Foreground color for description text providing additional information, for example for a label.
+    // icon.foreground: The default color for icons in the workbench.
+    // errorForeground: Overall foreground color for error messages (this color is only used if not overridden by a component).
+    // sash.hoverBorder: The hover border color for draggable sashes.
+
+
+    // Editor
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#editor-colors
+
+    "editor.background": "{{ little_moon.light.bg._0 }}",
+    "editor.foreground": "{{ little_moon.light.fg._0 }}",
+    // editor.placeholder.foreground: Foreground color of the placeholder text in the editor.
+
+    // ** Unused source code
+    // editorUnnecessaryCode.border: Border color of unnecessary (unused) source code in the editor.
+    // editorUnnecessaryCode.opacity: Opacity of unnecessary (unused) source code in the editor. For example, "#000000c0" will render the code with 75% opacity. For high contrast themes, use the "editorUnnecessaryCode.border" theme color to underline unnecessary code instead of fading it out.
+
+    // ** Cursors, including multiple cursors
+    "editorCursor.foreground": "{{ little_moon.light.fg._0 }}",
+    // editorCursor.background: The background color of the editor cursor. Allows customizing the color of a character overlapped by a block cursor.
+    // editorMultiCursor.primary.foreground: Color of the primary editor cursor when multiple cursors are present.
+    // editorMultiCursor.primary.background: The background color of the primary editor cursor when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.
+    "editorMultiCursor.secondary.foreground": "{{ little_moon.light.fg._0 }}A0",
+    // editorMultiCursor.secondary.background: The background color of secondary editor cursors when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.
+
+    // ** The gutter contains the glyph margins and the line numbers
+ // "editorGutter.background": null,
+    "editorGutter.modifiedBackground": "{{ little_moon.light.git.modified }}",
+    "editorGutter.addedBackground": "{{ little_moon.light.git.added }}",
+    "editorGutter.deletedBackground": "{{ little_moon.light.git.deleted }}",
+    // editorGutter.commentRangeForeground: Editor gutter decoration color for commenting ranges.
+    // editorGutter.commentGlyphForeground: Editor gutter decoration color for commenting glyphs.
+    // editorGutter.commentUnresolvedGlyphForeground: Editor gutter decoration color for commenting glyphs for unresolved comment threads.
+    "editorGutter.foldingControlForeground": "{{ little_moon.light.fg._0 }}",
+
+    // ** Line numbers are in the gutter (but included in the base sectino?)
+    "editorLineNumber.foreground": "{{ little_moon.light.fg._2 }}a0",
+    "editorLineNumber.activeForeground": "{{ little_moon.light.fg._0 }}d0",
+ // "editorLineNumber.dimmedForeground": null,
+
+    // ** Selection colors are visible when selecting one or more characters. In addition to the selection also all regions with the same content are highlighted.
+    "editor.selectionBackground": "{{ little_moon.light.range.sel }}",
+ // "editor.inactiveSelectionBackground": "{{ little_moon.light.range.sel_inact }}",
+ // "editor.selectionHighlightBackground": "{{ little_moon.light.range.sel_dim }}",
+    // editor.selectionHighlightBorder: Border color for regions with the same content as the selection.
+    // editor.selectionForeground: Color of the selected text for high contrast.
+
+    // ** Search colors are used in the search viewlet's global search results.
+    // search.resultsInfoForeground: Color of the text in the search viewlet's completion message. For example, this color is used in the text that says "{x} results in {y} files".
+
+    // ** The hover highlight is shown behind the symbol for which a hover is shown.
+    // ## This colors the symbol for which a mouse hover popover is open
+    "editor.hoverHighlightBackground": "{{ little_moon.light.range.hover }}",
+
+    // ** Find colors depend on the current find string in the Find/Replace dialog
+    "editor.findMatchBackground": "{{ little_moon.light.range.find }}",
+    "editor.findMatchHighlightBackground": "{{ little_moon.light.range.find_dim }}",
+    // editor.findMatchForeground: Text color of the current search match.
+    // editor.findMatchHighlightForeground: Foreground color of the other search matches.
+    // editor.findMatchBorder: Border color of the current search match.
+    // editor.findMatchHighlightBorder: Border color of the other search matches.
+
+    "editor.findRangeHighlightBackground": "{{ little_moon.light.range.find_in }}",
+    // "editor.findRangeHighlightBorder": null,
+
+    // ** Search Editor colors highlight results in a Search Editor.
+    // ## Search Editors are full editor tabs, spawned from the sidebar
+ // "searchEditor.findMatchBackground": "{{ little_moon.light.range.find_dim_se }}",
+    // searchEditor.findMatchBorder: Border color of the editor's results.
+ // "searchEditor.textInputBorder": null,
+
+    // ** The range highlight is visible when selecting a search result.
+    // ## e.g. when following a breadcrumb to a section, or cycling through Find results
+    "editor.rangeHighlightBackground": "{{ little_moon.light.range.result }}",
+    // "editor.rangeHighlightBorder": null,
+
+    // ** The symbol highlight is visible when navigating to a symbol via a command such as Go to Definition.
+ // "editor.symbolHighlightBackground": "{{ little_moon.light.range.symbol }}",
+    // editor.symbolHighlightBorder: Background color of the border around highlighted symbols.
+
+    // ** Word highlight colors are visible when the cursor is inside a symbol or a word.
+    // ## These settings are applicable to the Occurrence Highlight setting; only require the cursor to be present
+    // ## TODO: Build a toggle for this.
+    "editor.wordHighlightBackground": "{{ little_moon.light.range.semantic_symbol_ro }}",
+    "editor.wordHighlightStrongBackground": "{{ little_moon.light.range.semantic_symbol_rw }}",
+ // "editor.wordHighlightTextBackground": "{{ little_moon.light.range.semantic_symbol_bak }}",
+    // editor.wordHighlightBorder: Border color of a symbol during read-access, for example when reading a variable.
+    // editor.wordHighlightStrongBorder: Border color of a symbol during write-access, for example when writing to a variable.
+    // editor.wordHighlightTextBorder: Border color of a textual occurrence for a symbol.
+
+    // ** The current line is typically shown as either background highlight or a border (not both).
+    "editor.lineHighlightBackground": "{{ little_moon.light.bg._2 }}80",
+    // "editor.lineHighlightBorder": null,
+
+    // ** The color for the editor watermark
+    // editorWatermark.foreground: Foreground color for the labels in the editor watermark.
+
+    // ** The color for unicode highlights
+    // editorUnicodeHighlight.border: Border color used to highlight unicode characters.
+    // editorUnicodeHighlight.background: Background color used to highlight unicode characters.
+
+    // ** The link color is visible when clicking on a link.
+    "editorLink.activeForeground": "{{ little_moon.light.blue__1 }}",
+
+    // ** To see the editor white spaces, enable Toggle Render Whitespace.
+    // ## TODO: This is my special whitespace fun time. I should add a comment about disabling it.
+    "editorWhitespace.foreground": "{{ little_moon.light.bg._0 }}",
+
+    // ** To see the editor indent guides, set "editor.guides.indentation": true and "editor.guides.highlightActiveIndentation": true.
+    // ## Goes up to 6 for lots of colors
+    "editorIndentGuide.background1": "{{ little_moon.light.rule.dim }}",
+    "editorIndentGuide.activeBackground1": "{{ little_moon.light.rule.em }}",
+
+    // ** To see editor rulers, define their location with "editor.rulers"
+    "editorRuler.foreground": "{{ little_moon.light.rule.dim }}",
+    // editor.linkedEditingBackground: Background color when the editor is in linked editing mode.
+
+    // ** Bracket matches
+    // ## Matches are paired with what's under the cursor
+    "editorBracketMatch.background": "{{ little_moon.light.bg._2 }}",
+    "editorBracketMatch.border": "{{ little_moon.pure.transparent }}",
+
+    // ## Highlights are passive. Requires enabling bracket pair colorization
+    "editorBracketHighlight.foreground1": "{{ little_moon.light.orange }}",
+    "editorBracketHighlight.foreground2": "{{ little_moon.light.blue }}",
+    "editorBracketHighlight.foreground3": "{{ little_moon.light.green }}",
+    "editorBracketHighlight.foreground4": "{{ little_moon.light.cyan }}",
+ // "editorBracketHighlight.foreground5": "",
+ // "editorBracketHighlight.foreground6": "",
+    "editorBracketHighlight.unexpectedBracket.foreground": "{{ little_moon.light.red }}c0",
+
+    // ## Colorization is a much heavier-weight Match. Seems to be a high contrast thing.
+    //    Requires enabling bracket pair guides.
+    //    Goes up to 6 for lots of colors
+    // "editorBracketPairGuide.activeBackground1": "",
+    // "editorBracketPairGuide.background1": "",
+
+    // ** Folding
+    "editor.foldBackground": "{{ little_moon.light.bg._2 }}40",
+    "editor.foldPlaceholderForeground": "{{ little_moon.light.fg._2 }}",
+
+    // ** To see the editor inline hints, set "editor.inlineSuggest.enabled": true.
+    // editorInlayHint.background: Background color of inline hints.
+    // editorInlayHint.foreground: Foreground color of inline hints.
+    // editorInlayHint.typeForeground: Foreground color of inline hints for types
+    // editorInlayHint.typeBackground: Background color of inline hints for types
+    // editorInlayHint.parameterForeground: Foreground color of inline hints for parameters
+    // editorInlayHint.parameterBackground: Background color of inline hints for parameters
+
+    // ** CodeLens
+    // "editorCodeLens.foreground": "{{ little_moon.light .fg__1 }}",
+
+    // ** Lightbulb
+    // editorLightBulb.foreground: The color used for the lightbulb actions icon.
+    // editorLightBulbAutoFix.foreground: The color used for the lightbulb auto fix actions icon.
+    // editorLightBulbAi.foreground: The color used for the lightbulb AI icon.
+
+    // ** Errors and warnings
+    // ## NB: These names are misleading:
+    //    - .foreground -- Foreground color of error squigglies in the editor.
+    //    - .background: Background color of error text in the editor.
+    //    - .border: Color of double underlines for errors in the editor.
+    "editorError.foreground": "{{ little_moon.light.level.err }}",
+ // "editorError.border": null,
+ // "editorError.background": null,
+
+    "editorWarning.foreground": "{{ little_moon.light.level.warn }}",
+ // "editorWarning.border": null,
+ // "editorWarning.background": null,
+
+    "editorInfo.foreground": "{{ little_moon.light.level.info }}",
+ // "editorInfo.border": null,
+ // "editorInfo.background": null,
+
+    "editorHint.foreground": "{{ little_moon.light.level.hint }}",
+ // "editorHint.border": null,
+
+    // problemsErrorIcon.foreground: The color used for the problems error icon.
+    // problemsWarningIcon.foreground: The color used for the problems warning icon.
+    // problemsInfoIcon.foreground: The color used for the problems info icon.
+
+    // ** Overview ruler
+    // ** This ruler is ~~located beneath~~ the scroll bar['s track] on the right edge of the editor
+    //    and gives an overview of the decorations in the editor.
+ // "editorOverviewRuler.background": "{{ little_moon.light.bg.br }}",
+    "editorOverviewRuler.border": "{{ little_moon.pure.transparent }}",
+
+    // ## These seem to not be respected?
+ // "editorOverviewRuler.bracketMatchForeground": "{{ little_moon.light.fg._0 }}",
+ // "editorOverviewRuler.findMatchForeground": "{{ little_moon.light.range.find_dim }}",
+ // "editorOverviewRuler.rangeHighlightForeground": "{{ little_moon.light.range.result }}",
+ // "editorOverviewRuler.selectionHighlightForeground": "{{ little_moon.light.range.sel }}",
+
+    // ## These seem to not be respected?
+ // "editorOverviewRuler.wordHighlightForeground": "{{ little_moon.light.range.semantic_symbol_ro }}",
+ // "editorOverviewRuler.wordHighlightStrongForeground": "{{ little_moon.light.range.semantic_symbol_rw }}",
+ // "editorOverviewRuler.wordHighlightTextForeground": null,
+
+    // ## Defaults are pulled from the `editorGutter.___Background` set; reduced transparency
+    "editorOverviewRuler.modifiedForeground": "{{ little_moon.light.git.modified }}",
+    "editorOverviewRuler.addedForeground": "{{ little_moon.light.git.added }}",
+    "editorOverviewRuler.deletedForeground": "{{ little_moon.light.git.deleted }}",
+
+    // ## Defaults to locked, editorWarning.foreground, and editorInfo.foreground.
+    //    I'm guessing it's a bug that editorOverviewRuler.errorForeground doesn't default to
+    //    editorError.foreground?
+    "editorOverviewRuler.errorForeground": "{{ little_moon.light.level.err }}",
+    "editorOverviewRuler.warningForeground": "{{ little_moon.light.level.warn }}",
+    "editorOverviewRuler.infoForeground": "{{ little_moon.light.level.info }}",
+
+    // editorOverviewRuler.inlineChatInserted: Overview ruler marker color for inline chat inserted content.
+    // editorOverviewRuler.inlineChatRemoved: Overview ruler marker color for inline chat removed content.
+
+    // ** The editor comments widget can be seen when reviewing pull requests
+    // editorCommentsWidget.resolvedBorder: Color of borders and arrow for resolved comments.
+    // editorCommentsWidget.unresolvedBorder: Color of borders and arrow for unresolved comments.
+    // editorCommentsWidget.rangeBackground: Color of background for comment ranges.
+    // editorCommentsWidget.rangeActiveBackground: Color of background for currently selected or hovered comment range.
+    // editorCommentsWidget.replyInputBackground: Background color for comment reply input box.
+
+
+    // Editor Groups and Tabs
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#editor-groups-tabs
+    // NB. Order doesn't match the reference; the reference doesn't make sense.
+
+    // ## Background color of an empty editor group.
+    "editorGroup.emptyBackground": "{{ little_moon.light.bg._2 }}",
+    // ## Border color of an empty editor group that is focused.
+ // "editorGroup.focusedEmptyBorder": "",
+
+    // ## Color to separate multiple editor groups from each other.
+    "editorGroup.border": "{{ little_moon.light.border._0 }}",
+
+    "editorGroupHeader.noTabsBackground": "{{ little_moon.light.bg._3 }}",
+    // ## Background behind the tabs
+    "editorGroupHeader.tabsBackground": "{{ little_moon.light.bg._4 }}",
+    // ## Border below the tabs section (between tabs and breadcrumbs (if enabled))
+ // "editorGroupHeader.tabsBorder": null,
+    // ## Border below breadcrumbs (if enabled)
+ // "editorGroupHeader.border": null,
+
+    "tab.activeBackground": "{{ little_moon.light.bg._2 }}", // default: `editor.background`
+    "tab.activeForeground": "{{ little_moon.light.fg.em2 }}", // locked default, for reasons?
+    // tab.activeBorder: Bottom border for the active tab.
+    // tab.activeBorderTop: Top border for the active tab.
+
+    "tab.inactiveBackground": "{{ little_moon.light.bg._3 }}",
+    "tab.inactiveForeground": "{{ little_moon.light.fg._0 }}",
+
+    "tab.hoverBackground": "{{ little_moon.light.bg._4 }}",
+    // tab.hoverForeground: Tab foreground color when hovering
+    // tab.hoverBorder: Bottom border to highlight tabs when hovering
+
+    "tab.border": "{{ little_moon.light.bg._4 }}", // match `editorGroupHeader.tabsBackground`
+    // tab.lastPinnedBorder: Border on the right of the last pinned editor to separate from unpinned editors.
+
+    // tab.unfocusedActiveBackground: Active Tab background color in an inactive editor group.
+    // tab.unfocusedActiveForeground: Active tab foreground color in an inactive editor group.
+    // tab.unfocusedActiveBorder: Bottom border for the active tab in an inactive editor group.
+    // tab.unfocusedActiveBorderTop: Top border for the active tab in an inactive editor group
+    // tab.unfocusedInactiveBackground: Inactive Tab background color in an unfocused group
+    // tab.unfocusedInactiveForeground: Inactive tab foreground color in an inactive editor group.
+    // tab.unfocusedHoverBackground: Tab background color in an unfocused group when hovering
+    // tab.unfocusedHoverForeground: Tab foreground color in an unfocused group when hovering
+    // tab.unfocusedHoverBorder: Border to highlight tabs in an unfocused group when hovering
+
+    // tab.selectedBorderTop: Border to the top of a selected tab.
+    // tab.selectedBackground: Background of a selected tab.
+    // tab.selectedForeground: Foreground of a selected tab.
+
+    // "tab.activeModifiedBorder": "{{ little_moon.light .blue }}",
+    // "tab.inactiveModifiedBorder": "{{ little_moon.light .blue_1 }}",
+    // "tab.unfocusedActiveModifiedBorder": "{{ little_moon.light .blue }}",
+    // "tab.unfocusedInactiveModifiedBorder": "{{ little_moon.light .blue_1 }}",
+
+    // editorPane.background: Background color of the editor pane visible on the left and right side of the centered editor layout.
+    // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
+    // sideBySideEditor.verticalBorder: Color to separate two editors from each other when shown side by side in an editor group from left to right.
+
+    // "tab.dragAndDropBorder": "{{ little_moon.light .cyan }}",
+    // "editorGroup.dropBackground": "{{ little_moon.light .bg_1 }}80",
+    // editorGroup.dropIntoPromptForeground: Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+    // editorGroup.dropIntoPromptBackground: Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+    // editorGroup.dropIntoPromptBorder: Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+
+
+    // Breadcrumbs
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#breadcrumbs-colors
+    // "breadcrumb.foreground": "{{ little_moon.light .fg }}",
+    "breadcrumb.background": "{{ little_moon.light.bg._2 }}",
+    "breadcrumb.focusForeground": "{{ little_moon.light.fg.hl }}",
+    "breadcrumb.activeSelectionForeground": "{{ little_moon.light.blue__1 }}",
+ // "breadcrumbPicker.background": null,
+
+
+    // Side Bar
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#side-bar
+    "sideBar.background": "{{ little_moon.light.bg._2 }}",
+    // "sideBar.foreground": "{{ little_moon.light .fg }}",
+    "sideBar.border": "{{ little_moon.light.border._0 }}",
+    // "sideBar.dropBackground": "{{ little_moon.light .bg_2 }}",
+
+    // "sideBarTitle.foreground": "{{ little_moon.light .fg }}",
+    // "sideBarTitle.background": "{{ little_moon.light.bg._3 }}",
+
+    "sideBarSectionHeader.background": "{{ little_moon.light.bg._3 }}",
+ // "sideBarSectionHeader.foreground": null,
+ // "sideBarSectionHeader.border": null,
+
+    // ## Is this unused?
+    // "sideBarActivityBarTop.border": "{{ little_moon.light.border._0 }}",
+
+    "sideBarStickyScroll.background": "{{ little_moon.light.bg.ovr2 }}",
+ // "sideBarStickyScroll.border": null,
+    "sideBarStickyScroll.shadow": "{{ little_moon.light.shadow._2 }}",
+
+
+    // Activity Bar
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#activity-bar
+    "activityBar.background": "{{ little_moon.light.bg._3 }}",
+    "activityBar.foreground": "{{ little_moon.light.fg.em2 }}",
+ // "activityBar.border": null,
+    // "activityBar.inactiveForeground": "{{ little_moon.light .fg__1 }}",
+    // "activityBar.activeBackground": "{{ little_moon.light.bg._2 }}",
+    "activityBar.activeBorder": "{{ little_moon.light.border.em2 }}",
+    // activityBar.activeFocusBorder: Activity bar focus border color for the active item.
+
+    // activityBarTop.dropBorder: Drag and drop feedback color for the items in the Activity bar when it is on top. The activity allows to switch between views of the side bar.
+    // activityBarTop.foreground: Active foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.
+    // activityBarTop.activeBorder: Focus border color for the active item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.
+    // activityBarTop.inactiveForeground: Inactive foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.
+    // activityBarTop.background: Background color of the activity bar when set to top / bottom.
+    // activityBarTop.activeBackground: Background color for the active item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar.
+
+    "activityBarBadge.background": "{{ little_moon.light.badge.bg }}",
+    "activityBarBadge.foreground": "{{ little_moon.light.fg.i._0 }}",
+
+
+    // Title Bar
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#title-bar-colors
+    "titleBar.activeBackground": "{{ little_moon.light.bg._4 }}",
+    "titleBar.border": "{{ little_moon.light.bg._4 }}", // match `little_moon.light.bg._4`
+    // "titleBar.activeForeground": "{{ little_moon.light .fg__1 }}",
+    "titleBar.inactiveBackground": "{{ little_moon.light.bg._3 }}",
+    // "titleBar.inactiveForeground": "{{ little_moon.light .fg__1 }}",
+
+
+    // Menu Bar
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#menu-bar-colors
+    // menu.foreground: Foreground color of menu items.
+    // menu.background: Background color of menu items.
+    // menubar.selectionForeground, Foreground color of the selected menu item in the menubar.
+    "menubar.selectionBackground": "{{ little_moon.light.hover._0 }}",
+    // menubar.selectionBorder: Border color of the selected menu item in the menubar.
+    // menu.selectionForeground: Foreground color of the selected menu item in menus.
+    "menu.selectionBackground": "{{ little_moon.light.hover._0 }}",
+    // menu.selectionBorder: Border color of the selected menu item in menus.
+    "menu.separatorBackground": "{{ little_moon.light.rule.em }}",
+    "menu.border": "{{ little_moon.light.border.br }}",
+
+
+    // Status Bar
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#status-bar-colors
+    "statusBar.background": "{{ little_moon.light.bg._3 }}",
+    "statusBar.foreground": "{{ little_moon.light.fg._0 }}",
+    "statusBar.border": "{{ little_moon.light.bg._3 }}", // match `statusBar.background`
+ // "statusBar.focusBorder": null,
+
+    "statusBar.debuggingBackground": "{{ little_moon.light.bg.dbg }}",
+    "statusBar.debuggingForeground": "{{ little_moon.light.fg.i.em }}",
+ // "statusBar.debuggingBorder": null,
+
+    "statusBar.noFolderBackground": "{{ little_moon.light.bg._3 }}",
+    "statusBar.noFolderForeground": "{{ little_moon.light.fg._0 }}",
+ // "statusBar.noFolderBorder": null,
+
+    "statusBarItem.hoverBackground": "{{ little_moon.light.hover._2 }}",
+    // ## TODO: Find me
+    // statusBarItem.compactHoverBackground: Status bar item background color when hovering an item that contains two hovers.
+ // "statusBarItem.hoverForeground": null,
+    "statusBarItem.activeBackground": "{{ little_moon.light.hover._3 }}",
+ // "statusBarItem.focusBorder": null,
+
+    "statusBarItem.prominentBackground": "{{ little_moon.light.blue }}",
+    "statusBarItem.prominentForeground": "{{ little_moon.light.fg.i._0 }}",
+    "statusBarItem.prominentHoverBackground": "{{ little_moon.tint._20 }}",
+    "statusBarItem.prominentHoverForeground": "{{ little_moon.light.fg.i.br }}",
+
+    // The "Remote Indicator" is the opposing-chevron button in the bottom left
+    "statusBarItem.remoteBackground": "{{ little_moon.light.badge.bg }}",
+    "statusBarItem.remoteForeground": "{{ little_moon.light.fg.i._0 }}",
+    "statusBarItem.remoteHoverBackground": "{{ little_moon.tint._20 }}",
+    "statusBarItem.remoteHoverForeground": "{{ little_moon.light.fg.i.br }}",
+
+    "statusBarItem.warningBackground": "{{ little_moon.light.level.warn_bg }}",
+    "statusBarItem.warningForeground": "{{ little_moon.light.fg.i._0 }}",
+    "statusBarItem.warningHoverBackground": "{{ little_moon.tint._20 }}",
+    "statusBarItem.warningHoverForeground": "{{ little_moon.light.fg.i.br }}",
+
+    "statusBarItem.errorBackground": "{{ little_moon.light.level.err }}",
+    "statusBarItem.errorForeground": "{{ little_moon.light.fg.i._0 }}",
+    "statusBarItem.errorHoverBackground": "{{ little_moon.tint._20 }}",
+    "statusBarItem.errorHoverForeground": "{{ little_moon.light.fg.i.br }}",
+
+    // TODO: Find me
+    // statusBarItem.offlineBackground: Status bar item background color when the workbench is offline.
+    // statusBarItem.offlineForeground: Status bar item foreground color when the workbench is offline.
+    // statusBarItem.offlineHoverForeground: Status bar item foreground hover color when the workbench is offline.
+    // statusBarItem.offlineHoverBackground: Status bar item background hover color when the workbench is offline.
+
+
+    // Badge
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#badge
+    "badge.background": "{{ little_moon.light.badge.bg }}",
+    "badge.foreground": "{{ little_moon.light.fg.i._0 }}",
+
+
+    // Button Control
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#button-control
+    "button.background": "{{ little_moon.light.button.bg }}",
+    "button.hoverBackground": "{{ little_moon.light.button.bg_hv }}",
+    "button.foreground": "{{ little_moon.light.fg.i._0 }}",
+
+    // button.border: Button border color.
+    // button.separator: Button separator color.
+    // button.secondaryForeground: Secondary button foreground color.
+    // button.secondaryBackground: Secondary button background color.
+    // button.secondaryHoverBackground: Secondary button background color when hovering.
+    // checkbox.background: Background color of checkbox widget.
+    // checkbox.foreground: Foreground color of checkbox widget.
+    // checkbox.border: Border color of checkbox widget.
+    // checkbox.selectBackground: Background color of checkbox widget when the element it's in is selected.
+    // checkbox.selectBorder: Border color of checkbox widget when the element it's in is selected.
+    // radio.activeForeground: Foreground color of active radio option.
+    // radio.activeBackground: Background color of active radio option.
+    // radio.activeBorder: Border color of the active radio option.
+    // radio.inactiveForeground: Foreground color of inactive radio option.
+    // radio.inactiveBackground: Background color of inactive radio option.
+    // radio.inactiveBorder: Border color of the inactive radio option.
+    // radio.inactiveHoverBackground: Background color of inactive active radio option when hovering.
+
+
+    // Window Border
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#window-border
+    // Skipped; Pop_OS! handles my window borders
+
+
+    // Text
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#sc-colors
+    // ## TODO:
+    // "textBlockQuote.background": "{{ little_moon.light .bg__2 }}",
+    // "textBlockQuote.border": "{{ little_moon.light .bg_2 }}",
+    // "textCodeBlock.background": "{{ little_moon.pure.red }}", // TODO: Wrong
+    // "textLink.activeForeground": "{{ little_moon.light .blue }}",
+    // "textLink.foreground": "{{ little_moon.light .blue }}",
+    // "textPreformat.foreground": "{{ little_moon.light .cyan }}",
+    // textPreformat.background: Background color for preformatted text segments.
+    // "textSeparator.foreground": "{{ little_moon.pure.red }}", // TODO: Wrong
+
+
+    // Action
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#action-colors
+    "toolbar.hoverBackground": "{{ little_moon.light.hover._2 }}",
+ // "toolbar.hoverOutline": null,
+    "toolbar.activeBackground": "{{ little_moon.light.hover._3 }}",
+    // ## TODO: Find me
+    // "editorActionList.background": "{{ little_moon.light.red }}", // Action List background color.
+    // "editorActionList.foreground": "{{ little_moon.light.blue }}", // Action List foreground color.
+    // editorActionList.focusForeground: Action List foreground color for the focused item.
+    // editorActionList.focusBackground: Action List background color for the focused item.
+
+
+    // Dropdown Control
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#dropdown-control
+    "dropdown.background": "{{ little_moon.light.bg._2 }}",
+    "dropdown.listBackground": "{{ little_moon.light.bg._2 }}",
+    // "dropdown.border": "{{ little_moon.light.border._0 }}",
+    // "dropdown.foreground": "{{ little_moon.light .fg }}",
+
+
+    // Input Control
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#input-control
+    "input.background": "{{ little_moon.light.bg._0 }}",
+    "input.border": "{{ little_moon.light.border._0 }}",
+    "input.foreground": "{{ little_moon.light.fg._0 }}",
+    "input.placeholderForeground": "{{ little_moon.light.fg._2 }}",
+
+    "inputValidation.errorBackground": "{{ little_moon.light.level.err_bg }}",
+    "inputValidation.errorForeground": "{{ little_moon.light.fg.em2 }}",
+    "inputValidation.errorBorder": "{{ little_moon.light.level.err }}",
+
+    "inputValidation.warningBackground": "{{ little_moon.light.level.warn }}",
+    "inputValidation.warningForeground": "{{ little_moon.light.fg.em2 }}",
+    "inputValidation.warningBorder": "{{ little_moon.light.level.warn }}",
+
+    "inputValidation.infoBackground": "{{ little_moon.light.level.info }}",
+    "inputValidation.infoForeground": "{{ little_moon.light.fg.em2 }}",
+    "inputValidation.infoBorder": "{{ little_moon.light.level.info }}",
+
+    "inputOption.activeBackground": "{{ little_moon.light.hover._2 }}",
+    "inputOption.hoverBackground": "{{ little_moon.light.hover._0 }}",
+
+    "inputOption.activeForeground": "{{ little_moon.light.fg._0 }}",
+    "inputOption.activeBorder": "{{ little_moon.light.border.em }}",
+
+    // Progress Bar
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#progress-bar
+    // "progressBar.background": "{{ little_moon.light .yellow }}",
+
+
+    // Lists and Trees
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
+    // ## An active list/tree has keyboard focus, an inactive does not.
+
+    "list.inactiveSelectionBackground": "{{ little_moon.light.hover.dim }}",
+    "list.inactiveSelectionForeground": "{{ little_moon.light.fg._0 }}",
+    // list.inactiveSelectionIconForeground: List/Tree icon foreground color for the selected item when the list/tree is inactive
+    "list.activeSelectionBackground": "{{ little_moon.light.hover._3 }}",
+    "list.activeSelectionForeground": "{{ little_moon.light.fg._0 }}",
+    // list.activeSelectionIconForeground: List/Tree icon foreground color for the selected item when the list/tree is active
+    "list.hoverBackground": "{{ little_moon.light.hover._0 }}",
+    "list.hoverForeground": "{{ little_moon.light.fg._0 }}",
+
+ // "list.inactiveFocusBackground": null,
+ // "list.inactiveFocusOutline": "{{ little_moon.light.border.em4 }}60",
+ // "list.focusBackground": null,
+ // "list.focusForeground": null,
+ // "list.focusOutline": null,              // default: `focusBorder`
+ // "list.focusAndSelectionOutline": null,
+
+    "list.highlightForeground": "{{ little_moon.light.fg._0 }}",
+    "list.focusHighlightForeground": "{{ little_moon.light.fg._2 }}",
+    // ## FIND ME
+    "list.deemphasizedForeground": "{{ little_moon.pure.red }}",
+
+    "list.invalidItemForeground": "{{ little_moon.light.level.info }}",
+    "list.errorForeground": "{{ little_moon.light.level.err }}",
+    "list.warningForeground": "{{ little_moon.light.level.warn }}",
+
+ // "listFilterWidget.background": "",
+ // "listFilterWidget.outline": "",
+    // ## FIND ME
+    // "listFilterWidget.noMatchesOutline": "{{ little_moon.light.blue }}",
+ // "listFilterWidget.shadow": "",
+    // ## FIND ME
+    // list.filterMatchBackground: Background color of the filtered matches in lists and trees.
+    // list.filterMatchBorder: Border color of the filtered matches in lists and trees.
+
+    "tree.indentGuidesStroke": "{{ little_moon.light.rule.em }}",
+    "tree.inactiveIndentGuidesStroke": "{{ little_moon.light.rule.dim }}",
+
+    // tree.tableColumnsBorder: Tree stroke color for the indentation guides.
+    // tree.tableOddRowsBackground: Background color for odd table rows
+
+    // ## TODO: Drag and drop
+    // list.dropBackground: List/Tree drag and drop background when moving items around using the mouse.
+    // list.dropBetweenBackground: List/Tree drag and drop border color when moving items between items when using the mouse.
+
+
+    // Scrollbar Control
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#scrollbar-control
+    // ## The shadow applies to all scrolled panes; editor top/bottom, sidebar, list views etc.
+    "scrollbar.shadow": "{{ little_moon.light.shadow._0 }}",
+    // ## TODO: Make these semantic
+    "scrollbarSlider.background": "{{ little_moon.light.scroll._0 }}",
+    "scrollbarSlider.hoverBackground": "{{ little_moon.light.scroll.hv }}",
+    "scrollbarSlider.activeBackground": "{{ little_moon.light.scroll.em }}",
+
+
+    // Minimap
+    // =========================================================================
+    // ** NB. `minimap.foregroundOpacity` is expected to be of the form `000c`, which would the
+    //        opacity of elements to 75%/
+    // https://code.visualstudio.com/api/references/theme-color#minimap
+    // minimap.background: Minimap background color.
+    "minimap.foregroundOpacity": "#000d",
+
+    "minimap.findMatchHighlight": "{{ little_moon.light.range.find }}",
+    "minimap.selectionHighlight": "{{ little_moon.light.range.sel }}",
+    "minimap.selectionOccurrenceHighlight": "{{ little_moon.light.range.hover }}",
+
+    "minimap.errorHighlight": "{{ little_moon.light.level.err }}",
+    "minimap.warningHighlight": "{{ little_moon.light.level.warn }}",
+    "minimap.infoHighlight": "{{ little_moon.light.level.info }}",
+
+    "minimapSlider.background": "{{ little_moon.light.scroll._2 }}",
+    "minimapSlider.hoverBackground": "{{ little_moon.light.scroll.hv }}",
+    "minimapSlider.activeBackground": "{{ little_moon.light.scroll.em }}",
+
+    // ## These Default to the similarly named `editorGutter.___Background` styles.
+ // "minimapGutter.addedBackground": null,
+ // "minimapGutter.modifiedBackground": null,
+ // "minimapGutter.deletedBackground": null,
+
+
+    // Diff Editor
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#diff-editor-colors
+    // "diffEditor.insertedTextBackground": "",
+    // "diffEditor.insertedTextBorder": "{{ little_moon.pure.white }}4D",
+    // "diffEditor.removedTextBackground": "",
+    // "diffEditor.removedTextBorder": "{{ little_moon.pure.white }}4D",
+
+    // diffEditor.border: Border color between the two text editors.
+    // diffEditor.diagonalFill: Color of the diff editor's diagonal fill. The diagonal fill is used in side-by-side diff views.
+    // diffEditor.insertedLineBackground: Background color for lines that got inserted.
+    // diffEditor.removedLineBackground: Background color for lines that got removed.
+    // diffEditorGutter.insertedLineBackground: Background color for the margin where lines got inserted.
+    // diffEditorGutter.removedLineBackground: Background color for the margin where lines got removed.
+    // diffEditorOverview.insertedForeground: Diff overview ruler foreground for inserted content.
+    // diffEditorOverview.removedForeground: Diff overview ruler foreground for removed content.
+    // diffEditor.unchangedRegionBackground: The color of unchanged blocks in diff editor.
+    // diffEditor.unchangedRegionForeground: The foreground color of unchanged blocks in the diff editor.
+    // diffEditor.unchangedRegionShadow: The color of the shadow around unchanged region widgets.
+    // diffEditor.unchangedCodeBackground: The background color of unchanged code in the diff editor.
+    // diffEditor.move.border: The border color for text that got moved in the diff editor.
+    // diffEditor.moveActive.border: The active border color for text that got moved in the diff editor.
+    // multiDiffEditor.headerBackground: The background color of the diff editor's header
+    // multiDiffEditor.background: The background color of the multi file diff editor
+    // multiDiffEditor.border: The border color of the multi file diff editor
+
+
+    // Chat
+    // =========================================================================
+    // Inline Chat
+    // Panel Chat
+    // I am uninterested in all things chat
+
+
+    // Editor Widget
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#chat-colors
+    // ** The Editor widget is shown in front of the editor content.
+    // ** Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
+    "editorWidget.background": "{{ little_moon.light.bg._2 }}",
+ // "editorWidget.foreground": null,
+    "editorWidget.border": "{{ little_moon.light.blue }}",
+    "editorWidget.resizeBorder": "{{ little_moon.light.border.em2 }}",
+
+    "editorSuggestWidget.background": "{{ little_moon.light.bg._0 }}",
+    "editorSuggestWidget.foreground": "{{ little_moon.light.fg._0 }}",
+    "editorSuggestWidget.border": "{{ little_moon.light.border.em }}",
+
+    // ## Characters that match the current input.
+    "editorSuggestWidget.highlightForeground": "{{ little_moon.light.fg.hl }}",
+
+    "editorSuggestWidget.selectedBackground": "{{ little_moon.light.hover._2 }}",
+ // "editorSuggestWidget.selectedForeground": null,
+ // "editorSuggestWidget.selectedIconForeground": null,
+    // ## Characters on the selected line that match the current input.
+    "editorSuggestWidget.focusHighlightForeground": "{{ little_moon.light.fg.hl2 }}",
+
+    // ## TODO: Find me
+    // "editorSuggestWidgetStatus.foreground": "{{ little_moon.light.green }}",
+
+ // "editorHoverWidget.foreground": null,
+    "editorHoverWidget.background": "{{ little_moon.light.bg._0 }}",
+    "editorHoverWidget.border": "{{ little_moon.light.border.em }}",
+    "editorHoverWidget.highlightForeground": "{{ little_moon.light.fg.hl }}",
+    "editorHoverWidget.statusBarBackground": "{{ little_moon.light.bg._2 }}",
+
+    // editorGhostText.border: Border color of the ghost text shown by inline completion providers and the suggest preview.
+    // editorGhostText.background: Background color of the ghost text in the editor.
+    // editorGhostText.foreground: Foreground color of the ghost text shown by inline completion providers and the suggest preview.
+
+    "editorStickyScroll.background": "{{ little_moon.light.bg.ovr }}",
+ // "editorStickyScroll.border": null,
+    "editorStickyScroll.shadow": "{{ little_moon.light.shadow.dim }}",
+    "editorStickyScrollHover.background": "{{ little_moon.light.hover.ovr }}",
+
+    // ** The editor marker view shows when navigating to errors and warnings in the editor (Go to
+    //    Next Error or Warning command).
+    "editorMarkerNavigation.background": "{{ little_moon.light.bg._0 }}c0",
+
+    "editorMarkerNavigationError.background": "{{ little_moon.light.level.err }}",
+    "editorMarkerNavigationError.headerBackground": "{{ little_moon.light.level.err_bg }}",
+
+    "editorMarkerNavigationWarning.background": "{{ little_moon.light.level.warn }}",
+    "editorMarkerNavigationWarning.headerBackground": "{{ little_moon.light.level.warn_bg }}",
+
+    "editorMarkerNavigationInfo.background": "{{ little_moon.light.level.info }}",
+    "editorMarkerNavigationInfo.headerBackground": "{{ little_moon.light.level.info_bg }}",
+
+
+    // Peek View
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#peek-view-colors
+
+    "peekViewTitle.background": "{{ little_moon.light.bg._2 }}",
+    "peekViewTitleLabel.foreground": "{{ little_moon.light.fg.em }}",
+    "peekViewTitleDescription.foreground": "{{ little_moon.light.fg._0 }}",
+
+    "peekView.border": "{{ little_moon.light.border.em }}",
+
+    "peekViewEditor.background": "{{ little_moon.light.bg._0 }}",
+    "peekViewEditorGutter.background": "{{ little_moon.light.bg._0 }}",
+    "peekViewEditor.matchHighlightBackground": "{{ little_moon.light.range.result }}",
+ // "peekViewEditor.matchHighlightBorder": null,
+
+    "peekViewEditorStickyScroll.background": "{{ little_moon.light.bg.ovr }}",
+
+    "peekViewResult.background": "{{ little_moon.light.bg._2 }}",
+ // "peekViewResult.fileForeground": null,
+ // "peekViewResult.lineForeground": null,
+    "peekViewResult.matchHighlightBackground": "{{ little_moon.light.range.find }}",
+    "peekViewResult.selectionBackground": "{{ little_moon.light.hover._3 }}",
+    "peekViewResult.selectionForeground": "{{ little_moon.light.fg._0 }}",
+
+    // ** The Debug Exception widget is a peek view that shows in the editor when debug stops at an exception.
+    // "debugExceptionWidget.background": "{{ little_moon.light .bg__1 }}",
+    // "debugExceptionWidget.border": "{{ little_moon.light .semantic.border_br }}",
+
+
+    // Merge Conflicts
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#merge-conflicts-colors
+    // "merge.currentHeaderBackground": "{{ little_moon.light .bg__2 }}",
+    // "merge.currentContentBackground": "{{ little_moon.light .bg__2 }}",
+    // "merge.incomingHeaderBackground": "{{ little_moon.light .bg__2 }}",
+    // "merge.incomingContentBackground": "{{ little_moon.light .bg__2 }}",
+    // "merge.border": "{{ little_moon.light .bg_1 }}",
+    // merge.commonContentBackground: Common ancestor content background in inline merge-conflicts.
+    // merge.commonHeaderBackground: Common ancestor header background in inline merge-conflicts.
+    // "editorOverviewRuler.currentContentForeground": "{{ little_moon.light.red }}",
+    // "editorOverviewRuler.incomingContentForeground": "{{ little_moon.light.red }}",
+    // editorOverviewRuler.commonContentForeground: Common ancestor overview ruler foreground for inline merge conflicts.
+    // editorOverviewRuler.commentForeground: Editor overview ruler decoration color for resolved comments. This color should be opaque.
+    // editorOverviewRuler.commentUnresolvedForeground: Editor overview ruler decoration color for unresolved comments. This color should be opaque.
+    // mergeEditor.change.background: The background color for changes.
+    // mergeEditor.change.word.background: The background color for word changes.
+    // mergeEditor.conflict.unhandledUnfocused.border: The border color of unhandled unfocused conflicts.
+    // mergeEditor.conflict.unhandledFocused.border: The border color of unhandled focused conflicts.
+    // mergeEditor.conflict.handledUnfocused.border: The border color of handled unfocused conflicts.
+    // mergeEditor.conflict.handledFocused.border: The border color of handled focused conflicts.
+    // mergeEditor.conflict.handled.minimapOverViewRuler: The foreground color for changes in input 1.
+    // mergeEditor.conflict.unhandled.minimapOverViewRuler: The foreground color for changes in input 1.
+    // mergeEditor.conflictingLines.background: The background of the "Conflicting Lines" text.
+    // mergeEditor.changeBase.background: The background color for changes in base.
+    // mergeEditor.changeBase.word.background: The background color for word changes in base.
+    // mergeEditor.conflict.input1.background: The background color of decorations in input 1.
+    // mergeEditor.conflict.input2.background: The background color of decorations in input 2.
+
+
+    // Panel
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#panel-colors
+    // ## TODO: See if we can eat some of the terminal settings
+    // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
+ // "panel.background": "{{ little_moon.light.bg._0 }}",
+    "panel.border": "{{ little_moon.light.border._0 }}",
+    // panel.dropBorder: Drag and drop feedback color for the panel titles.
+
+    "panelTitle.activeBorder": "{{ little_moon.light.border.em }}",
+    "panelTitle.activeForeground": "{{ little_moon.light.fg._0 }}",
+    "panelTitle.inactiveForeground": "{{ little_moon.light.fg._2 }}",
+
+    "panelInput.border": "{{ little_moon.light.border._0 }}",
+
+    // ## Vertical border between horizontal sections
+    "panelSection.border": "{{ little_moon.light.border._0 }}",
+    "panelSectionHeader.background": "{{ little_moon.light.bg._3 }}",
+    // panelSectionHeader.foreground: Panel section header foreground color.
+    // panelSectionHeader.border: Panel section header border color used when multiple views are stacked vertically in the panel.
+    // panelSection.dropBackground: Drag and drop feedback color for the panel sections. The color should have transparency so that the panel sections can still shine through.
+
+    // panelStickyScroll.background: Background color of sticky scroll in the panel.
+    // panelStickyScroll.border: Border color of sticky scroll in the panel.
+    // panelStickyScroll.shadow: Shadow color of sticky scroll in the panel.
+
+    // outputView.background: Output view background color.
+    // outputViewStickyScroll.background: Output view sticky scroll background color.
+
+
+    // Command Center
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#command-center-colors
+    // commandCenter.foreground: Foreground color of the Command Center.
+    // commandCenter.activeForeground: Active foreground color of the Command Center.
+    // commandCenter.background: Background color of the Command Center.
+    // commandCenter.activeBackground: Active background color of the Command Center.
+    // commandCenter.border: Border color of the Command Center.
+    // commandCenter.inactiveForeground: Foreground color of the Command Center when the window is inactive.
+    // commandCenter.inactiveBorder: Border color of the Command Center when the window is inactive.
+    // commandCenter.activeBorder: Active border color of the Command Center.
+    // commandCenter.debuggingBackground: Command Center background color when a program is being debugged.
+
+
+    // Notification
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#notification-colors
+    // "notificationCenter.border": "{{ little_moon.light .bg_1 }}",
+    // "notificationCenterHeader.foreground": "{{ little_moon.light .fg }}",
+    // "notificationCenterHeader.background": "{{ little_moon.light .bg__2 }}",
+    // "notificationToast.border": "{{ little_moon.light .bg_1 }}",
+    // "notifications.foreground": "{{ little_moon.light .fg }}",
+    // "notifications.background": "{{ little_moon.light .bg__2 }}",
+    // "notifications.border": "{{ little_moon.light .bg_1 }}",
+    // "notificationLink.foreground": "{{ little_moon.light .blue }}",
+
+
+    // Banner
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#banner-colors
+    // The banner appears below the title bar and spans the entire width of the workbench when visible.
+    "banner.background": "{{ little_moon.light.blue__1 }}",
+    "banner.foreground": "{{ little_moon.light.fg.i.br }}",
+    "banner.iconForeground": "{{ little_moon.light.blue }}",
+
+
+    // Extensions
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#extensions-colors
+    // "extensionButton.prominentForeground": "{{ little_moon.light .fg }}",
+    // "extensionButton.prominentBackground": "{{ little_moon.light.red }}",
+    // "extensionButton.prominentHoverBackground": "{{ little_moon.light.red }}",
+    // extensionButton.background: Button background color for extension actions.
+    // extensionButton.foreground: Button foreground color for extension actions.
+    // extensionButton.hoverBackground: Button background hover color for extension actions.
+    // extensionButton.separator: Button separator color for extension actions.
+    // extensionBadge.remoteBackground: Background color for the remote badge in the extensions view.
+    // extensionBadge.remoteForeground: Foreground color for the remote badge in the extensions view.
+    // extensionIcon.starForeground: The icon color for extension ratings.
+    // extensionIcon.verifiedForeground: The icon color for extension verified publisher.
+    // extensionIcon.preReleaseForeground: The icon color for pre-release extension.
+    // extensionIcon.sponsorForeground: The icon color for extension sponsor.
+
+
+    // Quick Picker
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#quick-picker-colors
+    // ** The quick input widget is the container for views like the color theme picker.
+    // ** The quick picker widget is the container for pickers like the Command Palette.
+    // ## Border between sub-sections of quick-input; e.g. recently used vs other commands in the
+    //    command palette.
+    "pickerGroup.border": "{{ little_moon.light.bg._0 }}",
+    "pickerGroup.foreground": "{{ little_moon.light.fg._0 }}",
+    // quickInput.background: Quick input background color.
+    // quickInput.foreground: Quick input foreground color.
+
+    // ## This is for arrow-key controls; e.g. `list.hoverBackground` is for mouse interaction.
+ // "quickInputList.focusBackground": null, // default: `list.activeSelectionBackground`
+    // quickInputList.focusForeground: Quick picker foreground color for the focused item.
+    // quickInputList.focusIconForeground: Quick picker icon foreground color for the focused item.
+
+    // quickInputTitle.background: Quick picker title background color.
+
+
+    // Keybinding Label
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#quick-picker-colors
+    // Keybinding labels are shown when there is a keybinding associated with a command
+    // Usages of the keybinding label include (but are not limited to) displaying keyboard keys on:
+    // - The Command Palette
+    // - The Keyboard Shortcuts editor
+    // - The Keyboard Shortcuts recorder modal
+    // - The "feature contribution" section of an extension's marketplace page
+    "keybindingLabel.background": "{{ little_moon.light.bg._0 }}",
+ // "keybindingLabel.foreground": null,
+    "keybindingLabel.border": "{{ little_moon.light.border._0 }}",
+    "keybindingLabel.bottomBorder": "{{ little_moon.light.border._0 }}",
+
+
+    // Keyboard Shortcut Table
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#keyboard-shortcut-table-colors
+    // keybindingTable.headerBackground: Background color for the keyboard shortcuts table header.
+    // keybindingTable.rowsBackground: Background color for the keyboard shortcuts table alternating rows.
+
+
+    // Integrated Terminal
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#integrated-terminal-colors
+    "terminal.background": "{{ little_moon.light.bg._0 }}",
+    "terminal.foreground": "{{ little_moon.light.fg._0 }}",
+
+    "terminal.ansiBlack": "{{ little_moon.light.terminal._00_black }}",
+    "terminal.ansiRed": "{{ little_moon.light.terminal._01_red }}",
+    "terminal.ansiGreen": "{{ little_moon.light.terminal._02_green }}",
+    "terminal.ansiYellow": "{{ little_moon.light.terminal._03_yellow }}",
+    "terminal.ansiBlue": "{{ little_moon.light.terminal._04_blue }}",
+    "terminal.ansiMagenta": "{{ little_moon.light.terminal._05_magenta }}",
+    "terminal.ansiCyan": "{{ little_moon.light.terminal._06_cyan }}",
+    "terminal.ansiWhite": "{{ little_moon.light.terminal._07_white }}",
+    "terminal.ansiBrightBlack": "{{ little_moon.light.terminal._08_bright_black }}",
+    "terminal.ansiBrightRed": "{{ little_moon.light.terminal._09_bright_red }}",
+    "terminal.ansiBrightGreen": "{{ little_moon.light.terminal._10_bright_green }}",
+    "terminal.ansiBrightYellow": "{{ little_moon.light.terminal._11_bright_yellow }}",
+    "terminal.ansiBrightBlue": "{{ little_moon.light.terminal._12_bright_blue }}",
+    "terminal.ansiBrightMagenta": "{{ little_moon.light.terminal._13_bright_magenta }}",
+    "terminal.ansiBrightCyan": "{{ little_moon.light.terminal._14_bright_cyan }}",
+    "terminal.ansiBrightWhite": "{{ little_moon.light.terminal._15_bright_white }}",
+
+    "terminal.border": "{{ little_moon.light.border.em }}",
+
+    // terminal.selectionBackground: The selection background color of the terminal.
+    // terminal.selectionForeground: The selection foreground color of the terminal. When this is null the selection foreground will be retained and have the minimum contrast ratio feature applied.
+    // terminal.inactiveSelectionBackground: The selection background color of the terminal when it does not have focus.
+    // terminal.findMatchBackground: Color of the current search match in the terminal. The color must not be opaque so as not to hide underlying terminal content.
+    // terminal.findMatchBorder: Border color of the current search match in the terminal.
+    // terminal.findMatchHighlightBackground: Color of the other search matches in the terminal. The color must not be opaque so as not to hide underlying terminal content.
+    // terminal.findMatchHighlightBorder: Border color of the other search matches in the terminal.
+    // terminal.hoverHighlightBackground: Color of the highlight when hovering a link in the terminal.
+    // terminalCursor.background: The background color of the terminal cursor. Allows customizing the color of a character overlapped by a block cursor.
+    // terminalCursor.foreground: The foreground color of the terminal cursor.
+    // terminal.dropBackground: The background color when dragging on top of terminals. The color should have transparency so that the terminal contents can still shine through.
+    // terminal.tab.activeBorder: Border on the side of the terminal tab in the panel. This defaults to tab.activeBorder.
+    // terminalCommandDecoration.defaultBackground: The default terminal command decoration background color.
+    // terminalCommandDecoration.successBackground: The terminal command decoration background color for successful commands.
+    // terminalCommandDecoration.errorBackground: The terminal command decoration background color for error commands.
+    // terminalOverviewRuler.cursorForeground: The overview ruler cursor color.
+    // terminalOverviewRuler.findMatchForeground: Overview ruler marker color for find matches in the terminal.
+    // terminalStickyScroll.background: The background color of the sticky scroll overlay in the terminal.
+    // terminalStickyScroll.border: The border of the sticky scroll overlay in the terminal.
+    // terminalStickyScrollHover.background: The background color of the sticky scroll overlay in the terminal when hovered.
+    // terminal.initialHintForeground: Foreground color of the terminal initial hint.
+    // terminalOverviewRuler.border: The overview ruler left-side border color.
+    // terminalCommandGuide.foreground: The foreground color of the terminal command guide that appears to the left of a command and its output on hover.
+
+
+    // Debug colors
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#debug-colors
+    // debugToolBar.background: Debug toolbar background color.
+    // debugToolBar.border: Debug toolbar border color.
+    // editor.stackFrameHighlightBackground: Background color of the top stack frame highlight in the editor.
+    // editor.focusedStackFrameHighlightBackground: Background color of the focused stack frame highlight in the editor.
+    // editor.inlineValuesForeground: Color for the debug inline value text.
+    // editor.inlineValuesBackground: Color for the debug inline value background.
+    // debugView.exceptionLabelForeground: Foreground color for a label shown in the CALL STACK view when the debugger breaks on an exception.
+    // debugView.exceptionLabelBackground: Background color for a label shown in the CALL STACK view when the debugger breaks on an exception.
+    // debugView.stateLabelForeground: Foreground color for a label in the CALL STACK view showing the current session's or thread's state.
+    // debugView.stateLabelBackground: Background color for a label in the CALL STACK view showing the current session's or thread's state.
+    // debugView.valueChangedHighlight: Color used to highlight value changes in the debug views (such as in the Variables view).
+    // debugTokenExpression.name: Foreground color for the token names shown in debug views (such as in the Variables or Watch view).
+    // debugTokenExpression.value: Foreground color for the token values shown in debug views.
+    // debugTokenExpression.string: Foreground color for strings in debug views.
+    // debugTokenExpression.boolean: Foreground color for booleans in debug views.
+    // debugTokenExpression.number: Foreground color for numbers in debug views.
+    // debugTokenExpression.error: Foreground color for expression errors in debug views.
+    // debugTokenExpression.type: Foreground color for the token types shown in the debug views (ie. the Variables or Watch view).
+
+
+    // Testing colors
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#testing-colors
+    // testing.runAction: Color for 'run' icons in the editor.
+    // testing.iconErrored: Color for the 'Errored' icon in the test explorer.
+    // testing.iconFailed: Color for the 'failed' icon in the test explorer.
+    // testing.iconPassed: Color for the 'passed' icon in the test explorer.
+    // testing.iconQueued: Color for the 'Queued' icon in the test explorer.
+    // testing.iconUnset: Color for the 'Unset' icon in the test explorer.
+    // testing.iconSkipped: Color for the 'Skipped' icon in the test explorer.
+    // testing.iconErrored.retired: Retired color for the 'Errored' icon in the test explorer.
+    // testing.iconFailed.retired: Retired color for the 'failed' icon in the test explorer.
+    // testing.iconPassed.retired: Retired color for the 'passed' icon in the test explorer.
+    // testing.iconQueued.retired: Retired color for the 'Queued' icon in the test explorer.
+    // testing.iconUnset.retired: Retired color for the 'Unset' icon in the test explorer.
+    // testing.iconSkipped.retired: Retired color for the 'Skipped' icon in the test explorer.
+    // testing.peekBorder: Color of the peek view borders and arrow.
+    // testing.peekHeaderBackground: Color of the peek view borders and arrow.
+    // testing.message.error.decorationForeground: Text color of test error messages shown inline in the editor.
+    // testing.message.error.lineBackground: Margin color beside error messages shown inline in the editor.
+    // testing.message.info.decorationForeground: Text color of test info messages shown inline in the editor.
+    // testing.message.info.lineBackground: Margin color beside info messages shown inline in the editor.
+    // testing.messagePeekBorder: Color of the peek view borders and arrow when peeking a logged message.
+    // testing.messagePeekHeaderBackground: Color of the peek view borders and arrow when peeking a logged message.
+    // testing.coveredBackground: Background color of text that was covered.
+    // testing.coveredBorder: Border color of text that was covered.
+    // testing.coveredGutterBackground: Gutter color of regions where code was covered.
+    // testing.uncoveredBranchBackground: Background of the widget shown for an uncovered branch.
+    // testing.uncoveredBackground: Background color of text that was not covered.
+    // testing.uncoveredBorder: Border color of text that was not covered.
+    // testing.uncoveredGutterBackground: Gutter color of regions where code not covered.
+    // testing.coverCountBadgeBackground: Background for the badge indicating execution count
+    // testing.coverCountBadgeForeground: Foreground for the badge indicating execution count
+
+
+    // Welcome Page
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#welcome-page-colors
+    // "welcomePage.buttonBackground": "{{ little_moon.light .bg__2 }}", // TODO: Not a settings?
+    // welcomePage.background: Background color for the Welcome page.
+    // welcomePage.progress.background: Foreground color for the Welcome page progress bars.
+    // welcomePage.progress.foreground: Background color for the Welcome page progress bars.
+    // welcomePage.tileBackground: Background color for the tiles on the Welcome page.
+    // welcomePage.tileHoverBackground: Hover background color for the tiles on the Welcome page.
+    // welcomePage.tileBorder: Border color for the tiles on the Welcome page.
+    // "welcomePage.buttonHoverBackground": "{{ little_moon.light .bg_1 }}", // TODO: Not a settings?
+    // "walkThrough.embeddedEditorBackground": "{{ little_moon.light .bg__2 }}",
+    // walkthrough.stepTitle.foreground: Foreground color of the heading of each walkthrough step.
+
+
+    // Git
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#git-colors
+    "gitDecoration.addedResourceForeground": "{{ little_moon.light.git.added }}",
+    "gitDecoration.modifiedResourceForeground": "{{ little_moon.light.git.modified }}",
+    "gitDecoration.deletedResourceForeground": "{{ little_moon.light.git.deleted }}",
+    "gitDecoration.renamedResourceForeground": "{{ little_moon.light.git.renamed }}",
+
+    "gitDecoration.untrackedResourceForeground": "{{ little_moon.light.git.untracked }}",
+    "gitDecoration.ignoredResourceForeground": "{{ little_moon.light.git.ignored }}",
+    "gitDecoration.stageModifiedResourceForeground": "{{ little_moon.light.git.staged }}",
+    "gitDecoration.stageDeletedResourceForeground": "{{ little_moon.light.git.staged }}",
+    "gitDecoration.conflictingResourceForeground": "{{ little_moon.light.git.conflicting }}",
+
+    "gitDecoration.submoduleResourceForeground": "{{ little_moon.light.git.submodule }}"
+
+
+    // Source Control Graph colors
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#source-control-graph-colors
+    // What does "scm" stand for?
+    // scmGraph.historyItemGroupLocal: Local history item group color.
+    // scmGraph.historyItemGroupRemote: Remote history item group color.
+    // scmGraph.historyItemGroupBase: Base history item group color.
+    // scmGraph.historyItemHoverLabelForeground: History item hover label foreground color.
+    // scmGraph.foreground1: Source control graph foreground color (1).
+    // scmGraph.foreground2: Source control graph foreground color (2).
+    // scmGraph.foreground3: Source control graph foreground color (3).
+    // scmGraph.historyItemHoverAdditionsForeground: History item hover additions foreground color.
+    // scmGraph.historyItemHoverDeletionsForeground: History item hover deletions foreground color.
+
+
+    // Settings Editor
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#settings-editor-colors
+    // "settings.headerForeground": "{{ little_moon.light .fg }}",
+    // "settings.modifiedItemIndicator": "{{ little_moon.light .blue }}",
+    // "settings.dropdownBackground": "{{ little_moon.light .bg__2 }}",
+    // "settings.dropdownForeground": "{{ little_moon.light .fg }}",
+    // "settings.dropdownBorder": "{{ little_moon.light .bg_1 }}",
+    // settings.dropdownListBorder: Dropdown list border.
+    // "settings.checkboxBackground": "{{ little_moon.light .bg__2 }}",
+    // "settings.checkboxForeground": "{{ little_moon.light .fg }}",
+    // "settings.checkboxBorder": "{{ little_moon.light .bg_1 }}",
+    // settings.rowHoverBackground: The background color of a settings row when hovered.
+    // "settings.textInputBackground": "{{ little_moon.light .bg__2 }}",
+    // "settings.textInputForeground": "{{ little_moon.light .fg }}",
+    // "settings.textInputBorder": "{{ little_moon.light .bg_1 }}",
+    // "settings.numberInputBackground": "{{ little_moon.light .bg__2 }}",
+    // "settings.numberInputForeground": "{{ little_moon.light .fg }}",
+    // "settings.numberInputBorder": "{{ little_moon.light .bg_1 }}",
+    // settings.focusedRowBackground: Background color of a focused setting row.
+    // settings.focusedRowBorder: The color of the row's top and bottom border when the row is focused.
+    // settings.headerBorder: The color of the header container border.
+    // settings.sashBorder: The color of the Settings editor splitview sash border.
+    // settings.settingsHeaderHoverForeground: The foreground color for a section header or hovered title.
+
+
+    // Snippets
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#snippets-colors
+    // "editor.snippetTabstopHighlightBackground": "{{ little_moon.pure.red }}",
+    // "editor.snippetTabstopHighlightBorder": "{{ little_moon.light .fg }}",
+    // "editor.snippetFinalTabstopHighlightBackground": "{{ little_moon.light .fg }}",
+    // "editor.snippetFinalTabstopHighlightBorder": "{{ little_moon.light .fg }}",
+
+
+    // Symbol Icons
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#symbol-icons-colors
+    // The theme colors for symbol icons that appears in the Outline view, breadcrumb navigation, and suggest widget
+    // TODO: Consider looking at this section
+
+
+    // Debug Icons
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#debug-icons-colors
+    // TODO: Consider looking at this section
+
+
+    // Notebook
+    // =========================================================================
+    // Not interested in notebooks
+
+
+    // Chart colors
+    // =========================================================================
+    // https://code.visualstudio.com/api/references/theme-color#chart-colors
+    // What are charts?
+    // charts.foreground: Contrast color for text in charts.
+    // charts.lines: Color for lines in charts.
+    // charts.red: Color for red elements in charts.
+    // charts.blue: Color for blue elements in charts.
+    // charts.yellow: Color for yellow elements in charts.
+    // charts.orange: Color for orange elements in charts.
+    // charts.green: Color for green elements in charts.
+    // charts.purple: Color for purple elements in charts.
+
+
+    // Ports
+    // =========================================================================
+    // Ports?
+    // ports.iconRunningProcessForeground: The color of the icon for a port that has an associated running process.
+
+
+    // Comments View colors
+    // =========================================================================
+    // For pull requests?
+    // commentsView.resolvedIcon: Icon color for resolved comments.
+    // commentsView.unresolvedIcon: Icon color for unresolved comments.
+
+
+    // Action Bar colors
+    // =========================================================================
+    // What's the action bar?
+    // actionBar.toggledBackground: Background color for toggled action items in action bar.
+
+
+    // Simple Find Widget
+    // =========================================================================
+    // I think this was ctrl+i in sublime?
+    // simpleFindWidget.sashBorder: Border color of the sash border.
+
+
+    // SCM
+    // =========================================================================
+    // But not the SCM graph?
+    // scm.historyItemAdditionsForeground: History item additions foreground color.
+    // scm.historyItemDeletionsForeground: History item deletions foreground color.
+    // scm.historyItemStatisticsBorder: History item statistics border color.
+    // scm.historyItemSelectedStatisticsBorder: History item selected statistics border color.
+  }
+}

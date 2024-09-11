@@ -1,0 +1,224 @@
+.selenized {
+  .palette {
+    .dark {
+      //                                 CIE L*a*b*
+      //                                 ----------
+      .bg__3      { color: #001721; } // 6  -12 -12
+      .bg__2      { color: #002934; } // 14 -12 -12
+      .bg__1      { color: #00313d; } // 18 -12 -12
+      .bg         { color: #053d48; } // 23 -12 -12 -- orig: bg_0
+      .bg_1       { color: #0e4956; } // 28 -13 -13 -- orig: bg_1
+      .bg_2       { color: #275b69; } // 36 -13 -13 -- orig: bg_2
+
+      .fg         { color: #adbcbc; } // 75  -5  -2 -- orig: .fg_0
+      .fg_1       { color: #c8d7d8; } // 85  -5  -2 -- orig: .fg_1
+
+      .dim        { color: #718b90; } // 56  -8  -6 -- orig: .dim_0
+
+      .red        { color: #fd564e; } // 60  63  40 -- orig: red
+      .red_1      { color: #ff675d; } // 66  63  40 -- orig: br_red
+      .green      { color: #80b83c; } // 69 -38  55 -- orig: green
+      .green_1    { color: #8ec649; } // 74 -38  55 -- orig: br_green
+      .yellow     { color: #e3b230; } // 75   6  68 -- orig: yellow
+      .yellow_1   { color: #f2bf3f; } // 80   6  68 -- orig: br_yellow
+      .blue       { color: #0096f5; } // 60   0 -57 -- orig: blue
+      .blue_1     { color: #21a6ff; } // 66   0 -57 -- orig: br_blue
+      .magenta    { color: #f176bd; } // 66  55 -15 -- orig: magenta
+      .magenta_1  { color: #ff87cd; } // 72  55 -15 -- orig: br_magenta
+      .cyan       { color: #39c7b9; } // 73 -40  -4 -- orig: cyan
+      .cyan_1     { color: #4bd5c7; } // 78 -40  -4 -- orig: br_cyan
+      .orange     { color: #f38649; } // 67  37  50 -- orig: orange
+      .orange_1   { color: #ff9356; } // 72  37  50 -- orig: br_orange
+      .violet     { color: #a58cec; } // 64  30 -45 -- orig: violet
+      .violet_1   { color: #b399fa; } // 69  30 -45 -- orig: br_violet
+
+    }
+
+    .light {
+      //                                 CIE L*a*b*
+      //                                 ----------
+      .bg__5      { color: #5f5642; } // 37   0  13 -- UNUSED (rm?)
+      .bg__4      { color: #928872; } // 57   0  13 -- UNUSED (rm?)
+      .bg__3      { color: #c5baa4; } // 76   0  13
+      .bg__2      { color: #d6cbb4; } // 82   0  13 -- orig: .bg_2
+      .bg__1      { color: #f0e4cc; } // 91   0  13 -- orig: .bg_1
+      .bg         { color: #fef3da; } // 96   0  13 -- orig: .bg_0
+      .bg_1       { color: #fff8e0; } // 98   0  13
+      .bg_2       { color: #fffee6; } // 100  0  13
+
+      .bg_red     { color: #ff9181; } // 82  66  42
+      .bg_green   { color: #aae660; } // 85 -40  58
+      .bg_yellow  { color: #ffd048; } // 86   6  71
+      .bg_blue    { color: #60d2ff; } // 82   0 -60
+      .bg_magenta { color: #ffa5f1; } // 84  58 -16
+      .bg_cyan    { color: #5deddd; } // 86 -42  -4
+      .bg_orange  { color: #ffb271; } // 84  39  52
+      .bg_violet  { color: #ddbeff; } // 83  32 -47
+
+      .fg__2      { color: #384c52; } // 31  -6  -6 -- orig: .fg_1
+      .fg__1      { color: #465a60; } // 37  -6  -6
+      .fg         { color: #52666d; } // 42  -6  -6 -- orig: .fg_0
+      .fg_1       { color: #778c93; } // 57  -6  -6
+      .fg_2       { color: #9fb4bb; } // 72  -6  -6
+
+      .dim        { color: #8f9894; } // 62  -4   1 -- orig: .dim_0
+
+      .red__2     { color: #9b0002; } // 28  66  42
+      .red__1     { color: #ce1726; } // 44  66  42 -- orig: .br_red
+      .red        { color: #d4212b; } // 46  66  42 -- orig: .red
+      .red_1      { color: #f1413f; } // 55  66  42
+      .green__2   { color: #135800; } // 32 -40  58
+      .green__1   { color: #4e8b00; } // 52 -40  58 -- orig: .br_green
+      .green      { color: #539100; } // 54 -40  58 -- orig: .green
+      .green_1    { color: #69a61f; } // 62 -40  58
+      .yellow__2  { color: #6e4d00; } // 35   6  71
+      .yellow__1  { color: #ad8300; } // 57   6  71 -- orig: .br_yellow
+      .yellow     { color: #b38800; } // 59   6  71 -- orig: .yellow
+      .yellow_1   { color: #c89a00; } // 66   6  71
+      .blue__2    { color: #0049a0; } // 28   0 -60
+      .blue__1    { color: #006ecd; } // 44   0 -60 -- orig: .br_blue
+      .blue       { color: #0073d2; } // 46   0 -60 -- orig: .blue
+      .blue_1     { color: #008aec; } // 55   0 -60
+      .magenta__2 { color: #8e0063; } // 31  58 -16
+      .magenta__1 { color: #c54694; } // 50  58 -16 -- orig: .br_magenta
+      .magenta    { color: #cb4c99; } // 52  58 -16 -- orig: .magenta
+      .magenta_1  { color: #e362ae; } // 60  58 -16
+      .cyan__2    { color: #006055; } // 34 -42  -4
+      .cyan__1    { color: #009689; } // 55 -42  -4 -- orig: .br_cyan
+      .cyan       { color: #009c8f; } // 57 -42  -4 -- orig: .cyan
+      .cyan_1     { color: #00afa1; } // 64 -42  -4
+      .orange__2  { color: #882800; } // 31  39  52
+      .orange__1  { color: #c1581b; } // 50  39  52 -- orig: .br_orange
+      .orange     { color: #c75d20; } // 52  39  52 -- orig: .orange
+      .orange_1   { color: #e07234; } // 60  39  52
+      .violet__2  { color: #47358e; } // 29  32 -47
+      .violet__1  { color: #785fbf; } // 47  32 -47 -- orig: .br_violet
+      .violet     { color: #7d64c5; } // 49  32 -47 -- orig: .violet
+      .violet_1   { color: #967bde; } // 58  32 -47
+
+      // Notes:
+      // - bg_{color} -- colors shifted closer to the luminance of bg.
+      //   Calculated via `L + ((100 - L) * .666)` where `L` is the lightness of
+      //   the target color, and `.666` is the approximate `ΔL` shift from `red`
+      //   to `bg__2` (`(100 - 46)/82`).
+      // - The original `.br_{color}` luminance shifts (NB. those are _darker_
+      //   than base) are comically small. A new set of dark variants was
+      //   calculated via `L - (L * .41)` where `L` is the lightness of the target
+      //   color, and `.41` is the approximate `ΔL` shift to make `green` and
+      //   `green__2` visually distinct.
+      //   FIXME: Revisit this; the current shift is too much.
+      // - Because the original `br_{color}` set is actually a dark variant, a new
+      //   set of light variants was calculated via `L+((100 - L) * 0.165)` where
+      //   `L` is the lightness of the target color, and `.165` is the approximate
+      //   `ΔL` shift from `dark.bg_0` to `dark.bg_2` (`(36-23)/(100-23)`).
+    }
+  }
+
+  .terminal {
+    .dark {
+      .background         { color: #053d48; } /* .dark.bg_0       */
+      .foreground         { color: #adbcbc; } /* .dark.fg_0       */
+
+      .cursor             { color: #f38649; } /* .????            */
+
+      ._00_black          { color: #0e4956; } /* .dark.bg_1       */
+      ._01_red            { color: #fd564e; } /* .dark.red        */
+      ._02_green          { color: #80b83c; } /* .dark.green      */
+      ._03_yellow         { color: #e3b230; } /* .dark.yellow     */
+      ._04_blue           { color: #0096f5; } /* .dark.blue       */
+      ._05_magenta        { color: #f176bd; } /* .dark.magenta    */
+      ._06_cyan           { color: #39c7b9; } /* .dark.cyan       */
+      ._07_white          { color: #718b90; } /* .dark.dim_0      */
+
+      ._08_bright_black   { color: #275b69; } /* .dark.bg_2       */
+      ._09_bright_red     { color: #ff675d; } /* .dark.br_red     */
+      ._10_bright_green   { color: #8ec649; } /* .dark.br_green   */
+      ._11_bright_yellow  { color: #f2bf3f; } /* .dark.br_yellow  */
+      ._12_bright_blue    { color: #21a6ff; } /* .dark.br_blue    */
+      ._13_bright_magenta { color: #ff87cd; } /* .dark.br_magenta */
+      ._14_bright_cyan    { color: #4bd5c7; } /* .dark.br_cyan    */
+      ._15_bright_white   { color: #c8d7d8; } /* .dark.fg_1       */
+    }
+    .light {
+      .background         { color: #fef3da; } /* .light.bg_0       */
+      .foreground         { color: #52666d; } /* .light.fg_0       */
+
+      .cursor             { color: #f38649; } /* .????             */
+
+      ._00_black          { color: #f0e4cc; } /* .light.bg_1       */
+      ._01_red            { color: #d4212b; } /* .light.red        */
+      ._02_green          { color: #539100; } /* .light.green      */
+      ._03_yellow         { color: #b38800; } /* .light.yellow     */
+      ._04_blue           { color: #0073d2; } /* .light.blue       */
+      ._05_magenta        { color: #cb4c99; } /* .light.magenta    */
+      ._06_cyan           { color: #009c8f; } /* .light.cyan       */
+      ._07_white          { color: #8f9894; } /* .light.dim_0      */
+
+      ._08_bright_black   { color: #d6cbb4; } /* .light.bg_2       */
+      ._09_bright_red     { color: #ce1726; } /* .light.br_red     */
+      ._10_bright_green   { color: #4e8b00; } /* .light.br_green   */
+      ._11_bright_yellow  { color: #ad8300; } /* .light.br_yellow  */
+      ._12_bright_blue    { color: #006ecd; } /* .light.br_blue    */
+      ._13_bright_magenta { color: #c54694; } /* .light.br_magenta */
+      ._14_bright_cyan    { color: #009689; } /* .light.br_cyan    */
+      ._15_bright_white   { color: #384c52; } /* .light.fg_1       */
+    }
+  }
+}
+
+.gatito {
+  // From the vscode color theme JSON
+  .transparent       { color: #ffffff00; }
+  .white             { color: #ffffff; }
+
+  .backgroundLight0  { color: #3d4f3b; } // novel
+  .backgroundLight1  { color: #333d3d; } // old   - "backgroundLight"
+  .backgroundLight2  { color: #30373a; } // novel
+  .background        { color: #242b2e; } // old   - "background"
+  .backgroundDark1   { color: #171c1c; } // old   - "backgroundDark"
+
+  .foreground        { color: #d4d4d4; }
+  .foreground1       { color: #808080; } // old   - "foregroundDark"
+  .foreground2       { color: #545454; } // novel
+
+  .black1            { color: #d8dee9; }
+  .red0              { color: #e6767b; } // novel -- red lighten 17%
+  .red               { color: #e15a60; }
+  .red1              { color: #a94348; } // novel -- CMYK: red + 22K
+  .red2              { color: #5e2629; } // novel -- CMYK: red + 51K
+  .orange            { color: #f99157; } // novel
+  .orange1           { color: #ab7967; } // novel
+  .green             { color: #99c794; }
+  .yellow            { color: #fac863; }
+  .blue              { color: #6699cc; }
+  .blue1             { color: #5986b3; } // novel -- CMYK: blue + 10K
+  .magenta           { color: #c594c5; }
+  .magenta1          { color: #bb82bb; } // novel -- magenta darken 8%
+  .cyan              { color: #5fb3b3; }
+
+  .br_red            { color: #f44747; } // novel -- not really on theme?
+  .br_orange         { color: #cd9731; } // novel -- not really on theme?
+  .br_blue           { color: #6796e6; } // novel -- not really on theme?
+  .br_violet         { color: #b267e6; } // novel -- not really on theme?
+
+  .original {
+    // From the documentation
+    .transparent     { color: #FFFFFF00; }
+
+    .background      { color: #242B2E; }
+    .backgroundDark  { color: #171C1C; }
+    .backgroundLight { color: #333D3D; }
+
+    .foreground      { color: #D4D4D4; }
+    .foregroundDark  { color: #808080; }
+
+    .black           { color: #D4D4D4; }
+    .red             { color: #E15A60; }
+    .green           { color: #99C794; }
+    .yellow          { color: #FAC863; }
+    .blue            { color: #6699CC; }
+    .magenta         { color: #C594C5; }
+    .cyan            { color: #5FB3B3; }
+    .white           { color: #D4D4D4; }
+  }
+}
