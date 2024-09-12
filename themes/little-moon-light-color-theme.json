@@ -617,12 +617,12 @@
     // https://code.visualstudio.com/api/references/theme-color#side-bar
 
     "sideBar.background": "#f0e4cc",
-    // "sideBar.foreground": "[object Object]",
+ // "sideBar.foreground": null,
     "sideBar.border": "#d6cbb4",
     // "sideBar.dropBackground": "",
 
-    // "sideBarTitle.foreground": "[object Object]",
-    // "sideBarTitle.background": "#d6cbb4",
+ // "sideBarTitle.foreground": null,
+ // "sideBarTitle.background": null,
 
     "sideBarSectionHeader.background": "#d6cbb4",
  // "sideBarSectionHeader.foreground": null,
@@ -1100,8 +1100,8 @@
     // https://code.visualstudio.com/api/references/theme-color#panel-colors
     // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
 
- // "panel.background": "#fef3da",
-    "panel.border": "#d6cbb4",
+    "panel.background": "#f0e4cc",
+    "panel.border": "#fff8e0",
     // panel.dropBorder: Drag and drop feedback color for the panel titles.
 
     "panelTitle.activeBorder": "#c5baa4",
@@ -1117,12 +1117,12 @@
     // panelSectionHeader.border: Panel section header border color used when multiple views are stacked vertically in the panel.
     // panelSection.dropBackground: Drag and drop feedback color for the panel sections. The color should have transparency so that the panel sections can still shine through.
 
-    // panelStickyScroll.background: Background color of sticky scroll in the panel.
-    // panelStickyScroll.border: Border color of sticky scroll in the panel.
-    // panelStickyScroll.shadow: Shadow color of sticky scroll in the panel.
+    "panelStickyScroll.background": "#d6cbb4a0",
+ // "panelStickyScroll.border": null,
+    "panelStickyScroll.shadow": "#c5baa4c0",
 
-    // outputView.background: Output view background color.
-    // outputViewStickyScroll.background: Output view sticky scroll background color.
+    "outputView.background": "#fef3da",
+    "outputViewStickyScroll.background": "#fef3daa0",
 
 
     // Command Center
