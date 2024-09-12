@@ -299,16 +299,24 @@
     // Base
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#base-colors
-    "focusBorder": "#92887240",
+
     "foreground": "#52666d",
+    //##  TODO: Find out if this is used anywhere
+    // "descriptionForeground:" "#8f9894",
     "disabledForeground": "#8f9894",
-    // widget.border: Border color of widgets such as Find/Replace inside the editor.
-    "widget.shadow": "#d6cbb4c0",
-    "selection.background": "#009c8f30",
-    // descriptionForeground: Foreground color for description text providing additional information, for example for a label.
+    "errorForeground": "#d4212b",
     "icon.foreground": "#52666d",
-    // errorForeground: Overall foreground color for error messages (this color is only used if not overridden by a component).
-    // sash.hoverBorder: The hover border color for draggable sashes.
+
+    "selection.background": "#009c8f30",
+
+    // ## The focus border is shown when an element is clicked on by the mouse,
+    //    or navigated to with the keyboard.
+    "focusBorder": "#92887240",
+    // ## The "Sash" is typically a thin vertical or horizontal line that you
+    //    can click and drag to adjust the size of adjacent panels.
+ // "sash.hoverBorder": null, // default: `fucusBorder`
+    "widget.border": "#fff8e0",
+    "widget.shadow": "#d6cbb4c0",
 
 
     // Editor
@@ -596,7 +604,8 @@
     // Breadcrumbs
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#breadcrumbs-colors
-    // "breadcrumb.foreground": "[object Object]",
+
+ // "breadcrumb.foreground": null, // default: `{ foreground }cc`
     "breadcrumb.background": "#f0e4cc",
     "breadcrumb.focusForeground": "#b38800",
     "breadcrumb.activeSelectionForeground": "#0049a0",
@@ -606,6 +615,7 @@
     // Side Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#side-bar
+
     "sideBar.background": "#f0e4cc",
     // "sideBar.foreground": "[object Object]",
     "sideBar.border": "#d6cbb4",
@@ -629,6 +639,7 @@
     // Activity Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#activity-bar
+
     "activityBar.background": "#d6cbb4",
     "activityBar.foreground": "#384c52",
  // "activityBar.border": null,
@@ -651,6 +662,7 @@
     // Title Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#title-bar-colors
+
     "titleBar.activeBackground": "#c5baa4",
     "titleBar.border": "#c5baa4", // match `little_moon.light.bg._4`
     "titleBar.activeForeground": "#465a60",
@@ -661,21 +673,24 @@
     // Menu Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#menu-bar-colors
-    // menu.foreground: Foreground color of menu items.
-    // menu.background: Background color of menu items.
-    // menubar.selectionForeground, Foreground color of the selected menu item in the menubar.
-    "menubar.selectionBackground": "#d6cbb4",
-    // menubar.selectionBorder: Border color of the selected menu item in the menubar.
-    // menu.selectionForeground: Foreground color of the selected menu item in menus.
+
+ // "menu.background": null,
+ // "menu.foreground": null,
+ // "menu.selectionForeground": null,
     "menu.selectionBackground": "#d6cbb4",
-    // menu.selectionBorder: Border color of the selected menu item in menus.
+ // "menu.selectionBorder": null,
     "menu.separatorBackground": "#c5baa4",
     "menu.border": "#fff8e0",
+
+    "menubar.selectionForeground": "#465a60",
+    "menubar.selectionBackground": "#d6cbb4",
+ // "menubar.selectionBorder": null,
 
 
     // Status Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#status-bar-colors
+
     "statusBar.background": "#d6cbb4",
     "statusBar.foreground": "#52666d",
     "statusBar.border": "#d6cbb4", // match `statusBar.background`
@@ -727,6 +742,7 @@
     // Badge
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#badge
+
     "badge.background": "#b38800",
     "badge.foreground": "#fef3da",
 
@@ -734,6 +750,7 @@
     // Button Control
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#button-control
+
     "button.background": "#0073d2",
     "button.hoverBackground": "#008aec",
     "button.foreground": "#fef3da",
@@ -766,6 +783,7 @@
     // Text
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#sc-colors
+
     // ## TODO:
     // "textBlockQuote.background": "",
     // "textBlockQuote.border": "",
@@ -780,6 +798,7 @@
     // Action
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#action-colors
+
     "toolbar.hoverBackground": "#f0e4cc",
  // "toolbar.hoverOutline": null,
     "toolbar.activeBackground": "#fef3da",
@@ -793,6 +812,7 @@
     // Dropdown Control
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#dropdown-control
+
     "dropdown.background": "#f0e4cc",
     "dropdown.listBackground": "#f0e4cc",
     // "dropdown.border": "#d6cbb4",
@@ -802,6 +822,7 @@
     // Input Control
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#input-control
+
     "input.background": "#fef3da",
     "input.border": "#d6cbb4",
     "input.foreground": "#52666d",
@@ -828,6 +849,7 @@
     // Progress Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#progress-bar
+
     // "progressBar.background": "#b38800",
 
 
@@ -884,6 +906,7 @@
     // Scrollbar Control
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#scrollbar-control
+
     // ## The shadow applies to all scrolled panes; editor top/bottom, sidebar, list views etc.
     "scrollbar.shadow": "#d6cbb4c0",
     // ## TODO: Make these semantic
@@ -897,6 +920,7 @@
     // ** NB. `minimap.foregroundOpacity` is expected to be of the form `000c`, which would the
     //        opacity of elements to 75%/
     // https://code.visualstudio.com/api/references/theme-color#minimap
+
     // minimap.background: Minimap background color.
     "minimap.foregroundOpacity": "#000d",
 
@@ -921,6 +945,7 @@
     // Diff Editor
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#diff-editor-colors
+
     // "diffEditor.insertedTextBackground": "",
     // "diffEditor.insertedTextBorder": "#ffffff4D",
     // "diffEditor.removedTextBackground": "",
@@ -948,15 +973,18 @@
     // Chat
     // =========================================================================
     // Inline Chat
+    // =========================================================================
     // Panel Chat
+    // =========================================================================
     // I am uninterested in all things chat
 
 
     // Editor Widget
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#chat-colors
-    // ** The Editor widget is shown in front of the editor content.
-    // ** Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
+    // The Editor widget is shown in front of the editor content.
+    // Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
+
     "editorWidget.background": "#f0e4cc",
  // "editorWidget.foreground": null,
     "editorWidget.border": "#0073d2",
@@ -1039,6 +1067,7 @@
     // Merge Conflicts
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#merge-conflicts-colors
+
     // "merge.currentHeaderBackground": "",
     // "merge.currentContentBackground": "",
     // "merge.incomingHeaderBackground": "",
@@ -1069,8 +1098,8 @@
     // Panel
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#panel-colors
-    // ## TODO: See if we can eat some of the terminal settings
     // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
+
  // "panel.background": "#fef3da",
     "panel.border": "#d6cbb4",
     // panel.dropBorder: Drag and drop feedback color for the panel titles.
@@ -1099,6 +1128,7 @@
     // Command Center
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#command-center-colors
+
     // commandCenter.foreground: Foreground color of the Command Center.
     // commandCenter.activeForeground: Active foreground color of the Command Center.
     // commandCenter.background: Background color of the Command Center.
@@ -1113,6 +1143,7 @@
     // Notification
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#notification-colors
+
     // "notificationCenter.border": "",
     // "notificationCenterHeader.foreground": "[object Object]",
     // "notificationCenterHeader.background": "",
@@ -1127,6 +1158,7 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#banner-colors
     // The banner appears below the title bar and spans the entire width of the workbench when visible.
+
     "banner.background": "#0049a0",
     "banner.foreground": "#fff8e0",
     "banner.iconForeground": "#0073d2",
@@ -1135,6 +1167,7 @@
     // Extensions
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#extensions-colors
+
     // "extensionButton.prominentForeground": "[object Object]",
     // "extensionButton.prominentBackground": "#d4212b",
     // "extensionButton.prominentHoverBackground": "#d4212b",
@@ -1155,6 +1188,7 @@
     // https://code.visualstudio.com/api/references/theme-color#quick-picker-colors
     // ** The quick input widget is the container for views like the color theme picker.
     // ** The quick picker widget is the container for pickers like the Command Palette.
+
     // ## Border between sub-sections of quick-input; e.g. recently used vs other commands in the
     //    command palette.
     "pickerGroup.border": "#fef3da",
@@ -1173,6 +1207,7 @@
     // Keybinding Label
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#quick-picker-colors
+
     // Keybinding labels are shown when there is a keybinding associated with a command
     // Usages of the keybinding label include (but are not limited to) displaying keyboard keys on:
     // - The Command Palette
@@ -1188,6 +1223,7 @@
     // Keyboard Shortcut Table
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#keyboard-shortcut-table-colors
+
     // keybindingTable.headerBackground: Background color for the keyboard shortcuts table header.
     // keybindingTable.rowsBackground: Background color for the keyboard shortcuts table alternating rows.
 
@@ -1195,6 +1231,7 @@
     // Integrated Terminal
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#integrated-terminal-colors
+
     "terminal.background": "#fef3da",
     "terminal.foreground": "#52666d",
 
@@ -1245,6 +1282,7 @@
     // Debug colors
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#debug-colors
+
     // debugToolBar.background: Debug toolbar background color.
     // debugToolBar.border: Debug toolbar border color.
     // editor.stackFrameHighlightBackground: Background color of the top stack frame highlight in the editor.
@@ -1268,6 +1306,7 @@
     // Testing colors
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#testing-colors
+
     // testing.runAction: Color for 'run' icons in the editor.
     // testing.iconErrored: Color for the 'Errored' icon in the test explorer.
     // testing.iconFailed: Color for the 'failed' icon in the test explorer.
@@ -1303,6 +1342,7 @@
     // Welcome Page
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#welcome-page-colors
+
     // "welcomePage.buttonBackground": "", // TODO: Not a settings?
     // welcomePage.background: Background color for the Welcome page.
     // welcomePage.progress.background: Foreground color for the Welcome page progress bars.
@@ -1318,6 +1358,7 @@
     // Git
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#git-colors
+
     "gitDecoration.addedResourceForeground": "#539100",
     "gitDecoration.modifiedResourceForeground": "#0073d2",
     "gitDecoration.deletedResourceForeground": "#d4212b",
@@ -1335,6 +1376,7 @@
     // Source Control Graph colors
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#source-control-graph-colors
+
     // What does "scm" stand for?
     // scmGraph.historyItemGroupLocal: Local history item group color.
     // scmGraph.historyItemGroupRemote: Remote history item group color.
@@ -1350,6 +1392,7 @@
     // Settings Editor
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#settings-editor-colors
+
     // "settings.headerForeground": "[object Object]",
     // "settings.modifiedItemIndicator": "#0073d2",
     // "settings.dropdownBackground": "",
@@ -1376,6 +1419,7 @@
     // Snippets
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#snippets-colors
+
     // "editor.snippetTabstopHighlightBackground": "#f00",
     // "editor.snippetTabstopHighlightBorder": "[object Object]",
     // "editor.snippetFinalTabstopHighlightBackground": "[object Object]",
@@ -1404,6 +1448,7 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#chart-colors
     // What are charts?
+
     // charts.foreground: Contrast color for text in charts.
     // charts.lines: Color for lines in charts.
     // charts.red: Color for red elements in charts.
