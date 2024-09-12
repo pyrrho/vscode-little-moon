@@ -306,7 +306,7 @@
     "widget.shadow": "#d6cbb4c0",
     "selection.background": "#009c8f30",
     // descriptionForeground: Foreground color for description text providing additional information, for example for a label.
-    // icon.foreground: The default color for icons in the workbench.
+    "icon.foreground": "#52666d",
     // errorForeground: Overall foreground color for error messages (this color is only used if not overridden by a component).
     // sash.hoverBorder: The hover border color for draggable sashes.
 
@@ -653,9 +653,9 @@
     // https://code.visualstudio.com/api/references/theme-color#title-bar-colors
     "titleBar.activeBackground": "#c5baa4",
     "titleBar.border": "#c5baa4", // match `little_moon.light.bg._4`
-    // "titleBar.activeForeground": "",
+    "titleBar.activeForeground": "#465a60",
     "titleBar.inactiveBackground": "#d6cbb4",
-    // "titleBar.inactiveForeground": "",
+    "titleBar.inactiveForeground": "#52666d",
 
 
     // Menu Bar
