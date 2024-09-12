@@ -484,7 +484,7 @@
  // "editorWarning.border": null,
  // "editorWarning.background": null,
 
-    "editorInfo.foreground": "#7d64c5",
+    "editorInfo.foreground": "#0073d2",
  // "editorInfo.border": null,
  // "editorInfo.background": null,
 
@@ -522,7 +522,7 @@
     //    editorError.foreground?
     "editorOverviewRuler.errorForeground": "#d4212b",
     "editorOverviewRuler.warningForeground": "#b38800",
-    "editorOverviewRuler.infoForeground": "#7d64c5",
+    "editorOverviewRuler.infoForeground": "#0073d2",
 
     // editorOverviewRuler.inlineChatInserted: Overview ruler marker color for inline chat inserted content.
     // editorOverviewRuler.inlineChatRemoved: Overview ruler marker color for inline chat removed content.
@@ -713,23 +713,23 @@
 
     "statusBarItem.prominentBackground": "#0073d2",
     "statusBarItem.prominentForeground": "#fef3da",
-    "statusBarItem.prominentHoverBackground": "#ffffff33",
+    "statusBarItem.prominentHoverBackground": "#008aec",
     "statusBarItem.prominentHoverForeground": "#fff8e0",
 
     // The "Remote Indicator" is the opposing-chevron button in the bottom left
     "statusBarItem.remoteBackground": "#b38800",
     "statusBarItem.remoteForeground": "#fef3da",
-    "statusBarItem.remoteHoverBackground": "#ffffff33",
+    "statusBarItem.remoteHoverBackground": "#c89a00",
     "statusBarItem.remoteHoverForeground": "#fff8e0",
 
-    "statusBarItem.warningBackground": "#ffd048",
+    "statusBarItem.warningBackground": "#b38800",
     "statusBarItem.warningForeground": "#fef3da",
-    "statusBarItem.warningHoverBackground": "#ffffff33",
+    "statusBarItem.warningHoverBackground": "#c89a00",
     "statusBarItem.warningHoverForeground": "#fff8e0",
 
     "statusBarItem.errorBackground": "#d4212b",
     "statusBarItem.errorForeground": "#fef3da",
-    "statusBarItem.errorHoverBackground": "#ffffff33",
+    "statusBarItem.errorHoverBackground": "#f1413f",
     "statusBarItem.errorHoverForeground": "#fff8e0",
 
     // TODO: Find me
@@ -836,9 +836,9 @@
     "inputValidation.warningForeground": "#384c52",
     "inputValidation.warningBorder": "#b38800",
 
-    "inputValidation.infoBackground": "#7d64c5",
+    "inputValidation.infoBackground": "#0073d2",
     "inputValidation.infoForeground": "#384c52",
-    "inputValidation.infoBorder": "#7d64c5",
+    "inputValidation.infoBorder": "#0073d2",
 
     "inputOption.activeBackground": "#f0e4cc",
     "inputOption.hoverBackground": "#d6cbb4",
@@ -879,7 +879,7 @@
     // ## FIND ME
     "list.deemphasizedForeground": "#f00",
 
-    "list.invalidItemForeground": "#7d64c5",
+    "list.invalidItemForeground": "#0073d2",
     "list.errorForeground": "#d4212b",
     "list.warningForeground": "#b38800",
 
@@ -930,7 +930,7 @@
 
     "minimap.errorHighlight": "#d4212b",
     "minimap.warningHighlight": "#b38800",
-    "minimap.infoHighlight": "#7d64c5",
+    "minimap.infoHighlight": "#0073d2",
 
     "minimapSlider.background": "#c5baa460",
     "minimapSlider.hoverBackground": "#c5baa470",
@@ -1031,8 +1031,8 @@
     "editorMarkerNavigationWarning.background": "#b38800",
     "editorMarkerNavigationWarning.headerBackground": "#ffd048",
 
-    "editorMarkerNavigationInfo.background": "#7d64c5",
-    "editorMarkerNavigationInfo.headerBackground": "#ddbeff",
+    "editorMarkerNavigationInfo.background": "#0073d2",
+    "editorMarkerNavigationInfo.headerBackground": "#60d2ff",
 
 
     // Peek View
