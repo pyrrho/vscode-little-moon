@@ -267,15 +267,15 @@ const little_moon = {
     git: {
       added: selenized.light.green,
       modified: selenized.light.blue,
-      deleted: selenized.light.red,
-      renamed: selenized.light.orange,
+      deleted: selenized.light.orange,
+      renamed: selenized.light.yellow,
 
       untracked: selenized.light.fg,
       ignored: selenized.light.dim,
       staged: selenized.light.violet,
       conflicting: selenized.light.red,
 
-      submodule: selenized.light.yellow,
+      submodule: selenized.light.magenta,
     },
     level: {
       err: selenized.light.red,

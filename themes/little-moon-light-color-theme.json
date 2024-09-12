@@ -343,7 +343,7 @@
  // "editorGutter.background": null,
     "editorGutter.modifiedBackground": "#0073d2",
     "editorGutter.addedBackground": "#539100",
-    "editorGutter.deletedBackground": "#d4212b",
+    "editorGutter.deletedBackground": "#c75d20",
     // editorGutter.commentRangeForeground: Editor gutter decoration color for commenting ranges.
     // editorGutter.commentGlyphForeground: Editor gutter decoration color for commenting glyphs.
     // editorGutter.commentUnresolvedGlyphForeground: Editor gutter decoration color for commenting glyphs for unresolved comment threads.
@@ -515,7 +515,7 @@
     // ## Defaults are pulled from the `editorGutter.___Background` set; reduced transparency
     "editorOverviewRuler.modifiedForeground": "#0073d2",
     "editorOverviewRuler.addedForeground": "#539100",
-    "editorOverviewRuler.deletedForeground": "#d4212b",
+    "editorOverviewRuler.deletedForeground": "#c75d20",
 
     // ## Defaults to locked, editorWarning.foreground, and editorInfo.foreground.
     //    I'm guessing it's a bug that editorOverviewRuler.errorForeground doesn't default to
@@ -1365,8 +1365,8 @@
 
     "gitDecoration.addedResourceForeground": "#539100",
     "gitDecoration.modifiedResourceForeground": "#0073d2",
-    "gitDecoration.deletedResourceForeground": "#d4212b",
-    "gitDecoration.renamedResourceForeground": "#c75d20",
+    "gitDecoration.deletedResourceForeground": "#c75d20",
+    "gitDecoration.renamedResourceForeground": "#b38800",
 
     "gitDecoration.untrackedResourceForeground": "#52666d",
     "gitDecoration.ignoredResourceForeground": "#8f9894",
@@ -1374,7 +1374,7 @@
     "gitDecoration.stageDeletedResourceForeground": "#7d64c5",
     "gitDecoration.conflictingResourceForeground": "#d4212b",
 
-    "gitDecoration.submoduleResourceForeground": "#b38800"
+    "gitDecoration.submoduleResourceForeground": "#cb4c99"
 
 
     // Source Control Graph colors
