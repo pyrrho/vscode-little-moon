@@ -39,16 +39,20 @@ This theme uses the [Eleventy](https://11ty.dev) static site generator to feed J
 Because the extension host only runs the one VS Code window with the theme, I decided to jump through some self-imposed hoops to let myself view changes across multiple windows as I iterated. That process was as follows
 
 1. Run `pnmp install`
-2. Add this dumb alias to your shell (after editing `/{path/to}/vscode-little-moon` as needed),
+2. Add this dumb function to your shell (after editing `/{path/to}/vscode-little-moon` as needed),
 
    ```sh
-   reup_little_moon () {
-       pushd /{path/to}/vscode-little-moon
-       pnpm dlx @11ty/eleventy \
-         && vsce package \
-         && code --uninstall-extension pyrrho-little-moon-themes-0.0.1.vsix \
-         && code --install-extension pyrrho-little-moon-themes-0.0.1.vsix
-       popd
+   function reup_little_moon {
+       local __RULM_IN_DIR=0
+       if [ `pwd` = "${HOME}/{path/to}/vscode-little-moon" ]; then
+           __RULM_IN_DIR=1
+       fi
+       if [ ${__RULM_IN_DIR} -eq 0 ]; then pushd /{path/to}/vscode-little-moon; fi
+       pnpm dlx @11ty/eleventy && \
+           vsce package && \
+           code --uninstall-extension pyrrho-little-moon-themes-0.0.1.vsix && \
+           code --install-extension pyrrho-little-moon-themes-0.0.1.vsix
+       if [ ${__RULM_IN_DIR} -eq 0 ]; then popd; fi
    }
    ```
 3. Edit `src/data/themes.js` and/or any of the `src/*.njk` files.
@@ -58,6 +62,7 @@ Because the extension host only runs the one VS Code window with the theme, I de
 
 - Because it can be annoying to wait for changes to propagate through the extension host or through the the package-uninstall-reinstall dance, it will sometimes speed up experimentation to copy rules into your setting.json's `"workbench.colorCustomizations"` or `"editor.tokenColorCustomizations"` override object, and get immediate feedback on changes. Once you've found what you want, you can copy those values back into the .njk/.js files.
 - The `Developer: Toggle Developer Tools` (`workbench.action.toggleDevTools`) and `Developer: Inspect Editor Tokens and Scopes` (`editor.action.inspectTMScopes`) commands are very useful for figuring out what's what.
+- Check the extract_off_theme_rules.md for a way to look at what isn't being touched by your theme.
 
 Pending TODOs:
 ==============
