@@ -302,7 +302,7 @@
 
     "foreground": "#52666d",
     //##  TODO: Find out if this is used anywhere
-    // "descriptionForeground:" "#8f9894",
+    "descriptionForeground": "#52666d",
     "disabledForeground": "#8f9894",
     "errorForeground": "#d4212b",
     "icon.foreground": "#52666d",
@@ -594,8 +594,8 @@
     // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
     // sideBySideEditor.verticalBorder: Color to separate two editors from each other when shown side by side in an editor group from left to right.
 
-    // "tab.dragAndDropBorder": "#009c8f",
-    // "editorGroup.dropBackground": "80",
+    "tab.dragAndDropBorder": "#fff8e0a0",
+    "editorGroup.dropBackground": "#c5baa480",
     // editorGroup.dropIntoPromptForeground: Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
     // editorGroup.dropIntoPromptBackground: Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
     // editorGroup.dropIntoPromptBorder: Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
@@ -619,7 +619,7 @@
     "sideBar.background": "#f0e4cc",
  // "sideBar.foreground": null,
     "sideBar.border": "#d6cbb4",
-    // "sideBar.dropBackground": "",
+    // "sideBar.dropBackground": "#c5baa480",
 
  // "sideBarTitle.foreground": null,
  // "sideBarTitle.background": null,
@@ -705,7 +705,6 @@
  // "statusBar.noFolderBorder": null,
 
     "statusBarItem.hoverBackground": "#f0e4cc",
-    // ## TODO: Find me
     // statusBarItem.compactHoverBackground: Status bar item background color when hovering an item that contains two hovers.
  // "statusBarItem.hoverForeground": null,
     "statusBarItem.activeBackground": "#fef3da",
@@ -732,7 +731,6 @@
     "statusBarItem.errorHoverBackground": "#f1413f",
     "statusBarItem.errorHoverForeground": "#fff8e0",
 
-    // TODO: Find me
     // statusBarItem.offlineBackground: Status bar item background color when the workbench is offline.
     // statusBarItem.offlineForeground: Status bar item foreground color when the workbench is offline.
     // statusBarItem.offlineHoverForeground: Status bar item foreground hover color when the workbench is offline.
@@ -802,9 +800,8 @@
     "toolbar.hoverBackground": "#f0e4cc",
  // "toolbar.hoverOutline": null,
     "toolbar.activeBackground": "#fef3da",
-    // ## TODO: Find me
-    // "editorActionList.background": "#d4212b", // Action List background color.
-    // "editorActionList.foreground": "#0073d2", // Action List foreground color.
+    // "editorActionList.background": "#d4212b",
+    // "editorActionList.foreground": "#0073d2",
     // editorActionList.focusForeground: Action List foreground color for the focused item.
     // editorActionList.focusBackground: Action List background color for the focused item.
 
@@ -876,7 +873,6 @@
 
     "list.highlightForeground": "#52666d",
     "list.focusHighlightForeground": "#8f9894",
-    // ## FIND ME
     "list.deemphasizedForeground": "#f00",
 
     "list.invalidItemForeground": "#0073d2",
@@ -885,10 +881,8 @@
 
  // "listFilterWidget.background": "",
  // "listFilterWidget.outline": "",
-    // ## FIND ME
     // "listFilterWidget.noMatchesOutline": "#0073d2",
  // "listFilterWidget.shadow": "",
-    // ## FIND ME
     // list.filterMatchBackground: Background color of the filtered matches in lists and trees.
     // list.filterMatchBorder: Border color of the filtered matches in lists and trees.
 
@@ -898,9 +892,8 @@
     // tree.tableColumnsBorder: Tree stroke color for the indentation guides.
     // tree.tableOddRowsBackground: Background color for odd table rows
 
-    // ## TODO: Drag and drop
-    // list.dropBackground: List/Tree drag and drop background when moving items around using the mouse.
-    // list.dropBetweenBackground: List/Tree drag and drop border color when moving items between items when using the mouse.
+    // "list.dropBackground": "#c5baa480",
+    "list.dropBetweenBackground": "#384c52a0",
 
 
     // Scrollbar Control
@@ -1003,8 +996,7 @@
     // ## Characters on the selected line that match the current input.
     "editorSuggestWidget.focusHighlightForeground": "#6e4d00",
 
-    // ## TODO: Find me
-    // "editorSuggestWidgetStatus.foreground": "#539100",
+    // "editorSuggestWidgetStatus.foreground": "",
 
  // "editorHoverWidget.foreground": null,
     "editorHoverWidget.background": "#fef3da",

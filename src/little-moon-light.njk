@@ -306,7 +306,7 @@ permalink: /little-moon-light-color-theme.json
 
     "foreground": "{{ little_moon.light.fg._0 }}",
     //##  TODO: Find out if this is used anywhere
-    // "descriptionForeground:" "{{ little_moon.light.fg._2 }}",
+    "descriptionForeground": "{{ little_moon.light.fg._0 }}",
     "disabledForeground": "{{ little_moon.light.fg._2 }}",
     "errorForeground": "{{ little_moon.light.level.err }}",
     "icon.foreground": "{{ little_moon.light.fg._0 }}",
@@ -598,8 +598,8 @@ permalink: /little-moon-light-color-theme.json
     // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
     // sideBySideEditor.verticalBorder: Color to separate two editors from each other when shown side by side in an editor group from left to right.
 
-    // "tab.dragAndDropBorder": "{{ little_moon.light .cyan }}",
-    // "editorGroup.dropBackground": "{{ little_moon.light .bg_1 }}80",
+    "tab.dragAndDropBorder": "{{ little_moon.light.drop.i }}",
+    "editorGroup.dropBackground": "{{ little_moon.light.drop.bg }}",
     // editorGroup.dropIntoPromptForeground: Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
     // editorGroup.dropIntoPromptBackground: Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
     // editorGroup.dropIntoPromptBorder: Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
@@ -623,7 +623,7 @@ permalink: /little-moon-light-color-theme.json
     "sideBar.background": "{{ little_moon.light.bg._2 }}",
  // "sideBar.foreground": null,
     "sideBar.border": "{{ little_moon.light.border._0 }}",
-    // "sideBar.dropBackground": "{{ little_moon.light .bg_2 }}",
+    // "sideBar.dropBackground": "{{ little_moon.light.drop.bg }}",
 
  // "sideBarTitle.foreground": null,
  // "sideBarTitle.background": null,
@@ -709,7 +709,6 @@ permalink: /little-moon-light-color-theme.json
  // "statusBar.noFolderBorder": null,
 
     "statusBarItem.hoverBackground": "{{ little_moon.light.hover._2 }}",
-    // ## TODO: Find me
     // statusBarItem.compactHoverBackground: Status bar item background color when hovering an item that contains two hovers.
  // "statusBarItem.hoverForeground": null,
     "statusBarItem.activeBackground": "{{ little_moon.light.hover._3 }}",
@@ -736,7 +735,6 @@ permalink: /little-moon-light-color-theme.json
     "statusBarItem.errorHoverBackground": "{{ little_moon.light.level.err_br }}",
     "statusBarItem.errorHoverForeground": "{{ little_moon.light.fg.i.br }}",
 
-    // TODO: Find me
     // statusBarItem.offlineBackground: Status bar item background color when the workbench is offline.
     // statusBarItem.offlineForeground: Status bar item foreground color when the workbench is offline.
     // statusBarItem.offlineHoverForeground: Status bar item foreground hover color when the workbench is offline.
@@ -806,9 +804,8 @@ permalink: /little-moon-light-color-theme.json
     "toolbar.hoverBackground": "{{ little_moon.light.hover._2 }}",
  // "toolbar.hoverOutline": null,
     "toolbar.activeBackground": "{{ little_moon.light.hover._3 }}",
-    // ## TODO: Find me
-    // "editorActionList.background": "{{ little_moon.light.red }}", // Action List background color.
-    // "editorActionList.foreground": "{{ little_moon.light.blue }}", // Action List foreground color.
+    // "editorActionList.background": "{{ little_moon.light.red }}",
+    // "editorActionList.foreground": "{{ little_moon.light.blue }}",
     // editorActionList.focusForeground: Action List foreground color for the focused item.
     // editorActionList.focusBackground: Action List background color for the focused item.
 
@@ -880,7 +877,6 @@ permalink: /little-moon-light-color-theme.json
 
     "list.highlightForeground": "{{ little_moon.light.fg._0 }}",
     "list.focusHighlightForeground": "{{ little_moon.light.fg._2 }}",
-    // ## FIND ME
     "list.deemphasizedForeground": "{{ little_moon.pure.red }}",
 
     "list.invalidItemForeground": "{{ little_moon.light.level.info }}",
@@ -889,10 +885,8 @@ permalink: /little-moon-light-color-theme.json
 
  // "listFilterWidget.background": "",
  // "listFilterWidget.outline": "",
-    // ## FIND ME
     // "listFilterWidget.noMatchesOutline": "{{ little_moon.light.blue }}",
  // "listFilterWidget.shadow": "",
-    // ## FIND ME
     // list.filterMatchBackground: Background color of the filtered matches in lists and trees.
     // list.filterMatchBorder: Border color of the filtered matches in lists and trees.
 
@@ -902,9 +896,8 @@ permalink: /little-moon-light-color-theme.json
     // tree.tableColumnsBorder: Tree stroke color for the indentation guides.
     // tree.tableOddRowsBackground: Background color for odd table rows
 
-    // ## TODO: Drag and drop
-    // list.dropBackground: List/Tree drag and drop background when moving items around using the mouse.
-    // list.dropBetweenBackground: List/Tree drag and drop border color when moving items between items when using the mouse.
+    // "list.dropBackground": "{{ little_moon.light.drop.bg }}",
+    "list.dropBetweenBackground": "{{ little_moon.light.drop.em }}",
 
 
     // Scrollbar Control
@@ -1007,8 +1000,7 @@ permalink: /little-moon-light-color-theme.json
     // ## Characters on the selected line that match the current input.
     "editorSuggestWidget.focusHighlightForeground": "{{ little_moon.light.fg.hl2 }}",
 
-    // ## TODO: Find me
-    // "editorSuggestWidgetStatus.foreground": "{{ little_moon.light.green }}",
+    // "editorSuggestWidgetStatus.foreground": "",
 
  // "editorHoverWidget.foreground": null,
     "editorHoverWidget.background": "{{ little_moon.light.bg._0 }}",

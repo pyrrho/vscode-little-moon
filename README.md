@@ -67,18 +67,9 @@ Because the extension host only runs the one VS Code window with the theme, I de
 Pending TODOs:
 ==============
 - Light:
-   - Drag-and-drop colors need to be set.
    - Merge editor
    - Diff viewer
    - Welcome Page
-   - WTF is with the yellow flashing in the find widget on `editor.action.previousMatchFindAction`!?
-   - Audit grayscale elements that aren't on theme
-      - commandCenter.activeBorder
-      - commandCenter.activeForeground
-      - commandCenter.border
-      - commandCenter.foreground
-      - menubar.selectionForeground
-      - profileBadge.foreground
 - Dark:
    - ....
    - all of it.

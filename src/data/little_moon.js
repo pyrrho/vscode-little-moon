@@ -241,6 +241,11 @@ const little_moon = {
       dim: alpha(selenized.light.bg, "c0"),
       ovr: alpha(selenized.light.bg__1, "d8"),
     },
+    drop: {
+      bg: alpha(selenized.light.bg__3, "80"),
+      em: alpha(selenized.light.fg__2, "a0"),
+      i: alpha(selenized.light.bg_1, "a0"),
+    },
     scroll: {
       _0: alpha(selenized.light.bg__3, "50"),
       _2: alpha(selenized.light.bg__3, "60"),
