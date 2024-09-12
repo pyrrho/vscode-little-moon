@@ -1148,14 +1148,18 @@ permalink: /little-moon-light-color-theme.json
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#notification-colors
 
-    // "notificationCenter.border": "{{ little_moon.light .bg_1 }}",
-    // "notificationCenterHeader.foreground": "{{ little_moon.light .fg }}",
-    // "notificationCenterHeader.background": "{{ little_moon.light .bg__2 }}",
+    "notificationCenterHeader.foreground": "{{ little_moon.light.fg._2 }}",
+    "notificationCenterHeader.background": "{{ little_moon.light.bg._0 }}",
+ // "notificationCenter.border": null,
     // "notificationToast.border": "{{ little_moon.light .bg_1 }}",
-    // "notifications.foreground": "{{ little_moon.light .fg }}",
-    // "notifications.background": "{{ little_moon.light .bg__2 }}",
-    // "notifications.border": "{{ little_moon.light .bg_1 }}",
-    // "notificationLink.foreground": "{{ little_moon.light .blue }}",
+
+    // NB. Notifications entries inherit, among others, `list.hoverBackground`.
+    //     To disable the hover effect, the background needs to match ^.
+    "notifications.foreground": "{{ little_moon.light.fg.em }}",
+    "notifications.background": "{{ little_moon.light.hover._0 }}",
+    "notifications.border": "{{ little_moon.light.border._0 }}",
+
+    "notificationLink.foreground": "{{ little_moon.light.blue__1 }}",
 
 
     // Banner

@@ -1144,14 +1144,18 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#notification-colors
 
-    // "notificationCenter.border": "",
-    // "notificationCenterHeader.foreground": "[object Object]",
-    // "notificationCenterHeader.background": "",
+    "notificationCenterHeader.foreground": "#8f9894",
+    "notificationCenterHeader.background": "#fef3da",
+ // "notificationCenter.border": null,
     // "notificationToast.border": "",
-    // "notifications.foreground": "[object Object]",
-    // "notifications.background": "",
-    // "notifications.border": "",
-    // "notificationLink.foreground": "#0073d2",
+
+    // NB. Notifications entries inherit, among others, `list.hoverBackground`.
+    //     To disable the hover effect, the background needs to match ^.
+    "notifications.foreground": "#465a60",
+    "notifications.background": "#d6cbb4",
+    "notifications.border": "#d6cbb4",
+
+    "notificationLink.foreground": "#0049a0",
 
 
     // Banner
