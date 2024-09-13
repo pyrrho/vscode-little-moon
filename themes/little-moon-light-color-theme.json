@@ -999,8 +999,8 @@
     // "editorSuggestWidgetStatus.foreground": "",
 
  // "editorHoverWidget.foreground": null,
-    "editorHoverWidget.background": "#fef3da",
-    "editorHoverWidget.border": "#c5baa4",
+    "editorHoverWidget.background": "#f0e4cc",
+    "editorHoverWidget.border": "#fff8e0",
     "editorHoverWidget.highlightForeground": "#b38800",
     "editorHoverWidget.statusBarBackground": "#f0e4cc",
 
