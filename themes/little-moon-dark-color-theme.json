@@ -461,8 +461,8 @@
     "editor.foldPlaceholderForeground": "#718b90",
 
     // ** To see the editor inline hints, set "editor.inlineSuggest.enabled": true.
-    // editorInlayHint.background: Background color of inline hints.
-    // editorInlayHint.foreground: Foreground color of inline hints.
+    "editorInlayHint.background": "#b3880020",
+    "editorInlayHint.foreground": "#8f9894",
     // editorInlayHint.typeForeground: Foreground color of inline hints for types
     // editorInlayHint.typeBackground: Background color of inline hints for types
     // editorInlayHint.parameterForeground: Foreground color of inline hints for parameters
