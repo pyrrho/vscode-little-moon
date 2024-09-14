@@ -416,7 +416,7 @@
     // editorUnicodeHighlight.background: Background color used to highlight unicode characters.
 
     // ** The link color is visible when clicking on a link.
-    "editorLink.activeForeground": "#0049a0",
+    "editorLink.activeForeground": "#0056b1",
 
     // ** To see the editor white spaces, enable Toggle Render Whitespace.
     // ## TODO: This is my special whitespace fun time. I should add a comment about disabling it.
@@ -608,7 +608,7 @@
  // "breadcrumb.foreground": null, // default: `{ foreground }cc`
     "breadcrumb.background": "#f0e4cc",
     "breadcrumb.focusForeground": "#b38800",
-    "breadcrumb.activeSelectionForeground": "#0049a0",
+    "breadcrumb.activeSelectionForeground": "#0056b1",
  // "breadcrumbPicker.background": null,
 
 
@@ -994,7 +994,7 @@
  // "editorSuggestWidget.selectedForeground": null,
  // "editorSuggestWidget.selectedIconForeground": null,
     // ## Characters on the selected line that match the current input.
-    "editorSuggestWidget.focusHighlightForeground": "#6e4d00",
+    "editorSuggestWidget.focusHighlightForeground": "#876200",
 
     // "editorSuggestWidgetStatus.foreground": "",
 
@@ -1147,7 +1147,7 @@
     "notifications.background": "#d6cbb4",
     "notifications.border": "#d6cbb4",
 
-    "notificationLink.foreground": "#0049a0",
+    "notificationLink.foreground": "#0056b1",
 
 
     // Banner
@@ -1155,7 +1155,7 @@
     // https://code.visualstudio.com/api/references/theme-color#banner-colors
     // The banner appears below the title bar and spans the entire width of the workbench when visible.
 
-    "banner.background": "#0049a0",
+    "banner.background": "#0056b1",
     "banner.foreground": "#fff8e0",
     "banner.iconForeground": "#0073d2",
 

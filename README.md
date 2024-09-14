@@ -66,11 +66,8 @@ Because the extension host only runs the one VS Code window with the theme, I de
 
 Pending TODOs:
 ==============
-- Light:
+- Themes:
    - Merge editor
    - Diff viewer
    - Welcome Page
-- Dark:
-   - ....
-   - all of it.
 - Move off of the Solarized icon.png
