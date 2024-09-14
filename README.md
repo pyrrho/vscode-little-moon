@@ -68,6 +68,5 @@ Pending TODOs:
 ==============
 - Themes:
    - Merge editor
-   - Diff viewer
    - Welcome Page
 - Move off of the Solarized icon.png

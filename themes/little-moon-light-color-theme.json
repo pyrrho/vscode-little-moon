@@ -301,13 +301,12 @@
     // https://code.visualstudio.com/api/references/theme-color#base-colors
 
     "foreground": "#52666d",
-    //##  TODO: Find out if this is used anywhere
-    "descriptionForeground": "#52666d",
+    // "descriptionForeground": "#f00",
     "disabledForeground": "#8f9894",
     "errorForeground": "#d4212b",
     "icon.foreground": "#52666d",
 
-    "selection.background": "#009c8f30",
+    "selection.background": "#0073d23c",
 
     // ## The focus border is shown when an element is clicked on by the mouse,
     //    or navigated to with the keyboard.
@@ -341,12 +340,16 @@
 
     // ** The gutter contains the glyph margins and the line numbers
  // "editorGutter.background": null,
-    "editorGutter.modifiedBackground": "#0073d2",
-    "editorGutter.addedBackground": "#539100",
-    "editorGutter.deletedBackground": "#c75d20",
-    // editorGutter.commentRangeForeground: Editor gutter decoration color for commenting ranges.
-    // editorGutter.commentGlyphForeground: Editor gutter decoration color for commenting glyphs.
+    // NB. Match the transparency add of e.g. `editorOverviewRuler.modifiedForeground`
+    "editorGutter.modifiedBackground": "#0073d299",
+    "editorGutter.addedBackground": "#53910099",
+    "editorGutter.deletedBackground": "#d4212b99",
+
+    // TODO: Reused from `range.result` (`.find_2`?). Should also be used for ghost text?
+    "editorGutter.commentRangeForeground": "#b3880030",
+    "editorGutter.commentGlyphForeground": "#52666d",
     // editorGutter.commentUnresolvedGlyphForeground: Editor gutter decoration color for commenting glyphs for unresolved comment threads.
+
     "editorGutter.foldingControlForeground": "#52666d",
 
     // ** Line numbers are in the gutter (but included in the base sectino?)
@@ -355,22 +358,22 @@
  // "editorLineNumber.dimmedForeground": null,
 
     // ** Selection colors are visible when selecting one or more characters. In addition to the selection also all regions with the same content are highlighted.
-    "editor.selectionBackground": "#009c8f30",
- // "editor.inactiveSelectionBackground": "",
- // "editor.selectionHighlightBackground": "",
-    // editor.selectionHighlightBorder: Border color for regions with the same content as the selection.
-    // editor.selectionForeground: Color of the selected text for high contrast.
+    "editor.selectionBackground": "#0073d23c",
+ // "editor.inactiveSelectionBackground": null, // default: `editor.inactiveSelectionBackground`80
+    "editor.selectionHighlightBackground": "#0073d21c",
+ // "editor.selectionHighlightBorder": null,
+ // "editor.selectionForeground": null,
 
     // ** Search colors are used in the search viewlet's global search results.
     // search.resultsInfoForeground: Color of the text in the search viewlet's completion message. For example, this color is used in the text that says "{x} results in {y} files".
 
     // ** The hover highlight is shown behind the symbol for which a hover is shown.
     // ## This colors the symbol for which a mouse hover popover is open
-    "editor.hoverHighlightBackground": "#53910030",
+    "editor.hoverHighlightBackground": "#0073d20e",
 
     // ** Find colors depend on the current find string in the Find/Replace dialog
-    "editor.findMatchBackground": "#cb4c9918",
-    "editor.findMatchHighlightBackground": "#cb4c9930",
+    "editor.findMatchBackground": "#0073d22c",
+    "editor.findMatchHighlightBackground": "#b3880030",
     // editor.findMatchForeground: Text color of the current search match.
     // editor.findMatchHighlightForeground: Foreground color of the other search matches.
     // editor.findMatchBorder: Border color of the current search match.
@@ -381,32 +384,33 @@
 
     // ** Search Editor colors highlight results in a Search Editor.
     // ## Search Editors are full editor tabs, spawned from the sidebar
- // "searchEditor.findMatchBackground": "",
+ // "searchEditor.findMatchBackground": null, // default: `editor.findMatchHighlightBackground`a8
     // searchEditor.findMatchBorder: Border color of the editor's results.
  // "searchEditor.textInputBorder": null,
 
     // ** The range highlight is visible when selecting a search result.
     // ## e.g. when following a breadcrumb to a section, or cycling through Find results
-    "editor.rangeHighlightBackground": "#008aec20",
-    // "editor.rangeHighlightBorder": null,
+    "editor.rangeHighlightBackground": "#b3880020",
+ // "editor.rangeHighlightBorder": null,
 
-    // ** The symbol highlight is visible when navigating to a symbol via a command such as Go to Definition.
- // "editor.symbolHighlightBackground": "",
-    // editor.symbolHighlightBorder: Background color of the border around highlighted symbols.
+    // ** The symbol highlight is visible when navigating to a symbol via a command such as
+    //    Go to Definition.
+    "editor.symbolHighlightBackground": "#009c8f30",
+ // "editor.symbolHighlightBorder": null,
 
     // ** Word highlight colors are visible when the cursor is inside a symbol or a word.
-    // ## These settings are applicable to the Occurrence Highlight setting; only require the cursor to be present
-    // ## TODO: Build a toggle for this.
+    // ## These settings are applicable to the Occurrence Highlight setting; only require the cursor
+    //    to be present
     "editor.wordHighlightBackground": "#53910030",
-    "editor.wordHighlightStrongBackground": "#c75d2030",
- // "editor.wordHighlightTextBackground": "#0073d230",
-    // editor.wordHighlightBorder: Border color of a symbol during read-access, for example when reading a variable.
-    // editor.wordHighlightStrongBorder: Border color of a symbol during write-access, for example when writing to a variable.
-    // editor.wordHighlightTextBorder: Border color of a textual occurrence for a symbol.
+    "editor.wordHighlightStrongBackground": "#cb4c9930",
+    "editor.wordHighlightTextBackground": "#009c8f30",
+ // "editor.wordHighlightBorder": null,
+ // "editor.wordHighlightStrongBorder": null,
+ // "editor.wordHighlightTextBorder": null,
 
     // ** The current line is typically shown as either background highlight or a border (not both).
     "editor.lineHighlightBackground": "#f0e4cc80",
-    // "editor.lineHighlightBorder": null,
+ // "editor.lineHighlightBorder": null,
 
     // ** The color for the editor watermark
     // editorWatermark.foreground: Foreground color for the labels in the editor watermark.
@@ -422,7 +426,8 @@
     // ## TODO: This is my special whitespace fun time. I should add a comment about disabling it.
     "editorWhitespace.foreground": "#fef3da",
 
-    // ** To see the editor indent guides, set "editor.guides.indentation": true and "editor.guides.highlightActiveIndentation": true.
+    // ** To see the editor indent guides, set "editor.guides.indentation": true and
+    //    "editor.guides.highlightActiveIndentation": true.
     // ## Goes up to 6 for lots of colors
     "editorIndentGuide.background1": "#d6cbb480",
     "editorIndentGuide.activeBackground1": "#c5baa4",
@@ -433,7 +438,7 @@
 
     // ** Bracket matches
     // ## Matches are paired with what's under the cursor
-    "editorBracketMatch.background": "#f0e4cc",
+    "editorBracketMatch.background": "#d6cbb4c0",
     "editorBracketMatch.border": "#ffffff00",
 
     // ## Highlights are passive. Requires enabling bracket pair colorization
@@ -501,21 +506,26 @@
  // "editorOverviewRuler.background": "#fff8e0",
     "editorOverviewRuler.border": "#ffffff00",
 
-    // ## These seem to not be respected?
- // "editorOverviewRuler.bracketMatchForeground": "#52666d",
- // "editorOverviewRuler.findMatchForeground": "#cb4c9930",
- // "editorOverviewRuler.rangeHighlightForeground": "#008aec20",
- // "editorOverviewRuler.selectionHighlightForeground": "#009c8f30",
+    "editorOverviewRuler.findMatchForeground": "#b3880080",
+    "editorOverviewRuler.selectionHighlightForeground": "#0073d23c",
+    // ## TODO: Not respected?
+    // "editorOverviewRuler.rangeHighlightForeground": "#b3880020",
 
-    // ## These seem to not be respected?
- // "editorOverviewRuler.wordHighlightForeground": "#53910030",
- // "editorOverviewRuler.wordHighlightStrongForeground": "#c75d2030",
- // "editorOverviewRuler.wordHighlightTextForeground": null,
+    // ## NB. This setting doesn't respond to change in well. If you're iterating on it, you'll want
+    //        to 'Developer: Reload Window' to see your changes.
+    "editorOverviewRuler.bracketMatchForeground": "#0073d23c",
 
-    // ## Defaults are pulled from the `editorGutter.___Background` set; reduced transparency
-    "editorOverviewRuler.modifiedForeground": "#0073d2",
-    "editorOverviewRuler.addedForeground": "#539100",
-    "editorOverviewRuler.deletedForeground": "#c75d20",
+    // ## NB. These affect the minimap body as well as the overview ruler.
+    // ## NB. These settings don't respond to change in well. If you're iterating on them, you'll
+    //        want to 'Developer: Reload Window' to see your changes.
+    "editorOverviewRuler.wordHighlightForeground": "#539100c0",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#cb4c99c0",
+    "editorOverviewRuler.wordHighlightTextForeground": "#009c8fc0",
+
+    // ## Defaults are pulled from the `editorGutter.___Background` set; transparency of "99"
+ // "editorOverviewRuler.modifiedForeground": "#0073d2",
+ // "editorOverviewRuler.addedForeground": "#539100",
+ // "editorOverviewRuler.deletedForeground": "#d4212b",
 
     // ## Defaults to locked, editorWarning.foreground, and editorInfo.foreground.
     //    I'm guessing it's a bug that editorOverviewRuler.errorForeground doesn't default to
@@ -594,7 +604,7 @@
     // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
     // sideBySideEditor.verticalBorder: Color to separate two editors from each other when shown side by side in an editor group from left to right.
 
-    "tab.dragAndDropBorder": "#fff8e0a0",
+    "tab.dragAndDropBorder": "#384c52a0",
     "editorGroup.dropBackground": "#c5baa480",
     // editorGroup.dropIntoPromptForeground: Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
     // editorGroup.dropIntoPromptBackground: Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
@@ -605,7 +615,7 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#breadcrumbs-colors
 
- // "breadcrumb.foreground": null, // default: `{ foreground }cc`
+ // "breadcrumb.foreground": null, // default: `foreground`cc
     "breadcrumb.background": "#f0e4cc",
     "breadcrumb.focusForeground": "#b38800",
     "breadcrumb.activeSelectionForeground": "#0056b1",
@@ -873,7 +883,7 @@
 
     "list.highlightForeground": "#52666d",
     "list.focusHighlightForeground": "#8f9894",
-    "list.deemphasizedForeground": "#f00",
+    // "list.deemphasizedForeground": "#f00",
 
     "list.invalidItemForeground": "#0073d2",
     "list.errorForeground": "#d4212b",
@@ -902,7 +912,6 @@
 
     // ## The shadow applies to all scrolled panes; editor top/bottom, sidebar, list views etc.
     "scrollbar.shadow": "#d6cbb4c0",
-    // ## TODO: Make these semantic
     "scrollbarSlider.background": "#c5baa450",
     "scrollbarSlider.hoverBackground": "#c5baa470",
     "scrollbarSlider.activeBackground": "#c5baa490",
@@ -917,9 +926,11 @@
     // minimap.background: Minimap background color.
     "minimap.foregroundOpacity": "#000d",
 
-    "minimap.findMatchHighlight": "#cb4c9918",
-    "minimap.selectionHighlight": "#009c8f30",
-    "minimap.selectionOccurrenceHighlight": "#53910030",
+    "minimap.findMatchHighlight": "#b3880040",
+    "minimap.selectionHighlight": "#0073d22c",
+    // NB. This isn't for _selections_, it's for the "Occurrences Highlight" setting, same as the
+    //     "editor.wordHighlightBackground".
+    "minimap.selectionOccurrenceHighlight": "#009c8fc0",
 
     "minimap.errorHighlight": "#d4212b",
     "minimap.warningHighlight": "#b38800",
@@ -939,25 +950,33 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#diff-editor-colors
 
-    // "diffEditor.insertedTextBackground": "",
-    // "diffEditor.insertedTextBorder": "#ffffff4D",
-    // "diffEditor.removedTextBackground": "",
-    // "diffEditor.removedTextBorder": "#ffffff4D",
+    "diffEditor.border": "#d6cbb4",
 
-    // diffEditor.border: Border color between the two text editors.
-    // diffEditor.diagonalFill: Color of the diff editor's diagonal fill. The diagonal fill is used in side-by-side diff views.
-    // diffEditor.insertedLineBackground: Background color for lines that got inserted.
-    // diffEditor.removedLineBackground: Background color for lines that got removed.
-    // diffEditorGutter.insertedLineBackground: Background color for the margin where lines got inserted.
-    // diffEditorGutter.removedLineBackground: Background color for the margin where lines got removed.
-    // diffEditorOverview.insertedForeground: Diff overview ruler foreground for inserted content.
-    // diffEditorOverview.removedForeground: Diff overview ruler foreground for removed content.
-    // diffEditor.unchangedRegionBackground: The color of unchanged blocks in diff editor.
-    // diffEditor.unchangedRegionForeground: The foreground color of unchanged blocks in the diff editor.
-    // diffEditor.unchangedRegionShadow: The color of the shadow around unchanged region widgets.
-    // diffEditor.unchangedCodeBackground: The background color of unchanged code in the diff editor.
+    "diffEditorGutter.insertedLineBackground": "#aae66040",
+    "diffEditorGutter.removedLineBackground": "#ff918140",
+
+    "diffEditorOverview.insertedForeground": "#53910099",
+    "diffEditorOverview.removedForeground": "#d4212b99",
+
+    "diffEditor.diagonalFill": "#d6cbb480",
+
+    "diffEditor.unchangedCodeBackground": "#ddbeff20",
+
+    "diffEditor.unchangedRegionBackground": "#f0e4cc",
+    "diffEditor.unchangedRegionForeground": "#52666d",
+    "diffEditor.unchangedRegionShadow": "#d6cbb4c0",
+
+    "diffEditor.insertedLineBackground": "#aae66080",
+    "diffEditor.insertedTextBackground": "#aae66090",
+    // "diffEditor.insertedTextBorder": "#fef3da80",
+
+    "diffEditor.removedLineBackground": "#ff918180",
+    "diffEditor.removedTextBackground": "#ff918190",
+    // "diffEditor.removedTextBorder": "#fef3da80",
+
     // diffEditor.move.border: The border color for text that got moved in the diff editor.
     // diffEditor.moveActive.border: The active border color for text that got moved in the diff editor.
+
     // multiDiffEditor.headerBackground: The background color of the diff editor's header
     // multiDiffEditor.background: The background color of the multi file diff editor
     // multiDiffEditor.border: The border color of the multi file diff editor
@@ -1018,13 +1037,13 @@
     "editorMarkerNavigation.background": "#fef3dac0",
 
     "editorMarkerNavigationError.background": "#d4212b",
-    "editorMarkerNavigationError.headerBackground": "#ff9181",
+    "editorMarkerNavigationError.headerBackground": "#ff9181c0",
 
     "editorMarkerNavigationWarning.background": "#b38800",
-    "editorMarkerNavigationWarning.headerBackground": "#ffd048",
+    "editorMarkerNavigationWarning.headerBackground": "#ffd048c0",
 
     "editorMarkerNavigationInfo.background": "#0073d2",
-    "editorMarkerNavigationInfo.headerBackground": "#60d2ff",
+    "editorMarkerNavigationInfo.headerBackground": "#60d2ffc0",
 
 
     // Peek View
@@ -1039,7 +1058,7 @@
 
     "peekViewEditor.background": "#fef3da",
     "peekViewEditorGutter.background": "#fef3da",
-    "peekViewEditor.matchHighlightBackground": "#008aec20",
+    "peekViewEditor.matchHighlightBackground": "#b3880030",
  // "peekViewEditor.matchHighlightBorder": null,
 
     "peekViewEditorStickyScroll.background": "#fef3daa0",
@@ -1047,7 +1066,7 @@
     "peekViewResult.background": "#f0e4cc",
  // "peekViewResult.fileForeground": null,
  // "peekViewResult.lineForeground": null,
-    "peekViewResult.matchHighlightBackground": "#cb4c9918",
+    "peekViewResult.matchHighlightBackground": "#b3880080",
     "peekViewResult.selectionBackground": "#fef3da",
     "peekViewResult.selectionForeground": "#52666d",
 
@@ -1114,7 +1133,7 @@
     "panelStickyScroll.shadow": "#c5baa4c0",
 
     "outputView.background": "#fef3da",
-    "outputViewStickyScroll.background": "#fef3daa0",
+    "outputViewStickyScroll.background": "#d6cbb4a0",
 
 
     // Command Center
@@ -1357,14 +1376,14 @@
 
     "gitDecoration.addedResourceForeground": "#539100",
     "gitDecoration.modifiedResourceForeground": "#0073d2",
-    "gitDecoration.deletedResourceForeground": "#c75d20",
+    "gitDecoration.deletedResourceForeground": "#d4212b",
     "gitDecoration.renamedResourceForeground": "#b38800",
 
     "gitDecoration.untrackedResourceForeground": "#52666d",
     "gitDecoration.ignoredResourceForeground": "#8f9894",
     "gitDecoration.stageModifiedResourceForeground": "#7d64c5",
     "gitDecoration.stageDeletedResourceForeground": "#7d64c5",
-    "gitDecoration.conflictingResourceForeground": "#d4212b",
+    "gitDecoration.conflictingResourceForeground": "#c75d20",
 
     "gitDecoration.submoduleResourceForeground": "#cb4c99"
 

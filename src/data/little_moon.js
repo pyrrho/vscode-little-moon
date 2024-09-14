@@ -126,77 +126,6 @@ const palette = {
   }
 };
 
-// see the  "`range` object documentation" below
-const range = {
-  light: {
-    colorful: {
-      sel: alpha(palette.light.cyan, "30"),
-      sel_dim: null,
-
-      find: alpha(palette.light.magenta, "18"),
-      find_dim: alpha(palette.light.magenta, "30"),
-
-      hover: alpha(palette.light.green, "30"),
-
-      find_in: alpha(palette.light.yellow, "10"),
-      result: alpha(palette.light.blue_1, "20"),
-
-      semantic_symbol_ro: alpha(palette.light.green, "30"),
-      semantic_symbol_rw: alpha(palette.light.orange, "30"),
-      semantic_symbol_bak: alpha(palette.light.blue, "30"),
-    },
-    subtle: {
-      sel: alpha(palette.light.cyan, "30"),
-      sel_dim: null,
-
-      find: alpha(palette.light.magenta, "18"),
-      find_dim: alpha(palette.light.magenta, "30"),
-      find_in: alpha(palette.light.yellow, "10"),
-
-      hover: alpha(palette.light.green, "30"),
-
-      result: alpha(palette.light.blue_1, "20"),
-
-      semantic_symbol_ro: alpha(palette.light.green, "30"),
-      semantic_symbol_rw: alpha(palette.light.orange, "30"),
-      semantic_symbol_bak: alpha(palette.light.blue, "30"),
-    },
-  },
-  dark: {
-    colorful: {
-      sel: alpha(palette.dark.cyan, "30"),
-      sel_dim: null,
-
-      find: alpha(palette.dark.magenta, "18"),
-      find_dim: alpha(palette.dark.magenta, "30"),
-
-      hover: alpha(palette.dark.green, "30"),
-
-      find_in: alpha(palette.dark.yellow, "10"),
-      result: alpha(palette.dark.blue_1, "20"),
-
-      semantic_symbol_ro: alpha(palette.dark.green, "30"),
-      semantic_symbol_rw: alpha(palette.dark.orange, "30"),
-      semantic_symbol_bak: alpha(palette.dark.blue, "30"),
-    },
-    subtle: {
-      sel: alpha(palette.dark.cyan, "30"),
-      sel_dim: null,
-
-      find: alpha(palette.dark.magenta, "18"),
-      find_dim: alpha(palette.dark.magenta, "30"),
-      find_in: alpha(palette.dark.yellow, "10"),
-
-      hover: alpha(palette.dark.green, "30"),
-
-      result: alpha(palette.dark.blue_1, "20"),
-
-      semantic_symbol_ro: alpha(palette.dark.green, "30"),
-      semantic_symbol_rw: alpha(palette.dark.orange, "30"),
-      semantic_symbol_bak: alpha(palette.dark.blue, "30"),
-    },
-  }
-};
 const terminal = {
   light: {
     original: {
@@ -305,6 +234,31 @@ const little_moon = {
       dim: alpha(palette.light.bg, "c0"),
       ovr: alpha(palette.light.bg__1, "d8"),
     },
+    range: {
+      sel: alpha(palette.light.blue, "3c"),
+      sel_dim: alpha(palette.light.blue, "2c"),
+      sel_dim2: alpha(palette.light.blue, "1c"),
+
+      hover: alpha(palette.light.blue, "0e"),
+      hover_em: alpha(palette.light.blue_1, "80"),
+
+      find_8: alpha(palette.light.yellow, "80"),
+      find_4: alpha(palette.light.yellow, "40"),
+      find_3: alpha(palette.light.yellow, "30"),
+      find_2: alpha(palette.light.yellow, "20"),
+      find_1: alpha(palette.light.yellow, "10"),
+
+      symbol: alpha(palette.light.cyan, "30"),
+
+      semantic_symbol_ro_dim: alpha(palette.light.green, "30"),
+      semantic_symbol_ro_em: alpha(palette.light.green, "c0"),
+
+      semantic_symbol_rw_dim: alpha(palette.light.magenta, "30"),
+      semantic_symbol_rw_em: alpha(palette.light.magenta, "c0"),
+
+      semantic_symbol_dim: alpha(palette.light.cyan, "30"),
+      semantic_symbol_em: alpha(palette.light.cyan, "c0"),
+    },
     drop: {
       bg: alpha(palette.light.bg__3, "80"),
       em: alpha(palette.light.fg__2, "a0"),
@@ -335,14 +289,24 @@ const little_moon = {
     },
     git: {
       added: palette.light.green,
+      added_bg: palette.light.bg_green,
+
       modified: palette.light.blue,
-      deleted: palette.light.orange,
+      modified_bg: palette.light.bg_blue,
+
+      deleted: palette.light.red,
+      deleted_bg: palette.light.bg_red,
+
       renamed: palette.light.yellow,
+      renamed_bg: palette.light.bg_yellow,
+
+      unmodified: palette.light.violet,
+      unmodified_bg: palette.light.bg_violet,
 
       untracked: palette.light.fg,
       ignored: palette.light.dim,
       staged: palette.light.violet,
-      conflicting: palette.light.red,
+      conflicting: palette.light.orange,
 
       submodule: palette.light.magenta,
     },
@@ -360,7 +324,6 @@ const little_moon = {
       hint_br: palette.light.cyan_1,
       hint_bg: palette.light.bg_cyan,
     },
-    range: range.light.colorful,
     terminal: terminal.light.bright,
 
     red__1:     palette.light.red__2,
@@ -423,6 +386,31 @@ const little_moon = {
       _2: palette.dark.bg_1,
       br: palette.dark.bg__1,
     },
+    range: {
+      sel: alpha(palette.dark.blue, "3c"),
+      sel_dim: alpha(palette.dark.blue, "2c"),
+      sel_dim2: alpha(palette.dark.blue, "1c"),
+
+      hover: alpha(palette.dark.blue, "0e"),
+      hover_em: alpha(palette.dark.blue_1, "80"),
+
+      find_8: alpha(palette.dark.yellow, "80"),
+      find_4: alpha(palette.dark.yellow, "40"),
+      find_3: alpha(palette.dark.yellow, "30"),
+      find_2: alpha(palette.dark.yellow, "20"),
+      find_1: alpha(palette.dark.yellow, "10"),
+
+      symbol: alpha(palette.dark.cyan, "30"),
+
+      semantic_symbol_ro_dim: alpha(palette.dark.green, "30"),
+      semantic_symbol_ro_em: alpha(palette.dark.green, "c0"),
+
+      semantic_symbol_rw_dim: alpha(palette.dark.magenta, "30"),
+      semantic_symbol_rw_em: alpha(palette.dark.magenta, "c0"),
+
+      semantic_symbol_dim: alpha(palette.dark.cyan, "30"),
+      semantic_symbol_em: alpha(palette.dark.cyan, "c0"),
+    },
     hover: {
       _0: palette.dark.bg__2,
       _2: palette.dark.bg__1,
@@ -460,14 +448,24 @@ const little_moon = {
     },
     git: {
       added: palette.dark.green,
+      added_bg: palette.dark.bg_green,
+
       modified: palette.dark.blue,
-      deleted: palette.dark.orange,
+      modified_bg: palette.dark.bg_blue,
+
+      deleted: palette.dark.red,
+      deleted_bg: palette.dark.bg_red,
+
       renamed: palette.dark.yellow,
+      renamed_bg: palette.dark.bg_yellow,
+
+      unmodified: palette.dark.violet,
+      unmodified_bg: palette.dark.bg_violet,
 
       untracked: palette.dark.fg,
       ignored: palette.dark.dim,
       staged: palette.dark.violet,
-      conflicting: palette.dark.red,
+      conflicting: palette.dark.orange,
 
       submodule: palette.dark.magenta,
     },
@@ -485,7 +483,6 @@ const little_moon = {
       hint_br: palette.dark.cyan_1,
       hint_bg: palette.dark.bg_cyan,
     },
-    range: range.dark.colorful,
     terminal: terminal.dark.bright,
 
     red__1:     palette.dark.red__1,
@@ -534,70 +531,3 @@ function alpha(color, alpha) {
 }
 
 module.exports = little_moon;
-
-/** `range` object documentation
- * why am I not doing this in TS?
-{
-  sel:
-    editor.selectionBackground
-    What your cursor do
-    default: locked
-
-  sel_inact:
-    editor.inactiveSelectionBackground
-    What your cursor did in an editor that's no longer focused
-    default: transparent 0.5 `editor.selectionBackground`
-
-  sel_dim:
-    editor.selectionHighlightBackground
-    Same content as the cursor selection
-    default: "less prominent" `editor.selectionBackground`
-
-  find:
-    editor.findMatchBackground
-    Current search match
-    default: locked
-
-  find_dim:
-    editor.findMatchHighlightBackground
-    Other search matches
-    default: locked
-
-  find_dim_se:
-    searchEditor.findMatchBackground
-    Like editor.findMatchHighlightBackground but in the Search Editor.
-    default: transparent 0.66 `editor.findMatchHighlightBackground`
-
-  symbol:
-    editor.symbolHighlightBackground
-    Symbol targeted by e.g. go-to-definition
-    default: `editor.findMatchHighlightBackground`
-
-  find_in:
-    editor.findRangeHighlightBackground
-    Visual range for 'Find in selection'
-    default: locked
-
-  result:
-    editor.rangeHighlightBackground
-    Range for find results; ctrl+f, breadcrumb navigation, etc.
-    default: locked
-
-  hover:
-    editor.hoverHighlightBackground
-    Mouse-hover popover symbol highlight
-    default: locked
-
-  semantic_symbol_ro:
-    editor.wordHighlightBackground
-    Semantic symbol under mouse: r/o usage
-    default: locked
-  semantic_symbol_rw:
-    editor.wordHighlightStrongBackground
-    Semantic symbol under mouse: r/w usage
-    default: locked
-  semantic_symbol_bak:
-    editor.wordHighlightTextBackground
-    Semantic symbol under mouse: fallback
-    default: editor.wordHighlightBackground
-} */

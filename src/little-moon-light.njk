@@ -305,8 +305,7 @@ permalink: /little-moon-light-color-theme.json
     // https://code.visualstudio.com/api/references/theme-color#base-colors
 
     "foreground": "{{ little_moon.light.fg._0 }}",
-    //##  TODO: Find out if this is used anywhere
-    "descriptionForeground": "{{ little_moon.light.fg._0 }}",
+    // "descriptionForeground": "{{ little_moon.pure.red }}",
     "disabledForeground": "{{ little_moon.light.fg._2 }}",
     "errorForeground": "{{ little_moon.light.level.err }}",
     "icon.foreground": "{{ little_moon.light.fg._0 }}",
@@ -345,12 +344,16 @@ permalink: /little-moon-light-color-theme.json
 
     // ** The gutter contains the glyph margins and the line numbers
  // "editorGutter.background": null,
-    "editorGutter.modifiedBackground": "{{ little_moon.light.git.modified }}",
-    "editorGutter.addedBackground": "{{ little_moon.light.git.added }}",
-    "editorGutter.deletedBackground": "{{ little_moon.light.git.deleted }}",
-    // editorGutter.commentRangeForeground: Editor gutter decoration color for commenting ranges.
-    // editorGutter.commentGlyphForeground: Editor gutter decoration color for commenting glyphs.
+    // NB. Match the transparency add of e.g. `editorOverviewRuler.modifiedForeground`
+    "editorGutter.modifiedBackground": "{{ little_moon.light.git.modified }}99",
+    "editorGutter.addedBackground": "{{ little_moon.light.git.added }}99",
+    "editorGutter.deletedBackground": "{{ little_moon.light.git.deleted }}99",
+
+    // TODO: Reused from `range.result` (`.find_2`?). Should also be used for ghost text?
+    "editorGutter.commentRangeForeground": "{{ little_moon.light.yellow }}30",
+    "editorGutter.commentGlyphForeground": "{{ little_moon.light.fg._0 }}",
     // editorGutter.commentUnresolvedGlyphForeground: Editor gutter decoration color for commenting glyphs for unresolved comment threads.
+
     "editorGutter.foldingControlForeground": "{{ little_moon.light.fg._0 }}",
 
     // ** Line numbers are in the gutter (but included in the base sectino?)
@@ -360,10 +363,10 @@ permalink: /little-moon-light-color-theme.json
 
     // ** Selection colors are visible when selecting one or more characters. In addition to the selection also all regions with the same content are highlighted.
     "editor.selectionBackground": "{{ little_moon.light.range.sel }}",
- // "editor.inactiveSelectionBackground": "{{ little_moon.light.range.sel_inact }}",
- // "editor.selectionHighlightBackground": "{{ little_moon.light.range.sel_dim }}",
-    // editor.selectionHighlightBorder: Border color for regions with the same content as the selection.
-    // editor.selectionForeground: Color of the selected text for high contrast.
+ // "editor.inactiveSelectionBackground": null, // default: `editor.inactiveSelectionBackground`80
+    "editor.selectionHighlightBackground": "{{ little_moon.light.range.sel_dim2 }}",
+ // "editor.selectionHighlightBorder": null,
+ // "editor.selectionForeground": null,
 
     // ** Search colors are used in the search viewlet's global search results.
     // search.resultsInfoForeground: Color of the text in the search viewlet's completion message. For example, this color is used in the text that says "{x} results in {y} files".
@@ -373,44 +376,45 @@ permalink: /little-moon-light-color-theme.json
     "editor.hoverHighlightBackground": "{{ little_moon.light.range.hover }}",
 
     // ** Find colors depend on the current find string in the Find/Replace dialog
-    "editor.findMatchBackground": "{{ little_moon.light.range.find }}",
-    "editor.findMatchHighlightBackground": "{{ little_moon.light.range.find_dim }}",
+    "editor.findMatchBackground": "{{ little_moon.light.range.sel_dim }}",
+    "editor.findMatchHighlightBackground": "{{ little_moon.light.range.find_3 }}",
     // editor.findMatchForeground: Text color of the current search match.
     // editor.findMatchHighlightForeground: Foreground color of the other search matches.
     // editor.findMatchBorder: Border color of the current search match.
     // editor.findMatchHighlightBorder: Border color of the other search matches.
 
-    "editor.findRangeHighlightBackground": "{{ little_moon.light.range.find_in }}",
+    "editor.findRangeHighlightBackground": "{{ little_moon.light.range.find_1 }}",
     // "editor.findRangeHighlightBorder": null,
 
     // ** Search Editor colors highlight results in a Search Editor.
     // ## Search Editors are full editor tabs, spawned from the sidebar
- // "searchEditor.findMatchBackground": "{{ little_moon.light.range.find_dim_se }}",
+ // "searchEditor.findMatchBackground": null, // default: `editor.findMatchHighlightBackground`a8
     // searchEditor.findMatchBorder: Border color of the editor's results.
  // "searchEditor.textInputBorder": null,
 
     // ** The range highlight is visible when selecting a search result.
     // ## e.g. when following a breadcrumb to a section, or cycling through Find results
-    "editor.rangeHighlightBackground": "{{ little_moon.light.range.result }}",
-    // "editor.rangeHighlightBorder": null,
+    "editor.rangeHighlightBackground": "{{ little_moon.light.range.find_2 }}",
+ // "editor.rangeHighlightBorder": null,
 
-    // ** The symbol highlight is visible when navigating to a symbol via a command such as Go to Definition.
- // "editor.symbolHighlightBackground": "{{ little_moon.light.range.symbol }}",
-    // editor.symbolHighlightBorder: Background color of the border around highlighted symbols.
+    // ** The symbol highlight is visible when navigating to a symbol via a command such as
+    //    Go to Definition.
+    "editor.symbolHighlightBackground": "{{ little_moon.light.range.symbol }}",
+ // "editor.symbolHighlightBorder": null,
 
     // ** Word highlight colors are visible when the cursor is inside a symbol or a word.
-    // ## These settings are applicable to the Occurrence Highlight setting; only require the cursor to be present
-    // ## TODO: Build a toggle for this.
-    "editor.wordHighlightBackground": "{{ little_moon.light.range.semantic_symbol_ro }}",
-    "editor.wordHighlightStrongBackground": "{{ little_moon.light.range.semantic_symbol_rw }}",
- // "editor.wordHighlightTextBackground": "{{ little_moon.light.range.semantic_symbol_bak }}",
-    // editor.wordHighlightBorder: Border color of a symbol during read-access, for example when reading a variable.
-    // editor.wordHighlightStrongBorder: Border color of a symbol during write-access, for example when writing to a variable.
-    // editor.wordHighlightTextBorder: Border color of a textual occurrence for a symbol.
+    // ## These settings are applicable to the Occurrence Highlight setting; only require the cursor
+    //    to be present
+    "editor.wordHighlightBackground": "{{ little_moon.light.range.semantic_symbol_ro_dim }}",
+    "editor.wordHighlightStrongBackground": "{{ little_moon.light.range.semantic_symbol_rw_dim }}",
+    "editor.wordHighlightTextBackground": "{{ little_moon.light.range.semantic_symbol_dim }}",
+ // "editor.wordHighlightBorder": null,
+ // "editor.wordHighlightStrongBorder": null,
+ // "editor.wordHighlightTextBorder": null,
 
     // ** The current line is typically shown as either background highlight or a border (not both).
     "editor.lineHighlightBackground": "{{ little_moon.light.bg._2 }}80",
-    // "editor.lineHighlightBorder": null,
+ // "editor.lineHighlightBorder": null,
 
     // ** The color for the editor watermark
     // editorWatermark.foreground: Foreground color for the labels in the editor watermark.
@@ -426,7 +430,8 @@ permalink: /little-moon-light-color-theme.json
     // ## TODO: This is my special whitespace fun time. I should add a comment about disabling it.
     "editorWhitespace.foreground": "{{ little_moon.light.bg._0 }}",
 
-    // ** To see the editor indent guides, set "editor.guides.indentation": true and "editor.guides.highlightActiveIndentation": true.
+    // ** To see the editor indent guides, set "editor.guides.indentation": true and
+    //    "editor.guides.highlightActiveIndentation": true.
     // ## Goes up to 6 for lots of colors
     "editorIndentGuide.background1": "{{ little_moon.light.rule.dim }}",
     "editorIndentGuide.activeBackground1": "{{ little_moon.light.rule.em }}",
@@ -437,7 +442,7 @@ permalink: /little-moon-light-color-theme.json
 
     // ** Bracket matches
     // ## Matches are paired with what's under the cursor
-    "editorBracketMatch.background": "{{ little_moon.light.bg._2 }}",
+    "editorBracketMatch.background": "{{ little_moon.light.bg._3 }}c0",
     "editorBracketMatch.border": "{{ little_moon.pure.transparent }}",
 
     // ## Highlights are passive. Requires enabling bracket pair colorization
@@ -505,21 +510,26 @@ permalink: /little-moon-light-color-theme.json
  // "editorOverviewRuler.background": "{{ little_moon.light.bg.br }}",
     "editorOverviewRuler.border": "{{ little_moon.pure.transparent }}",
 
-    // ## These seem to not be respected?
- // "editorOverviewRuler.bracketMatchForeground": "{{ little_moon.light.fg._0 }}",
- // "editorOverviewRuler.findMatchForeground": "{{ little_moon.light.range.find_dim }}",
- // "editorOverviewRuler.rangeHighlightForeground": "{{ little_moon.light.range.result }}",
- // "editorOverviewRuler.selectionHighlightForeground": "{{ little_moon.light.range.sel }}",
+    "editorOverviewRuler.findMatchForeground": "{{ little_moon.light.range.find_8 }}",
+    "editorOverviewRuler.selectionHighlightForeground": "{{ little_moon.light.range.sel }}",
+    // ## TODO: Not respected?
+    // "editorOverviewRuler.rangeHighlightForeground": "{{ little_moon.light.range.find_2 }}",
 
-    // ## These seem to not be respected?
- // "editorOverviewRuler.wordHighlightForeground": "{{ little_moon.light.range.semantic_symbol_ro }}",
- // "editorOverviewRuler.wordHighlightStrongForeground": "{{ little_moon.light.range.semantic_symbol_rw }}",
- // "editorOverviewRuler.wordHighlightTextForeground": null,
+    // ## NB. This setting doesn't respond to change in well. If you're iterating on it, you'll want
+    //        to 'Developer: Reload Window' to see your changes.
+    "editorOverviewRuler.bracketMatchForeground": "{{ little_moon.light.range.sel }}",
 
-    // ## Defaults are pulled from the `editorGutter.___Background` set; reduced transparency
-    "editorOverviewRuler.modifiedForeground": "{{ little_moon.light.git.modified }}",
-    "editorOverviewRuler.addedForeground": "{{ little_moon.light.git.added }}",
-    "editorOverviewRuler.deletedForeground": "{{ little_moon.light.git.deleted }}",
+    // ## NB. These affect the minimap body as well as the overview ruler.
+    // ## NB. These settings don't respond to change in well. If you're iterating on them, you'll
+    //        want to 'Developer: Reload Window' to see your changes.
+    "editorOverviewRuler.wordHighlightForeground": "{{ little_moon.light.range.semantic_symbol_ro_em }}",
+    "editorOverviewRuler.wordHighlightStrongForeground": "{{ little_moon.light.range.semantic_symbol_rw_em }}",
+    "editorOverviewRuler.wordHighlightTextForeground": "{{ little_moon.light.range.semantic_symbol_em }}",
+
+    // ## Defaults are pulled from the `editorGutter.___Background` set; transparency of "99"
+ // "editorOverviewRuler.modifiedForeground": "{{ little_moon.light.git.modified }}",
+ // "editorOverviewRuler.addedForeground": "{{ little_moon.light.git.added }}",
+ // "editorOverviewRuler.deletedForeground": "{{ little_moon.light.git.deleted }}",
 
     // ## Defaults to locked, editorWarning.foreground, and editorInfo.foreground.
     //    I'm guessing it's a bug that editorOverviewRuler.errorForeground doesn't default to
@@ -598,7 +608,7 @@ permalink: /little-moon-light-color-theme.json
     // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
     // sideBySideEditor.verticalBorder: Color to separate two editors from each other when shown side by side in an editor group from left to right.
 
-    "tab.dragAndDropBorder": "{{ little_moon.light.drop.i }}",
+    "tab.dragAndDropBorder": "{{ little_moon.light.drop.em }}",
     "editorGroup.dropBackground": "{{ little_moon.light.drop.bg }}",
     // editorGroup.dropIntoPromptForeground: Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
     // editorGroup.dropIntoPromptBackground: Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
@@ -609,7 +619,7 @@ permalink: /little-moon-light-color-theme.json
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#breadcrumbs-colors
 
- // "breadcrumb.foreground": null, // default: `{ foreground }cc`
+ // "breadcrumb.foreground": null, // default: `foreground`cc
     "breadcrumb.background": "{{ little_moon.light.bg._2 }}",
     "breadcrumb.focusForeground": "{{ little_moon.light.fg.hl }}",
     "breadcrumb.activeSelectionForeground": "{{ little_moon.light.blue__1 }}",
@@ -877,7 +887,7 @@ permalink: /little-moon-light-color-theme.json
 
     "list.highlightForeground": "{{ little_moon.light.fg._0 }}",
     "list.focusHighlightForeground": "{{ little_moon.light.fg._2 }}",
-    "list.deemphasizedForeground": "{{ little_moon.pure.red }}",
+    // "list.deemphasizedForeground": "{{ little_moon.pure.red }}",
 
     "list.invalidItemForeground": "{{ little_moon.light.level.info }}",
     "list.errorForeground": "{{ little_moon.light.level.err }}",
@@ -906,7 +916,6 @@ permalink: /little-moon-light-color-theme.json
 
     // ## The shadow applies to all scrolled panes; editor top/bottom, sidebar, list views etc.
     "scrollbar.shadow": "{{ little_moon.light.shadow._0 }}",
-    // ## TODO: Make these semantic
     "scrollbarSlider.background": "{{ little_moon.light.scroll._0 }}",
     "scrollbarSlider.hoverBackground": "{{ little_moon.light.scroll.hv }}",
     "scrollbarSlider.activeBackground": "{{ little_moon.light.scroll.em }}",
@@ -921,9 +930,11 @@ permalink: /little-moon-light-color-theme.json
     // minimap.background: Minimap background color.
     "minimap.foregroundOpacity": "#000d",
 
-    "minimap.findMatchHighlight": "{{ little_moon.light.range.find }}",
-    "minimap.selectionHighlight": "{{ little_moon.light.range.sel }}",
-    "minimap.selectionOccurrenceHighlight": "{{ little_moon.light.range.hover }}",
+    "minimap.findMatchHighlight": "{{ little_moon.light.range.find_4 }}",
+    "minimap.selectionHighlight": "{{ little_moon.light.range.sel_dim }}",
+    // NB. This isn't for _selections_, it's for the "Occurrences Highlight" setting, same as the
+    //     "editor.wordHighlightBackground".
+    "minimap.selectionOccurrenceHighlight": "{{ little_moon.light.range.semantic_symbol_em }}",
 
     "minimap.errorHighlight": "{{ little_moon.light.level.err }}",
     "minimap.warningHighlight": "{{ little_moon.light.level.warn }}",
@@ -943,25 +954,33 @@ permalink: /little-moon-light-color-theme.json
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#diff-editor-colors
 
-    // "diffEditor.insertedTextBackground": "",
-    // "diffEditor.insertedTextBorder": "{{ little_moon.pure.white }}4D",
-    // "diffEditor.removedTextBackground": "",
-    // "diffEditor.removedTextBorder": "{{ little_moon.pure.white }}4D",
+    "diffEditor.border": "{{ little_moon.light.border._0 }}",
 
-    // diffEditor.border: Border color between the two text editors.
-    // diffEditor.diagonalFill: Color of the diff editor's diagonal fill. The diagonal fill is used in side-by-side diff views.
-    // diffEditor.insertedLineBackground: Background color for lines that got inserted.
-    // diffEditor.removedLineBackground: Background color for lines that got removed.
-    // diffEditorGutter.insertedLineBackground: Background color for the margin where lines got inserted.
-    // diffEditorGutter.removedLineBackground: Background color for the margin where lines got removed.
-    // diffEditorOverview.insertedForeground: Diff overview ruler foreground for inserted content.
-    // diffEditorOverview.removedForeground: Diff overview ruler foreground for removed content.
-    // diffEditor.unchangedRegionBackground: The color of unchanged blocks in diff editor.
-    // diffEditor.unchangedRegionForeground: The foreground color of unchanged blocks in the diff editor.
-    // diffEditor.unchangedRegionShadow: The color of the shadow around unchanged region widgets.
-    // diffEditor.unchangedCodeBackground: The background color of unchanged code in the diff editor.
+    "diffEditorGutter.insertedLineBackground": "{{ little_moon.light.git.added_bg }}40",
+    "diffEditorGutter.removedLineBackground": "{{ little_moon.light.git.deleted_bg }}40",
+
+    "diffEditorOverview.insertedForeground": "{{ little_moon.light.git.added }}99",
+    "diffEditorOverview.removedForeground": "{{ little_moon.light.git.deleted }}99",
+
+    "diffEditor.diagonalFill": "{{ little_moon.light.rule.dim }}",
+
+    "diffEditor.unchangedCodeBackground": "{{ little_moon.light.git.unmodified_bg }}20",
+
+    "diffEditor.unchangedRegionBackground": "{{ little_moon.light.bg._2 }}",
+    "diffEditor.unchangedRegionForeground": "{{ little_moon.light.fg._0 }}",
+    "diffEditor.unchangedRegionShadow": "{{ little_moon.light.shadow._0 }}",
+
+    "diffEditor.insertedLineBackground": "{{ little_moon.light.git.added_bg }}80",
+    "diffEditor.insertedTextBackground": "{{ little_moon.light.git.added_bg }}90",
+    // "diffEditor.insertedTextBorder": "{{ little_moon.light.bg._0 }}80",
+
+    "diffEditor.removedLineBackground": "{{ little_moon.light.git.deleted_bg }}80",
+    "diffEditor.removedTextBackground": "{{ little_moon.light.git.deleted_bg }}90",
+    // "diffEditor.removedTextBorder": "{{ little_moon.light.bg._0 }}80",
+
     // diffEditor.move.border: The border color for text that got moved in the diff editor.
     // diffEditor.moveActive.border: The active border color for text that got moved in the diff editor.
+
     // multiDiffEditor.headerBackground: The background color of the diff editor's header
     // multiDiffEditor.background: The background color of the multi file diff editor
     // multiDiffEditor.border: The border color of the multi file diff editor
@@ -1022,13 +1041,13 @@ permalink: /little-moon-light-color-theme.json
     "editorMarkerNavigation.background": "{{ little_moon.light.bg._0 }}c0",
 
     "editorMarkerNavigationError.background": "{{ little_moon.light.level.err }}",
-    "editorMarkerNavigationError.headerBackground": "{{ little_moon.light.level.err_bg }}",
+    "editorMarkerNavigationError.headerBackground": "{{ little_moon.light.level.err_bg }}c0",
 
     "editorMarkerNavigationWarning.background": "{{ little_moon.light.level.warn }}",
-    "editorMarkerNavigationWarning.headerBackground": "{{ little_moon.light.level.warn_bg }}",
+    "editorMarkerNavigationWarning.headerBackground": "{{ little_moon.light.level.warn_bg }}c0",
 
     "editorMarkerNavigationInfo.background": "{{ little_moon.light.level.info }}",
-    "editorMarkerNavigationInfo.headerBackground": "{{ little_moon.light.level.info_bg }}",
+    "editorMarkerNavigationInfo.headerBackground": "{{ little_moon.light.level.info_bg }}c0",
 
 
     // Peek View
@@ -1043,7 +1062,7 @@ permalink: /little-moon-light-color-theme.json
 
     "peekViewEditor.background": "{{ little_moon.light.bg._0 }}",
     "peekViewEditorGutter.background": "{{ little_moon.light.bg._0 }}",
-    "peekViewEditor.matchHighlightBackground": "{{ little_moon.light.range.result }}",
+    "peekViewEditor.matchHighlightBackground": "{{ little_moon.light.range.find_3 }}",
  // "peekViewEditor.matchHighlightBorder": null,
 
     "peekViewEditorStickyScroll.background": "{{ little_moon.light.bg.ovr }}",
@@ -1051,7 +1070,7 @@ permalink: /little-moon-light-color-theme.json
     "peekViewResult.background": "{{ little_moon.light.bg._2 }}",
  // "peekViewResult.fileForeground": null,
  // "peekViewResult.lineForeground": null,
-    "peekViewResult.matchHighlightBackground": "{{ little_moon.light.range.find }}",
+    "peekViewResult.matchHighlightBackground": "{{ little_moon.light.range.find_8 }}",
     "peekViewResult.selectionBackground": "{{ little_moon.light.hover._3 }}",
     "peekViewResult.selectionForeground": "{{ little_moon.light.fg._0 }}",
 
@@ -1118,7 +1137,7 @@ permalink: /little-moon-light-color-theme.json
     "panelStickyScroll.shadow": "{{ little_moon.light.shadow._2 }}",
 
     "outputView.background": "{{ little_moon.light.bg._0 }}",
-    "outputViewStickyScroll.background": "{{ little_moon.light.bg.ovr }}",
+    "outputViewStickyScroll.background": "{{ little_moon.light.bg.ovr2 }}",
 
 
     // Command Center
