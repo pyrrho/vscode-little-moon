@@ -16,8 +16,6 @@ To get the list of rules that are using hard-coded default values unrelated to t
      tr -d '[:blank:]' |\
      ## Trim leading slashes
      tr -d '/' |\
-     ## Replace `.`s with `_`s
-     sed 's/\./_/' |\
      ## Make all the rules CSS to make looking at colors easier
      perl -p -e 's/"(.*)":"(.*)",/\.\1 { color: \2; }/' |\
      ## Strip on-theme colors
