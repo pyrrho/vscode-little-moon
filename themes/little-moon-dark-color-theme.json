@@ -420,7 +420,7 @@
     // editorUnicodeHighlight.background: Background color used to highlight unicode characters.
 
     // ** The link color is visible when clicking on a link.
-    "editorLink.activeForeground": "#006ec7",
+    "editorLink.activeForeground": "#007ad5",
 
     // ** To see the editor white spaces, enable Toggle Render Whitespace.
     // ## TODO: This is my special whitespace fun time. I should add a comment about disabling it.
@@ -618,7 +618,7 @@
  // "breadcrumb.foreground": null, // default: `foreground`cc
     "breadcrumb.background": "#00313d",
     "breadcrumb.focusForeground": "#e3b230",
-    "breadcrumb.activeSelectionForeground": "#006ec7",
+    "breadcrumb.activeSelectionForeground": "#007ad5",
  // "breadcrumbPicker.background": null,
 
 
@@ -665,7 +665,7 @@
     // activityBarTop.background: Background color of the activity bar when set to top / bottom.
     // activityBarTop.activeBackground: Background color for the active item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar.
 
-    "activityBarBadge.background": "#a77e00",
+    "activityBarBadge.background": "#bc8f00",
     "activityBarBadge.foreground": "#053d48",
 
 
@@ -726,7 +726,7 @@
     "statusBarItem.prominentHoverForeground": "#00313d",
 
     // The "Remote Indicator" is the opposing-chevron button in the bottom left
-    "statusBarItem.remoteBackground": "#a77e00",
+    "statusBarItem.remoteBackground": "#bc8f00",
     "statusBarItem.remoteForeground": "#053d48",
     "statusBarItem.remoteHoverBackground": "#e3b230",
     "statusBarItem.remoteHoverForeground": "#00313d",
@@ -751,7 +751,7 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#badge
 
-    "badge.background": "#a77e00",
+    "badge.background": "#bc8f00",
     "badge.foreground": "#053d48",
 
 
@@ -967,11 +967,11 @@
     "diffEditor.unchangedRegionShadow": "#002934c0",
 
     "diffEditor.insertedLineBackground": "#13530080",
-    "diffEditor.insertedTextBackground": "#4f880020",
+    "diffEditor.insertedTextBackground": "#5f981820",
     // "diffEditor.insertedTextBorder": "#053d4880",
 
     "diffEditor.removedLineBackground": "#91000080",
-    "diffEditor.removedTextBackground": "#ca222920",
+    "diffEditor.removedTextBackground": "#da343520",
     // "diffEditor.removedTextBorder": "#053d4880",
 
     // diffEditor.move.border: The border color for text that got moved in the diff editor.
@@ -1166,7 +1166,7 @@
     "notifications.background": "#002934",
     "notifications.border": "#275b69",
 
-    "notificationLink.foreground": "#006ec7",
+    "notificationLink.foreground": "#007ad5",
 
 
     // Banner
@@ -1174,7 +1174,7 @@
     // https://code.visualstudio.com/api/references/theme-color#banner-colors
     // The banner appears below the title bar and spans the entire width of the workbench when visible.
 
-    "banner.background": "#006ec7",
+    "banner.background": "#007ad5",
     "banner.foreground": "#00313d",
     "banner.iconForeground": "#0096f5",
 
@@ -1259,12 +1259,12 @@
     "terminal.ansiCyan": "#39c7b9",
     "terminal.ansiWhite": "#718b90",
     "terminal.ansiBrightBlack": "#002934",
-    "terminal.ansiBrightRed": "#ca2229",
-    "terminal.ansiBrightGreen": "#4f8800",
-    "terminal.ansiBrightYellow": "#a77e00",
-    "terminal.ansiBrightBlue": "#006ec7",
-    "terminal.ansiBrightMagenta": "#bf488f",
-    "terminal.ansiBrightCyan": "#009387",
+    "terminal.ansiBrightRed": "#da3435",
+    "terminal.ansiBrightGreen": "#5f9818",
+    "terminal.ansiBrightYellow": "#bc8f00",
+    "terminal.ansiBrightBlue": "#007ad5",
+    "terminal.ansiBrightMagenta": "#cd559c",
+    "terminal.ansiBrightCyan": "#00a396",
     "terminal.ansiBrightWhite": "#606d6e",
 
     "terminal.border": "#376a78",

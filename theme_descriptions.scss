@@ -193,8 +193,8 @@
       // Proportionally remove some fraction of Δ from `.{color}`L to `100`L
       // (which is a long-winded way of saying, 'decrease .{color}`L').
       //     ΔL = L - (L * f)
-      // Choose the fraction that shifts `.fg_0` to `.fg_1`.
-      //     f = (42 - 31) / 42 = .262
+      // Which fraction are we going to choose?
+      //     f = (42 - 31) / 42 = .262 -- light `.fg_0` to `.fg_1`.
       .red__1     { color: #ca2229; } // 44  63  40
       .green__1   { color: #4f8800; } // 51 -38  55
       .yellow__1  { color: #a77e00; } // 55   6  68
@@ -203,6 +203,18 @@
       .cyan__1    { color: #009387; } // 54 -40  -4
       .orange__1  { color: #bb571d; } // 49  37  50
       .violet__1  { color: #7761bc; } // 47  30 -45
+
+      //     f = (42 - 37) / 42 = .119 -- light `fg` to `fg__1`
+
+      //     f = (28 - 23) / 28 = .179 -- dark `.bg_0` to `.bg_1`
+      .red__1     { color: #da3435; } // 49  63  40
+      .green__1   { color: #5f9818; } // 57 -38  55
+      .yellow__1  { color: #bc8f00; } // 62   6  68
+      .blue__1    { color: #007ad5; } // 49   0 -57
+      .magenta__1 { color: #cd559c; } // 54  55 -15
+      .cyan__1    { color: #00a396; } // 60 -40  -4
+      .orange__1  { color: #ce672c; } // 55  37  50
+      .violet__1  { color: #8770cc; } // 53  30 -45
     }
   }
 
