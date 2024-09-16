@@ -189,7 +189,7 @@ const little_moon = {
       semantic_symbol_dim: alpha(palette.light.cyan, "30"),
       semantic_symbol_em: alpha(palette.light.cyan, "c0"),
     },
-    drop: {
+    drag_and_drop: {
       bg: alpha(palette.light.bg__3, "80"),
       em: alpha(palette.light.fg__2, "a0"),
       i: alpha(palette.light.bg_1, "a0"),
@@ -344,7 +344,7 @@ const little_moon = {
       dim: alpha(palette.dark.bg, "c0"),
       ovr: alpha(palette.dark.bg__1, "d8"),
     },
-    drop: {
+    drag_and_drop: {
       bg: alpha(palette.dark.bg__3, "80"),
       em: alpha(palette.dark.fg__2, "a0"),
       i: alpha(palette.dark.bg_1, "a0"),
