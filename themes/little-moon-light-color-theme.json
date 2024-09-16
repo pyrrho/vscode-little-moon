@@ -1079,18 +1079,20 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#merge-conflicts-colors
 
-    // "merge.currentHeaderBackground": "",
-    // "merge.currentContentBackground": "",
-    // "merge.incomingHeaderBackground": "",
-    // "merge.incomingContentBackground": "",
-    // "merge.border": "",
+    "merge.currentHeaderBackground": "#00afa180",
+    "merge.currentContentBackground": "#00afa133",
+    "merge.incomingHeaderBackground": "#008aec80",
+    "merge.incomingContentBackground": "#008aec33",
+    "merge.border": "#fff8e0",
     // merge.commonContentBackground: Common ancestor content background in inline merge-conflicts.
     // merge.commonHeaderBackground: Common ancestor header background in inline merge-conflicts.
-    // "editorOverviewRuler.currentContentForeground": "#d4212b",
-    // "editorOverviewRuler.incomingContentForeground": "#d4212b",
+
+    "editorOverviewRuler.currentContentForeground": "#00afa180",
+    "editorOverviewRuler.incomingContentForeground": "#008aec80",
     // editorOverviewRuler.commonContentForeground: Common ancestor overview ruler foreground for inline merge conflicts.
     // editorOverviewRuler.commentForeground: Editor overview ruler decoration color for resolved comments. This color should be opaque.
     // editorOverviewRuler.commentUnresolvedForeground: Editor overview ruler decoration color for unresolved comments. This color should be opaque.
+
     // mergeEditor.change.background: The background color for changes.
     // mergeEditor.change.word.background: The background color for word changes.
     // mergeEditor.conflict.unhandledUnfocused.border: The border color of unhandled unfocused conflicts.

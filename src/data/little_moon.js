@@ -257,6 +257,10 @@ const little_moon = {
       hint_br: palette.light.cyan_1,
       hint_bg: palette.light.bg_cyan,
     },
+    merge: {
+      current: palette.light.cyan_1,
+      incoming: palette.light.blue_1,
+    },
     terminal: {
       _00_black:          palette.light.bg__1,
       _01_red:            palette.light.red,
@@ -411,6 +415,10 @@ const little_moon = {
       hint: palette.dark.cyan,
       hint_br: palette.dark.cyan_1,
       hint_bg: palette.dark.bg_cyan,
+    },
+    merge: {
+      current: palette.dark.cyan_1,
+      incoming: palette.dark.blue_1,
     },
     terminal: {
       _00_black:          palette.dark.bg__1,

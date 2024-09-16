@@ -1083,18 +1083,20 @@ permalink: /little-moon-light-color-theme.json
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#merge-conflicts-colors
 
-    // "merge.currentHeaderBackground": "{{ little_moon.light .bg__2 }}",
-    // "merge.currentContentBackground": "{{ little_moon.light .bg__2 }}",
-    // "merge.incomingHeaderBackground": "{{ little_moon.light .bg__2 }}",
-    // "merge.incomingContentBackground": "{{ little_moon.light .bg__2 }}",
-    // "merge.border": "{{ little_moon.light .bg_1 }}",
+    "merge.currentHeaderBackground": "{{ little_moon.light.merge.current }}80",
+    "merge.currentContentBackground": "{{ little_moon.light.merge.current }}33",
+    "merge.incomingHeaderBackground": "{{ little_moon.light.merge.incoming }}80",
+    "merge.incomingContentBackground": "{{ little_moon.light.merge.incoming }}33",
+    "merge.border": "{{ little_moon.light.border.br }}",
     // merge.commonContentBackground: Common ancestor content background in inline merge-conflicts.
     // merge.commonHeaderBackground: Common ancestor header background in inline merge-conflicts.
-    // "editorOverviewRuler.currentContentForeground": "{{ little_moon.light.palette.red }}",
-    // "editorOverviewRuler.incomingContentForeground": "{{ little_moon.light.palette.red }}",
+
+    "editorOverviewRuler.currentContentForeground": "{{ little_moon.light.merge.current }}80",
+    "editorOverviewRuler.incomingContentForeground": "{{ little_moon.light.merge.incoming }}80",
     // editorOverviewRuler.commonContentForeground: Common ancestor overview ruler foreground for inline merge conflicts.
     // editorOverviewRuler.commentForeground: Editor overview ruler decoration color for resolved comments. This color should be opaque.
     // editorOverviewRuler.commentUnresolvedForeground: Editor overview ruler decoration color for unresolved comments. This color should be opaque.
+
     // mergeEditor.change.background: The background color for changes.
     // mergeEditor.change.word.background: The background color for word changes.
     // mergeEditor.conflict.unhandledUnfocused.border: The border color of unhandled unfocused conflicts.
