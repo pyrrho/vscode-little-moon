@@ -967,11 +967,11 @@
     "diffEditor.unchangedRegionShadow": "#002934c0",
 
     "diffEditor.insertedLineBackground": "#13530080",
-    "diffEditor.insertedTextBackground": "#13530090",
+    "diffEditor.insertedTextBackground": "#4f880020",
     // "diffEditor.insertedTextBorder": "#053d4880",
 
     "diffEditor.removedLineBackground": "#91000080",
-    "diffEditor.removedTextBackground": "#91000090",
+    "diffEditor.removedTextBackground": "#ca222920",
     // "diffEditor.removedTextBorder": "#053d4880",
 
     // diffEditor.move.border: The border color for text that got moved in the diff editor.

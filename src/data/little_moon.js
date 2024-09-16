@@ -290,12 +290,15 @@ const little_moon = {
     git: {
       added: palette.light.green,
       added_bg: palette.light.bg_green,
+      added_em: palette.light.green__1,
 
       modified: palette.light.blue,
       modified_bg: palette.light.bg_blue,
+      modified_em: palette.light.blue__1,
 
       deleted: palette.light.red,
       deleted_bg: palette.light.bg_red,
+      deleted_em: palette.light.red__1,
 
       renamed: palette.light.yellow,
       renamed_bg: palette.light.bg_yellow,
@@ -449,12 +452,15 @@ const little_moon = {
     git: {
       added: palette.dark.green,
       added_bg: palette.dark.bg_green,
+      added_em: palette.dark.green__1,
 
       modified: palette.dark.blue,
       modified_bg: palette.dark.bg_blue,
+      modified_em: palette.dark.blue__1,
 
       deleted: palette.dark.red,
       deleted_bg: palette.dark.bg_red,
+      deleted_em: palette.dark.red__1,
 
       renamed: palette.dark.yellow,
       renamed_bg: palette.dark.bg_yellow,
