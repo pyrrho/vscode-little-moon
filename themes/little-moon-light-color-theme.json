@@ -420,7 +420,7 @@
     // editorUnicodeHighlight.background: Background color used to highlight unicode characters.
 
     // ** The link color is visible when clicking on a link.
-    "editorLink.activeForeground": "#0056b1",
+    "editorLink.activeForeground": "#0067c4",
 
     // ** To see the editor white spaces, enable Toggle Render Whitespace.
     // ## TODO: This is my special whitespace fun time. I should add a comment about disabling it.
@@ -595,10 +595,10 @@
     // tab.selectedBackground: Background of a selected tab.
     // tab.selectedForeground: Foreground of a selected tab.
 
-    // "tab.activeModifiedBorder": "#0073d2",
-    // "tab.inactiveModifiedBorder": "#008aec",
-    // "tab.unfocusedActiveModifiedBorder": "#0073d2",
-    // "tab.unfocusedInactiveModifiedBorder": "#008aec",
+    // "tab.activeModifiedBorder": "",
+    // "tab.inactiveModifiedBorder": "",
+    // "tab.unfocusedActiveModifiedBorder": "",
+    // "tab.unfocusedInactiveModifiedBorder": "",
 
     // editorPane.background: Background color of the editor pane visible on the left and right side of the centered editor layout.
     // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
@@ -618,7 +618,7 @@
  // "breadcrumb.foreground": null, // default: `foreground`cc
     "breadcrumb.background": "#f0e4cc",
     "breadcrumb.focusForeground": "#b38800",
-    "breadcrumb.activeSelectionForeground": "#0056b1",
+    "breadcrumb.activeSelectionForeground": "#0067c4",
  // "breadcrumbPicker.background": null,
 
 
@@ -796,9 +796,9 @@
     // "textBlockQuote.background": "",
     // "textBlockQuote.border": "",
     // "textCodeBlock.background": "#f00", // TODO: Wrong
-    // "textLink.activeForeground": "#0073d2",
-    // "textLink.foreground": "#0073d2",
-    // "textPreformat.foreground": "#009c8f",
+    // "textLink.activeForeground": "",
+    // "textLink.foreground": "",
+    // "textPreformat.foreground": "",
     // textPreformat.background: Background color for preformatted text segments.
     // "textSeparator.foreground": "#f00", // TODO: Wrong
 
@@ -857,7 +857,7 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#progress-bar
 
-    // "progressBar.background": "#b38800",
+    // "progressBar.background": "",
 
 
     // Lists and Trees
@@ -967,11 +967,11 @@
     "diffEditor.unchangedRegionShadow": "#d6cbb4c0",
 
     "diffEditor.insertedLineBackground": "#aae66080",
-    "diffEditor.insertedTextBackground": "#4e8b0020",
+    "diffEditor.insertedTextBackground": "#43810020",
     // "diffEditor.insertedTextBorder": "#fef3da80",
 
     "diffEditor.removedLineBackground": "#ff918180",
-    "diffEditor.removedTextBackground": "#ce172620",
+    "diffEditor.removedTextBackground": "#c4012020",
     // "diffEditor.removedTextBorder": "#fef3da80",
 
     // diffEditor.move.border: The border color for text that got moved in the diff editor.
@@ -1013,7 +1013,7 @@
  // "editorSuggestWidget.selectedForeground": null,
  // "editorSuggestWidget.selectedIconForeground": null,
     // ## Characters on the selected line that match the current input.
-    "editorSuggestWidget.focusHighlightForeground": "#876200",
+    "editorSuggestWidget.focusHighlightForeground": "#9e7600",
 
     // "editorSuggestWidgetStatus.foreground": "",
 
@@ -1166,7 +1166,7 @@
     "notifications.background": "#d6cbb4",
     "notifications.border": "#d6cbb4",
 
-    "notificationLink.foreground": "#0056b1",
+    "notificationLink.foreground": "#0067c4",
 
 
     // Banner
@@ -1174,7 +1174,7 @@
     // https://code.visualstudio.com/api/references/theme-color#banner-colors
     // The banner appears below the title bar and spans the entire width of the workbench when visible.
 
-    "banner.background": "#0056b1",
+    "banner.background": "#0067c4",
     "banner.foreground": "#fff8e0",
     "banner.iconForeground": "#0073d2",
 
@@ -1409,7 +1409,7 @@
     // https://code.visualstudio.com/api/references/theme-color#settings-editor-colors
 
     // "settings.headerForeground": "[object Object]",
-    // "settings.modifiedItemIndicator": "#0073d2",
+    // "settings.modifiedItemIndicator": "",
     // "settings.dropdownBackground": "",
     // "settings.dropdownForeground": "[object Object]",
     // "settings.dropdownBorder": "",

@@ -595,10 +595,10 @@
     // tab.selectedBackground: Background of a selected tab.
     // tab.selectedForeground: Foreground of a selected tab.
 
-    // "tab.activeModifiedBorder": "#0096f5",
-    // "tab.inactiveModifiedBorder": "#21a6ff",
-    // "tab.unfocusedActiveModifiedBorder": "#0096f5",
-    // "tab.unfocusedInactiveModifiedBorder": "#21a6ff",
+    // "tab.activeModifiedBorder": "",
+    // "tab.inactiveModifiedBorder": "",
+    // "tab.unfocusedActiveModifiedBorder": "",
+    // "tab.unfocusedInactiveModifiedBorder": "",
 
     // editorPane.background: Background color of the editor pane visible on the left and right side of the centered editor layout.
     // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
@@ -796,9 +796,9 @@
     // "textBlockQuote.background": "",
     // "textBlockQuote.border": "",
     // "textCodeBlock.background": "#f00", // TODO: Wrong
-    // "textLink.activeForeground": "#0096f5",
-    // "textLink.foreground": "#0096f5",
-    // "textPreformat.foreground": "#39c7b9",
+    // "textLink.activeForeground": "",
+    // "textLink.foreground": "",
+    // "textPreformat.foreground": "",
     // textPreformat.background: Background color for preformatted text segments.
     // "textSeparator.foreground": "#f00", // TODO: Wrong
 
@@ -857,7 +857,7 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#progress-bar
 
-    // "progressBar.background": "#e3b230",
+    // "progressBar.background": "",
 
 
     // Lists and Trees
@@ -1250,22 +1250,22 @@
     "terminal.background": "#053d48",
     "terminal.foreground": "#adbcbc",
 
-    "terminal.ansiBlack": "",
-    "terminal.ansiRed": "",
-    "terminal.ansiGreen": "",
-    "terminal.ansiYellow": "",
-    "terminal.ansiBlue": "",
-    "terminal.ansiMagenta": "",
-    "terminal.ansiCyan": "",
-    "terminal.ansiWhite": "",
-    "terminal.ansiBrightBlack": "",
-    "terminal.ansiBrightRed": "",
-    "terminal.ansiBrightGreen": "",
-    "terminal.ansiBrightYellow": "",
-    "terminal.ansiBrightBlue": "",
-    "terminal.ansiBrightMagenta": "",
-    "terminal.ansiBrightCyan": "",
-    "terminal.ansiBrightWhite": "",
+    "terminal.ansiBlack": "#00313d",
+    "terminal.ansiRed": "#fd564e",
+    "terminal.ansiGreen": "#80b83c",
+    "terminal.ansiYellow": "#e3b230",
+    "terminal.ansiBlue": "#0096f5",
+    "terminal.ansiMagenta": "#f176bd",
+    "terminal.ansiCyan": "#39c7b9",
+    "terminal.ansiWhite": "#718b90",
+    "terminal.ansiBrightBlack": "#002934",
+    "terminal.ansiBrightRed": "#ca2229",
+    "terminal.ansiBrightGreen": "#4f8800",
+    "terminal.ansiBrightYellow": "#a77e00",
+    "terminal.ansiBrightBlue": "#006ec7",
+    "terminal.ansiBrightMagenta": "#bf488f",
+    "terminal.ansiBrightCyan": "#009387",
+    "terminal.ansiBrightWhite": "#606d6e",
 
     "terminal.border": "#376a78",
 
@@ -1409,7 +1409,7 @@
     // https://code.visualstudio.com/api/references/theme-color#settings-editor-colors
 
     // "settings.headerForeground": "[object Object]",
-    // "settings.modifiedItemIndicator": "#0096f5",
+    // "settings.modifiedItemIndicator": "",
     // "settings.dropdownBackground": "",
     // "settings.dropdownForeground": "[object Object]",
     // "settings.dropdownBorder": "",

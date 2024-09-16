@@ -49,23 +49,14 @@ const palette = {
     orange_1:   "#e07234", // 60  39  52
     violet_1:   "#967bde", // 58  32 -47
 
-    red__1:     "#ce1726", // 44  66  42 -- orig: .br_red
-    green__1:   "#4e8b00", // 52 -40  58 -- orig: .br_green
-    yellow__1:  "#ad8300", // 57   6  71 -- orig: .br_yellow
-    blue__1:    "#006ecd", // 44   0 -60 -- orig: .br_blue
-    magenta__1: "#c54694", // 50  58 -16 -- orig: .br_magenta
-    cyan__1:    "#009689", // 55 -42  -4 -- orig: .br_cyan
-    orange__1:  "#c1581b", // 50  39  52 -- orig: .br_orange
-    violet__1:  "#785fbf", // 47  32 -47 -- orig: .br_violet
-
-    red__2:     "#ae0011", // 34  66  42
-    green__2:   "#2b6c00", // 40 -40  58
-    yellow__2:  "#876200", // 44   6  71
-    blue__2:    "#0056b1", // 34   0 -60
-    magenta__2: "#a22175", // 38  58 -16
-    cyan__2:    "#007469", // 42 -42  -4
-    orange__2:  "#9c3a00", // 38  39  52
-    violet__2:  "#5a45a1", // 36  32 -47
+    red__1:     "#c40120", // 41  66  42
+    green__1:   "#438100", // 48 -40  58
+    yellow__1:  "#9e7600", // 52   6  71
+    blue__1:    "#0067c4", // 41   0 -60
+    magenta__1: "#b93b89", // 46  58 -16
+    cyan__1:    "#00897d", // 50 -42  -4
+    orange__1:  "#b54e0f", // 46  39  52
+    violet__1:  "#6d56b4", // 43  32 -47
   },
   dark: {
     //                        CIE L*a*b*
@@ -126,67 +117,6 @@ const palette = {
   }
 };
 
-const terminal = {
-  light: {
-    original: {
-      _00_black:          palette.light.bg__1,
-      _01_red:            palette.light.red,
-      _02_green:          palette.light.green,
-      _03_yellow:         palette.light.yellow,
-      _04_blue:           palette.light.blue,
-      _05_magenta:        palette.light.magenta,
-      _06_cyan:           palette.light.cyan,
-      _07_white:          palette.light.dim,
-      _08_bright_black:   palette.light.bg__2,
-      _09_bright_red:     palette.light.red__1,
-      _10_bright_green:   palette.light.green__1,
-      _11_bright_yellow:  palette.light.yellow__1,
-      _12_bright_blue:    palette.light.blue__1,
-      _13_bright_magenta: palette.light.magenta__1,
-      _14_bright_cyan:    palette.light.cyan__1,
-      _15_bright_white:   palette.light.fg__2,
-    },
-    bright: {
-      _00_black:          palette.light.bg__1,
-      _01_red:            palette.light.red,
-      _02_green:          palette.light.green,
-      _03_yellow:         palette.light.yellow,
-      _04_blue:           palette.light.blue,
-      _05_magenta:        palette.light.magenta,
-      _06_cyan:           palette.light.cyan,
-      _07_white:          palette.light.dim,
-      _08_bright_black:   palette.light.bg__2,
-      _09_bright_red:     palette.light.red_1,
-      _10_bright_green:   palette.light.green_1,
-      _11_bright_yellow:  palette.light.yellow_1,
-      _12_bright_blue:    palette.light.blue_1,
-      _13_bright_magenta: palette.light.magenta_1,
-      _14_bright_cyan:    palette.light.cyan_1,
-      _15_bright_white:   palette.light.fg__2,
-    },
-  },
-  dark: {
-    original: {
-      _00_black:          palette.dark.bg__1,
-      _01_red:            palette.dark.red,
-      _02_green:          palette.dark.green,
-      _03_yellow:         palette.dark.yellow,
-      _04_blue:           palette.dark.blue,
-      _05_magenta:        palette.dark.magenta,
-      _06_cyan:           palette.dark.cyan,
-      _07_white:          palette.dark.dim,
-      _08_bright_black:   palette.dark.bg__2,
-      _09_bright_red:     palette.dark.red__1,
-      _10_bright_green:   palette.dark.green__1,
-      _11_bright_yellow:  palette.dark.yellow__1,
-      _12_bright_blue:    palette.dark.blue__1,
-      _13_bright_magenta: palette.dark.magenta__1,
-      _14_bright_cyan:    palette.dark.cyan__1,
-      _15_bright_white:   palette.dark.fg__2,
-    },
-  },
-};
-
 const little_moon = {
   type: {
     dark: "dark",
@@ -200,7 +130,7 @@ const little_moon = {
       em: palette.light.fg__1,
       em2: palette.light.fg__2,
       hl: palette.light.yellow,
-      hl2: palette.light.yellow__2,
+      hl2: palette.light.yellow__1,
       i: {
         em: palette.light.bg__1,
         _0: palette.light.bg,
@@ -327,32 +257,25 @@ const little_moon = {
       hint_br: palette.light.cyan_1,
       hint_bg: palette.light.bg_cyan,
     },
-    terminal: terminal.light.bright,
-
-    red__1:     palette.light.red__2,
-    red:        palette.light.red,
-    red_1:      palette.light.red_1,
-    green__1:   palette.light.green__2,
-    green:      palette.light.green,
-    green_1:    palette.light.green_1,
-    yellow__1:  palette.light.yellow__1,
-    yellow:     palette.light.yellow,
-    yellow_1:   palette.light.yellow_1,
-    blue__1:    palette.light.blue__2,
-    blue:       palette.light.blue,
-    blue_1:     palette.light.blue_1,
-    magenta__1: palette.light.magenta__2,
-    magenta:    palette.light.magenta,
-    magenta_1:  palette.light.magenta_1,
-    cyan__1:    palette.light.cyan__2,
-    cyan:       palette.light.cyan,
-    cyan_1:     palette.light.cyan_1,
-    orange__1:  palette.light.orange__2,
-    orange:     palette.light.orange,
-    orange_1:   palette.light.orange_1,
-    violet__1:  palette.light.violet__2,
-    violet:     palette.light.violet,
-    violet_1:   palette.light.violet_1,
+    terminal: {
+      _00_black:          palette.light.bg__1,
+      _01_red:            palette.light.red,
+      _02_green:          palette.light.green,
+      _03_yellow:         palette.light.yellow,
+      _04_blue:           palette.light.blue,
+      _05_magenta:        palette.light.magenta,
+      _06_cyan:           palette.light.cyan,
+      _07_white:          palette.light.dim,
+      _08_bright_black:   palette.light.bg__2,
+      _09_bright_red:     palette.light.red_1,     // NB. Orig theme shifts dark; __1, not _1
+      _10_bright_green:   palette.light.green_1,   // NB. Orig theme shifts dark; __1, not _1
+      _11_bright_yellow:  palette.light.yellow_1,  // NB. Orig theme shifts dark; __1, not _1
+      _12_bright_blue:    palette.light.blue_1,    // NB. Orig theme shifts dark; __1, not _1
+      _13_bright_magenta: palette.light.magenta_1, // NB. Orig theme shifts dark; __1, not _1
+      _14_bright_cyan:    palette.light.cyan_1,    // NB. Orig theme shifts dark; __1, not _1
+      _15_bright_white:   palette.light.fg__2,
+    },
+    palette: palette.light,
   },
 
   dark: {
@@ -489,32 +412,25 @@ const little_moon = {
       hint_br: palette.dark.cyan_1,
       hint_bg: palette.dark.bg_cyan,
     },
-    terminal: terminal.dark.bright,
-
-    red__1:     palette.dark.red__1,
-    red:        palette.dark.red,
-    red_1:      palette.dark.red_1,
-    green__1:   palette.dark.green__1,
-    green:      palette.dark.green,
-    green_1:    palette.dark.green_1,
-    yellow__1:  palette.dark.yellow__1,
-    yellow:     palette.dark.yellow,
-    yellow_1:   palette.dark.yellow_1,
-    blue__1:    palette.dark.blue__1,
-    blue:       palette.dark.blue,
-    blue_1:     palette.dark.blue_1,
-    magenta__1: palette.dark.magenta__1,
-    magenta:    palette.dark.magenta,
-    magenta_1:  palette.dark.magenta_1,
-    cyan__1:    palette.dark.cyan__1,
-    cyan:       palette.dark.cyan,
-    cyan_1:     palette.dark.cyan_1,
-    orange__1:  palette.dark.orange__1,
-    orange:     palette.dark.orange,
-    orange_1:   palette.dark.orange_1,
-    violet__1:  palette.dark.violet__1,
-    violet:     palette.dark.violet,
-    violet_1:   palette.dark.violet_1,
+    terminal: {
+      _00_black:          palette.dark.bg__1,
+      _01_red:            palette.dark.red,
+      _02_green:          palette.dark.green,
+      _03_yellow:         palette.dark.yellow,
+      _04_blue:           palette.dark.blue,
+      _05_magenta:        palette.dark.magenta,
+      _06_cyan:           palette.dark.cyan,
+      _07_white:          palette.dark.dim,
+      _08_bright_black:   palette.dark.bg__2,
+      _09_bright_red:     palette.dark.red__1,
+      _10_bright_green:   palette.dark.green__1,
+      _11_bright_yellow:  palette.dark.yellow__1,
+      _12_bright_blue:    palette.dark.blue__1,
+      _13_bright_magenta: palette.dark.magenta__1,
+      _14_bright_cyan:    palette.dark.cyan__1,
+      _15_bright_white:   palette.dark.fg__2,
+    },
+    palette: palette.dark,
   },
 
   tint: {

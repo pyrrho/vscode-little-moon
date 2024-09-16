@@ -96,14 +96,28 @@
       //     ΔL = L - (L * f)
       // Choose the fraction that shifts `.fg_0` to `.fg_1`.
       //     f = (42 - 31) / 42 = .262
-      .red__2     { color: #ae0011; } // 34  66  42
-      .green__2   { color: #2b6c00; } // 40 -40  58
-      .yellow__2  { color: #876200; } // 44   6  71
-      .blue__2    { color: #0056b1; } // 34   0 -60
-      .magenta__2 { color: #a22175; } // 38  58 -16
-      .cyan__2    { color: #007469; } // 42 -42  -4
-      .orange__2  { color: #9c3a00; } // 38  39  52
-      .violet__2  { color: #5a45a1; } // 36  32 -470
+      .red__1     { color: #ae0011; } // 34  66  42
+      .green__1   { color: #2b6c00; } // 40 -40  58
+      .yellow__1  { color: #876200; } // 44   6  71
+      .blue__1    { color: #0056b1; } // 34   0 -60
+      .magenta__1 { color: #a22175; } // 38  58 -16
+      .cyan__1    { color: #007469; } // 42 -42  -4
+      .orange__1  { color: #9c3a00; } // 38  39  52
+      .violet__1  { color: #5a45a1; } // 36  32 -470
+
+      // Proportionally remove some fraction of Δ from `.{color}`L to `100`L
+      // (which is a long-winded way of saying, 'decrease .{color}`L').
+      //     ΔL = L - (L * f)
+      // Choose the fraction that shifts `fg` to `fg__1`.
+      //     f = (42 - 37) / 42 = .119
+      .red__1     { color: #c40120; } // 41  66  42
+      .green__1   { color: #438100; } // 48 -40  58
+      .yellow__1  { color: #9e7600; } // 52   6  71
+      .blue__1    { color: #0067c4; } // 41   0 -60
+      .magenta__1 { color: #b93b89; } // 46  58 -16
+      .cyan__1    { color: #00897d; } // 50 -42  -4
+      .orange__1  { color: #b54e0f; } // 46  39  52
+      .violet__1  { color: #6d56b4; } // 43  32 -47
     }
     .dark {
       //                                 CIE L*a*b*
