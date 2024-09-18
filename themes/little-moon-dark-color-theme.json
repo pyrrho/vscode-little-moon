@@ -685,8 +685,8 @@
     // https://code.visualstudio.com/api/references/theme-color#menu-bar-colors
 
  // "menu.background": null,
- // "menu.foreground": null,
- // "menu.selectionForeground": null,
+    "menu.foreground": "#718b90",
+    "menu.selectionForeground": "#adbcbc",
     "menu.selectionBackground": "#002934",
  // "menu.selectionBorder": null,
     "menu.separatorBackground": "#00202b",

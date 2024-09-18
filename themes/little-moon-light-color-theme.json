@@ -686,7 +686,7 @@
 
  // "menu.background": null,
  // "menu.foreground": null,
- // "menu.selectionForeground": null,
+    "menu.selectionForeground": "#465a60",
     "menu.selectionBackground": "#d6cbb4",
  // "menu.selectionBorder": null,
     "menu.separatorBackground": "#c5baa4",
