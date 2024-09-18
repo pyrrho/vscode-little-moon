@@ -679,9 +679,9 @@ permalink: /little-moon-dark-color-theme.json
 
     "titleBar.activeBackground": "{{ little_moon.dark.bg._4 }}",
     "titleBar.border": "{{ little_moon.dark.bg._4 }}", // match `little_moon.dark.bg._4`
-    "titleBar.activeForeground": "{{ little_moon.dark.fg.em }}",
+    "titleBar.activeForeground": "{{ little_moon.dark.fg._0 }}",
     "titleBar.inactiveBackground": "{{ little_moon.dark.bg._3 }}",
-    "titleBar.inactiveForeground": "{{ little_moon.dark.fg._0 }}",
+    "titleBar.inactiveForeground": "{{ little_moon.dark.fg._2 }}",
 
 
     // Menu Bar
@@ -706,7 +706,7 @@ permalink: /little-moon-dark-color-theme.json
     // https://code.visualstudio.com/api/references/theme-color#status-bar-colors
 
     "statusBar.background": "{{ little_moon.dark.bg._3 }}",
-    "statusBar.foreground": "{{ little_moon.dark.fg._0 }}",
+    "statusBar.foreground": "{{ little_moon.dark.fg._2 }}",
     "statusBar.border": "{{ little_moon.dark.bg._3 }}", // match `statusBar.background`
  // "statusBar.focusBorder": null,
 
@@ -715,7 +715,7 @@ permalink: /little-moon-dark-color-theme.json
  // "statusBar.debuggingBorder": null,
 
     "statusBar.noFolderBackground": "{{ little_moon.dark.bg._3 }}",
-    "statusBar.noFolderForeground": "{{ little_moon.dark.fg._0 }}",
+    "statusBar.noFolderForeground": "{{ little_moon.dark.fg._2 }}",
  // "statusBar.noFolderBorder": null,
 
     "statusBarItem.hoverBackground": "{{ little_moon.dark.hover._2 }}",
@@ -1168,6 +1168,7 @@ permalink: /little-moon-dark-color-theme.json
 
     // NB. Notifications entries inherit, among others, `list.hoverBackground`.
     //     To disable the hover effect, the background needs to match ^.
+    //     But that doesn't disable the selected effect -_-
     "notifications.foreground": "{{ little_moon.dark.fg.em }}",
     "notifications.background": "{{ little_moon.dark.hover._0 }}",
     "notifications.border": "{{ little_moon.dark.border._0 }}",
