@@ -314,7 +314,7 @@
     // ## The "Sash" is typically a thin vertical or horizontal line that you
     //    can click and drag to adjust the size of adjacent panels.
  // "sash.hoverBorder": null, // default: `fucusBorder`
-    "widget.border": "#00313d",
+    "widget.border": "#002934",
     "widget.shadow": "#002934c0",
 
 
@@ -690,7 +690,7 @@
     "menu.selectionBackground": "#002934",
  // "menu.selectionBorder": null,
     "menu.separatorBackground": "#00202b",
-    "menu.border": "#00313d",
+    "menu.border": "#002934",
 
     "menubar.selectionForeground": "#b8c7c7",
     "menubar.selectionBackground": "#002934",
@@ -1019,7 +1019,7 @@
 
  // "editorHoverWidget.foreground": null,
     "editorHoverWidget.background": "#00313d",
-    "editorHoverWidget.border": "#00313d",
+    "editorHoverWidget.border": "#002934",
     "editorHoverWidget.highlightForeground": "#e3b230",
     "editorHoverWidget.statusBarBackground": "#00313d",
 
@@ -1083,7 +1083,7 @@
     "merge.currentContentBackground": "#4bd5c733",
     "merge.incomingHeaderBackground": "#21a6ff80",
     "merge.incomingContentBackground": "#21a6ff33",
-    "merge.border": "#00313d",
+    "merge.border": "#002934",
     // merge.commonContentBackground: Common ancestor content background in inline merge-conflicts.
     // merge.commonHeaderBackground: Common ancestor header background in inline merge-conflicts.
 
@@ -1114,7 +1114,7 @@
     // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
 
     "panel.background": "#00313d",
-    "panel.border": "#00313d",
+    "panel.border": "#002934",
     // panel.dropBorder: Drag and drop feedback color for the panel titles.
 
     "panelTitle.activeBorder": "#376a78",
