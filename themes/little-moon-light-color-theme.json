@@ -891,7 +891,7 @@
  // "listFilterWidget.background": "",
  // "listFilterWidget.outline": "",
     // "listFilterWidget.noMatchesOutline": "#0073d2",
- // "listFilterWidget.shadow": "",
+    "listFilterWidget.shadow": "#c5baa4c0",
     // list.filterMatchBackground: Background color of the filtered matches in lists and trees.
     // list.filterMatchBorder: Border color of the filtered matches in lists and trees.
 
