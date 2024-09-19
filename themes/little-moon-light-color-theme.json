@@ -1005,7 +1005,7 @@
     //    inherit. As such, don't let the below inherit bg/border styles.
     "editorWidget.background": "#f0e4cc",
  // "editorWidget.foreground": null,
-    "editorWidget.border": "#f00", // Seems that I've overridden every instance of this.
+    "editorWidget.border": "#fff8e0",
     "editorWidget.resizeBorder": "#928872",
 
     "editorSuggestWidget.background": "#fef3da",
