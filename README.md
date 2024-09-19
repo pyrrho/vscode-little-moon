@@ -69,7 +69,7 @@ Pending TODOs:
 - Themes:
    - Welcome Page
    - Chat stuff
-   - Don't use orange for bracket colors; too close to the unmatched-red
+   - Settings; drop-down borders at least are off theme
    - Consider not using yellow for the minimap gutter find highlights; too close to warnings. (crank up transparency?)
    - Consider a softer widget border? Or maybe the find widget shadow is just too much
 - Move off of the Solarized icon.png

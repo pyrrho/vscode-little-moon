@@ -442,11 +442,11 @@
     "editorBracketMatch.border": "#ffffff00",
 
     // ## Highlights are passive. Requires enabling bracket pair colorization
-    "editorBracketHighlight.foreground1": "#f38649",
+    "editorBracketHighlight.foreground1": "#f176bd",
     "editorBracketHighlight.foreground2": "#0096f5",
     "editorBracketHighlight.foreground3": "#80b83c",
     "editorBracketHighlight.foreground4": "#39c7b9",
- // "editorBracketHighlight.foreground5": "",
+    "editorBracketHighlight.foreground5": "#a58cec",
  // "editorBracketHighlight.foreground6": "",
     "editorBracketHighlight.unexpectedBracket.foreground": "#fd564ec0",
 
