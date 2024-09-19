@@ -926,10 +926,12 @@
     "minimap.foregroundOpacity": "#000d",
 
     "minimap.findMatchHighlight": "#b3880040",
-    "minimap.selectionHighlight": "#0073d22c",
-    // NB. This isn't for _selections_, it's for the "Occurrences Highlight" setting, same as the
-    //     "editor.wordHighlightBackground".
-    "minimap.selectionOccurrenceHighlight": "#009c8fc0",
+    "minimap.selectionHighlight": "#0073d260",
+    // ## NB. This setting doesn't respond to change in well. If you're iterating on it, you'll want
+    //        to 'Developer: Reload Window' to see your changes.
+    // ## NB. This setting is used for both selections and for the "Occurrences Highlight" setting;
+    //        in that case, it's used for both r/o and r/w highlights.
+    "minimap.selectionOccurrenceHighlight": "#0073d22c",
 
     "minimap.errorHighlight": "#d4212b",
     "minimap.warningHighlight": "#b38800",

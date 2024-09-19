@@ -176,6 +176,7 @@ const little_moon = {
       sel: alpha(palette.light.blue, "3c"),
       sel_dim: alpha(palette.light.blue, "2c"),
       sel_dim2: alpha(palette.light.blue, "1c"),
+      sel_em: alpha(palette.light.blue, "60"),
 
       hover: alpha(palette.light.blue, "0e"),
       hover_em: alpha(palette.light.blue_1, "80"),
@@ -328,6 +329,7 @@ const little_moon = {
       sel: alpha(palette.dark.blue, "3c"),
       sel_dim: alpha(palette.dark.blue, "2c"),
       sel_dim2: alpha(palette.dark.blue, "1c"),
+      sel_em: alpha(palette.dark.blue, "60"),
 
       hover: alpha(palette.dark.blue, "0e"),
       hover_em: alpha(palette.dark.blue_1, "80"),

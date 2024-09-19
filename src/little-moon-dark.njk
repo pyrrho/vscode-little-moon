@@ -930,10 +930,12 @@ permalink: /little-moon-dark-color-theme.json
     "minimap.foregroundOpacity": "#000d",
 
     "minimap.findMatchHighlight": "{{ little_moon.dark.range.find_4 }}",
-    "minimap.selectionHighlight": "{{ little_moon.dark.range.sel_dim }}",
-    // NB. This isn't for _selections_, it's for the "Occurrences Highlight" setting, same as the
-    //     "editor.wordHighlightBackground".
-    "minimap.selectionOccurrenceHighlight": "{{ little_moon.dark.range.semantic_symbol_em }}",
+    "minimap.selectionHighlight": "{{ little_moon.dark.range.sel_em }}",
+    // ## NB. This setting doesn't respond to change in well. If you're iterating on it, you'll want
+    //        to 'Developer: Reload Window' to see your changes.
+    // ## NB. This setting is used for both selections and for the "Occurrences Highlight" setting;
+    //        in that case, it's used for both r/o and r/w highlights.
+    "minimap.selectionOccurrenceHighlight": "{{ little_moon.dark.range.sel_dim }}",
 
     "minimap.errorHighlight": "{{ little_moon.dark.level.err }}",
     "minimap.warningHighlight": "{{ little_moon.dark.level.warn }}",
