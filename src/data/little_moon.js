@@ -145,7 +145,7 @@ const little_moon = {
       br: palette.light.bg_1,
 
       ovr: alpha(palette.light.bg, "a0"),
-      ovr2: alpha(palette.light.bg__2, "a0"),
+      ovr2: alpha(palette.light.bg__1, "a0"),
 
       dbg: palette.light.orange_1,
       no_folder: palette.light.violet,
@@ -304,7 +304,7 @@ const little_moon = {
       br: palette.dark.bg_1,
 
       ovr: alpha(palette.dark.bg, "a0"),
-      ovr2: alpha(palette.dark.bg__2, "a0"),
+      ovr2: alpha(palette.dark.bg__1, "a0"),
 
       dbg: palette.dark.orange_1,
       no_folder: palette.dark.violet,

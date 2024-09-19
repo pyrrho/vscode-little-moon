@@ -641,7 +641,7 @@
     // ## Is this unused?
     // "sideBarActivityBarTop.border": "#d6cbb4",
 
-    "sideBarStickyScroll.background": "#d6cbb4a0",
+    "sideBarStickyScroll.background": "#f0e4cca0",
  // "sideBarStickyScroll.border": null,
     "sideBarStickyScroll.shadow": "#c5baa4c0",
 
@@ -1130,12 +1130,12 @@
     // panelSectionHeader.border: Panel section header border color used when multiple views are stacked vertically in the panel.
     // panelSection.dropBackground: Drag and drop feedback color for the panel sections. The color should have transparency so that the panel sections can still shine through.
 
-    "panelStickyScroll.background": "#d6cbb4a0",
+    "panelStickyScroll.background": "#fef3daa0",
  // "panelStickyScroll.border": null,
     "panelStickyScroll.shadow": "#c5baa4c0",
 
     "outputView.background": "#fef3da",
-    "outputViewStickyScroll.background": "#d6cbb4a0",
+    "outputViewStickyScroll.background": "#fef3daa0",
 
 
     // Command Center
