@@ -503,8 +503,8 @@
     // ** Overview ruler
     // ** This ruler is ~~located beneath~~ the scroll bar['s track] on the right edge of the editor
     //    and gives an overview of the decorations in the editor.
- // "editorOverviewRuler.background": "#0e4956",
-    "editorOverviewRuler.border": "#ffffff00",
+ // "editorOverviewRuler.background": null,
+    "editorOverviewRuler.border": "#003641",
 
     "editorOverviewRuler.findMatchForeground": "#e3b23080",
     "editorOverviewRuler.selectionHighlightForeground": "#0096f53c",
