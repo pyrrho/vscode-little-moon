@@ -335,7 +335,7 @@
     // editorCursor.background: The background color of the editor cursor. Allows customizing the color of a character overlapped by a block cursor.
     // editorMultiCursor.primary.foreground: Color of the primary editor cursor when multiple cursors are present.
     // editorMultiCursor.primary.background: The background color of the primary editor cursor when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.
-    "editorMultiCursor.secondary.foreground": "#52666dA0",
+    "editorMultiCursor.secondary.foreground": "#52666da0",
     // editorMultiCursor.secondary.background: The background color of secondary editor cursors when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.
 
     // ** The gutter contains the glyph margins and the line numbers
@@ -463,6 +463,7 @@
     // ** To see the editor inline hints, set "editor.inlineSuggest.enabled": true.
     "editorInlayHint.background": "#b3880020",
     "editorInlayHint.foreground": "#8f9894",
+    // ## TODO: Do I want to style different kinds of inlays differently?
     // editorInlayHint.typeForeground: Foreground color of inline hints for types
     // editorInlayHint.typeBackground: Background color of inline hints for types
     // editorInlayHint.parameterForeground: Foreground color of inline hints for parameters
@@ -1409,7 +1410,7 @@
     "gitDecoration.stageDeletedResourceForeground": "#7d64c5",
     "gitDecoration.conflictingResourceForeground": "#c75d20",
 
-    "gitDecoration.submoduleResourceForeground": "#cb4c99"
+    "gitDecoration.submoduleResourceForeground": "#cb4c99",
 
 
     // Source Control Graph colors
@@ -1459,10 +1460,13 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#snippets-colors
 
-    // "editor.snippetTabstopHighlightBackground": "#f00",
-    // "editor.snippetTabstopHighlightBorder": "[object Object]",
-    // "editor.snippetFinalTabstopHighlightBackground": "[object Object]",
-    // "editor.snippetFinalTabstopHighlightBorder": "[object Object]",
+    // ## TODO: probably want to use a semanitc .range for this?
+    // ## TODO: Figure out what a good color might be? default is #0a326433
+    "editor.snippetTabstopHighlightBackground": "#9e760020",
+ // "editor.snippetTabstopHighlightBorder": null,
+    // ## TODO: Should this be semantic?
+    "editor.snippetFinalTabstopHighlightBackground": "#52666da0",
+ // "editor.snippetFinalTabstopHighlightBorder": null,
 
 
     // Symbol Icons
