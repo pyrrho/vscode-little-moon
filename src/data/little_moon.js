@@ -157,12 +157,20 @@ const little_moon = {
       _2: palette.light.bg__1,
       br: palette.light.bg_1,
     },
-    hover: {
-      _0: palette.light.bg__2,
-      _2: palette.light.bg__1,
-      _3: palette.light.bg,
-      dim: alpha(palette.light.bg, "c0"),
-      ovr: alpha(palette.light.bg__1, "d8"),
+    hl: {
+      _0: {
+        focus: palette.light.bg__2,
+        // TODO: Cheating w/ alpha to get another bg variant
+        hover: alpha(palette.light.bg__2, "a0"),
+        selected: palette.light.bg,
+        // TODO: Cheating w/ alpha to get another bg variant
+        selected_dim: alpha(palette.light.bg, "a0"),
+        ovr: alpha(palette.light.bg__1, "d0"),
+      },
+      _2: {
+        hover: palette.light.bg__1,
+        active: palette.light.bg,
+      }
     },
     range: {
       sel: alpha(palette.light.blue, "3c"),
@@ -341,12 +349,20 @@ const little_moon = {
       semantic_symbol_dim: alpha(palette.dark.cyan, "30"),
       semantic_symbol_em: alpha(palette.dark.cyan, "c0"),
     },
-    hover: {
-      _0: palette.dark.bg__2,
-      _2: palette.dark.bg__1,
-      _3: palette.dark.bg,
-      dim: alpha(palette.dark.bg, "c0"),
-      ovr: alpha(palette.dark.bg__1, "d8"),
+    hl: {
+      _0: {
+        focus: palette.light.bg__2,
+        // TODO: Cheating w/ alpha to get another bg variant
+        hover: alpha(palette.light.bg__2, "a0"),
+        selected: palette.light.bg,
+        // TODO: Cheating w/ alpha to get another bg variant
+        selected_dim: alpha(palette.light.bg, "a0"),
+        ovr: alpha(palette.light.bg__1, "d0"),
+      },
+      _2: {
+        hover: palette.light.bg__1,
+        active: palette.light.bg,
+      }
     },
     drag_and_drop: {
       bg: alpha(palette.dark.bg__3, "80"),

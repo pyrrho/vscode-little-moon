@@ -691,13 +691,13 @@ permalink: /little-moon-dark-color-theme.json
  // "menu.background": null,
     "menu.foreground": "{{ little_moon.dark.fg._2 }}",
     "menu.selectionForeground": "{{ little_moon.dark.fg._0 }}",
-    "menu.selectionBackground": "{{ little_moon.dark.hover._0 }}",
+    "menu.selectionBackground": "{{ little_moon.dark.hl._0.focus }}",
  // "menu.selectionBorder": null,
     "menu.separatorBackground": "{{ little_moon.dark.rule.em }}",
     "menu.border": "{{ little_moon.dark.border.br }}",
 
     "menubar.selectionForeground": "{{ little_moon.dark.fg.em }}",
-    "menubar.selectionBackground": "{{ little_moon.dark.hover._0 }}",
+    "menubar.selectionBackground": "{{ little_moon.dark.hl._2.hover }}",
  // "menubar.selectionBorder": null,
 
 
@@ -718,10 +718,10 @@ permalink: /little-moon-dark-color-theme.json
     "statusBar.noFolderForeground": "{{ little_moon.dark.fg._2 }}",
  // "statusBar.noFolderBorder": null,
 
-    "statusBarItem.hoverBackground": "{{ little_moon.dark.hover._2 }}",
+    "statusBarItem.hoverBackground": "{{ little_moon.dark.hl._2.hover }}",
     // statusBarItem.compactHoverBackground: Status bar item background color when hovering an item that contains two hovers.
  // "statusBarItem.hoverForeground": null,
-    "statusBarItem.activeBackground": "{{ little_moon.dark.hover._3 }}",
+    "statusBarItem.activeBackground": "{{ little_moon.dark.hl._2.active }}",
  // "statusBarItem.focusBorder": null,
 
     "statusBarItem.prominentBackground": "{{ little_moon.dark.palette.blue }}",
@@ -811,9 +811,9 @@ permalink: /little-moon-dark-color-theme.json
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#action-colors
 
-    "toolbar.hoverBackground": "{{ little_moon.dark.hover._2 }}",
+    "toolbar.hoverBackground": "{{ little_moon.dark.hl._2.hover }}",
  // "toolbar.hoverOutline": null,
-    "toolbar.activeBackground": "{{ little_moon.dark.hover._3 }}",
+    "toolbar.activeBackground": "{{ little_moon.dark.hl._2.active }}",
     // "editorActionList.background": "{{ little_moon.dark.palette.red }}",
     // "editorActionList.foreground": "{{ little_moon.dark.palette.blue }}",
     // editorActionList.focusForeground: Action List foreground color for the focused item.
@@ -851,11 +851,10 @@ permalink: /little-moon-dark-color-theme.json
     "inputValidation.infoForeground": "{{ little_moon.dark.fg.em2 }}",
     "inputValidation.infoBorder": "{{ little_moon.dark.level.info }}",
 
-    "inputOption.activeBackground": "{{ little_moon.dark.hover._2 }}",
-    "inputOption.hoverBackground": "{{ little_moon.dark.hover._0 }}",
-
-    "inputOption.activeForeground": "{{ little_moon.dark.fg._0 }}",
+    "inputOption.hoverBackground": "{{ little_moon.dark.hl._0.hover }}",
+    "inputOption.activeBackground": "{{ little_moon.dark.hl._0.selected }}",
     "inputOption.activeBorder": "{{ little_moon.dark.border.em }}",
+    "inputOption.activeForeground": "{{ little_moon.dark.fg._0 }}",
 
     // Progress Bar
     // =========================================================================
@@ -869,21 +868,21 @@ permalink: /little-moon-dark-color-theme.json
     // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
     // ## An active list/tree has keyboard focus, an inactive does not.
 
-    "list.inactiveSelectionBackground": "{{ little_moon.dark.hover.dim }}",
+    "list.inactiveSelectionBackground": "{{ little_moon.dark.hl._0.selected_dim }}",
     "list.inactiveSelectionForeground": "{{ little_moon.dark.fg._0 }}",
     // list.inactiveSelectionIconForeground: List/Tree icon foreground color for the selected item when the list/tree is inactive
-    "list.activeSelectionBackground": "{{ little_moon.dark.hover._3 }}",
+    "list.activeSelectionBackground": "{{ little_moon.dark.hl._0.selected }}",
     "list.activeSelectionForeground": "{{ little_moon.dark.fg._0 }}",
     // list.activeSelectionIconForeground: List/Tree icon foreground color for the selected item when the list/tree is active
-    "list.hoverBackground": "{{ little_moon.dark.hover._0 }}",
+    "list.hoverBackground": "{{ little_moon.dark.hl._0.hover }}",
     "list.hoverForeground": "{{ little_moon.dark.fg._0 }}",
 
  // "list.inactiveFocusBackground": null,
- // "list.inactiveFocusOutline": "{{ little_moon.dark.border.em4 }}60",
- // "list.focusBackground": null,
+ // "list.inactiveFocusOutline": null,
+    "list.focusBackground": "{{ little_moon.dark.hl._0.focus }}",
+    "list.focusOutline": "{{ little_moon.dark.border._2 }}", // default: `focusBorder`
+    "list.focusAndSelectionOutline": "{{ little_moon.dark.border.em }}",
  // "list.focusForeground": null,
- // "list.focusOutline": null,              // default: `focusBorder`
- // "list.focusAndSelectionOutline": null,
 
     "list.highlightForeground": "{{ little_moon.dark.fg._0 }}",
     "list.focusHighlightForeground": "{{ little_moon.dark.fg._2 }}",
@@ -1001,40 +1000,45 @@ permalink: /little-moon-dark-color-theme.json
     // The Editor widget is shown in front of the editor content.
     // Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
 
+    // ## I split widgets into two groups; those that have shadows and those that don't. Those with
+    //    should use bg._2 with a bright border to float over the editor, those without should use
+    //    bg._0 with a dark boarder to sit within. The find/replace widget has a shadow and uses the
+    //    base editorWidget styles that the below specializations -- that don't have shadows --
+    //    inherit. As such, don't let the below inherit bg/border styles.
     "editorWidget.background": "{{ little_moon.dark.bg._2 }}",
  // "editorWidget.foreground": null,
-    "editorWidget.border": "{{ little_moon.dark.palette.blue }}",
+    "editorWidget.border": "#f00", // Seems that I've overridden every instance of this.
     "editorWidget.resizeBorder": "{{ little_moon.dark.border.em2 }}",
 
     "editorSuggestWidget.background": "{{ little_moon.dark.bg._0 }}",
-    "editorSuggestWidget.foreground": "{{ little_moon.dark.fg._0 }}",
-    "editorSuggestWidget.border": "{{ little_moon.dark.border.em }}",
+    "editorSuggestWidget.border": "{{ little_moon.dark.border._0 }}",
+ // "editorSuggestWidget.foreground": null,
 
     // ## Characters that match the current input.
     "editorSuggestWidget.highlightForeground": "{{ little_moon.dark.fg.hl }}",
 
-    "editorSuggestWidget.selectedBackground": "{{ little_moon.dark.hover._2 }}",
- // "editorSuggestWidget.selectedForeground": null,
+    "editorSuggestWidget.selectedBackground": "{{ little_moon.dark.hl._0.focus }}",
+    "editorSuggestWidget.selectedForeground": "{{ little_moon.dark.fg.em2 }}",
  // "editorSuggestWidget.selectedIconForeground": null,
     // ## Characters on the selected line that match the current input.
     "editorSuggestWidget.focusHighlightForeground": "{{ little_moon.dark.fg.hl2 }}",
 
     // "editorSuggestWidgetStatus.foreground": "",
 
+    "editorHoverWidget.background": "{{ little_moon.dark.bg._0 }}",
+    "editorHoverWidget.border": "{{ little_moon.dark.border._0 }}",
  // "editorHoverWidget.foreground": null,
-    "editorHoverWidget.background": "{{ little_moon.dark.bg._2 }}",
-    "editorHoverWidget.border": "{{ little_moon.dark.border.br }}",
     "editorHoverWidget.highlightForeground": "{{ little_moon.dark.fg.hl }}",
     "editorHoverWidget.statusBarBackground": "{{ little_moon.dark.bg._2 }}",
 
-    // editorGhostText.border: Border color of the ghost text shown by inline completion providers and the suggest preview.
     // editorGhostText.background: Background color of the ghost text in the editor.
+    // editorGhostText.border: Border color of the ghost text shown by inline completion providers and the suggest preview.
     // editorGhostText.foreground: Foreground color of the ghost text shown by inline completion providers and the suggest preview.
 
     "editorStickyScroll.background": "{{ little_moon.dark.bg.ovr }}",
  // "editorStickyScroll.border": null,
     "editorStickyScroll.shadow": "{{ little_moon.dark.shadow.dim }}",
-    "editorStickyScrollHover.background": "{{ little_moon.dark.hover.ovr }}",
+    "editorStickyScrollHover.background": "{{ little_moon.dark.hl._0.ovr }}",
 
     // ** The editor marker view shows when navigating to errors and warnings in the editor (Go to
     //    Next Error or Warning command).
@@ -1071,7 +1075,7 @@ permalink: /little-moon-dark-color-theme.json
  // "peekViewResult.fileForeground": null,
  // "peekViewResult.lineForeground": null,
     "peekViewResult.matchHighlightBackground": "{{ little_moon.dark.range.find_8 }}",
-    "peekViewResult.selectionBackground": "{{ little_moon.dark.hover._3 }}",
+    "peekViewResult.selectionBackground": "{{ little_moon.light.hl._0.selected }}",
     "peekViewResult.selectionForeground": "{{ little_moon.dark.fg._0 }}",
 
     // ** The Debug Exception widget is a peek view that shows in the editor when debug stops at an exception.
@@ -1169,9 +1173,9 @@ permalink: /little-moon-dark-color-theme.json
     // NB. Notifications entries inherit, among others, `list.hoverBackground`.
     //     To disable the hover effect, the background needs to match ^.
     //     But that doesn't disable the selected effect -_-
-    "notifications.foreground": "{{ little_moon.dark.fg.em }}",
-    "notifications.background": "{{ little_moon.dark.hover._0 }}",
+    "notifications.background": "{{ little_moon.dark.hl._0.hover }}",
     "notifications.border": "{{ little_moon.dark.border._0 }}",
+    "notifications.foreground": "{{ little_moon.dark.fg.em }}",
 
     "notificationLink.foreground": "{{ little_moon.dark.palette.blue__1 }}",
 

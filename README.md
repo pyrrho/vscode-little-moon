@@ -67,6 +67,9 @@ Because the extension host only runs the one VS Code window with the theme, I de
 Pending TODOs:
 ==============
 - Themes:
-   - Merge editor
    - Welcome Page
+   - Chat stuff
+   - Don't use orange for bracket colors; too close to the unmatched-red
+   - Consider not using yellow for the minimap gutter find highlights; too close to warnings. (crank up transparency?)
+   - Consider a softer widget border? Or maybe the find widget shadow is just too much
 - Move off of the Solarized icon.png

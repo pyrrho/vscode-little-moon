@@ -693,7 +693,7 @@
     "menu.border": "#fff8e0",
 
     "menubar.selectionForeground": "#465a60",
-    "menubar.selectionBackground": "#d6cbb4",
+    "menubar.selectionBackground": "#f0e4cc",
  // "menubar.selectionBorder": null,
 
 
@@ -847,11 +847,10 @@
     "inputValidation.infoForeground": "#384c52",
     "inputValidation.infoBorder": "#0073d2",
 
-    "inputOption.activeBackground": "#f0e4cc",
-    "inputOption.hoverBackground": "#d6cbb4",
-
-    "inputOption.activeForeground": "#52666d",
+    "inputOption.hoverBackground": "#d6cbb4a0",
+    "inputOption.activeBackground": "#fef3da",
     "inputOption.activeBorder": "#c5baa4",
+    "inputOption.activeForeground": "#52666d",
 
     // Progress Bar
     // =========================================================================
@@ -865,21 +864,21 @@
     // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
     // ## An active list/tree has keyboard focus, an inactive does not.
 
-    "list.inactiveSelectionBackground": "#fef3dac0",
+    "list.inactiveSelectionBackground": "#fef3daa0",
     "list.inactiveSelectionForeground": "#52666d",
     // list.inactiveSelectionIconForeground: List/Tree icon foreground color for the selected item when the list/tree is inactive
     "list.activeSelectionBackground": "#fef3da",
     "list.activeSelectionForeground": "#52666d",
     // list.activeSelectionIconForeground: List/Tree icon foreground color for the selected item when the list/tree is active
-    "list.hoverBackground": "#d6cbb4",
+    "list.hoverBackground": "#d6cbb4a0",
     "list.hoverForeground": "#52666d",
 
  // "list.inactiveFocusBackground": null,
- // "list.inactiveFocusOutline": "60",
- // "list.focusBackground": null,
+ // "list.inactiveFocusOutline": null,
+    "list.focusBackground": "#d6cbb4",
+    "list.focusOutline": "#f0e4cc", // default: `focusBorder`
+    "list.focusAndSelectionOutline": "#c5baa4",
  // "list.focusForeground": null,
- // "list.focusOutline": null,              // default: `focusBorder`
- // "list.focusAndSelectionOutline": null,
 
     "list.highlightForeground": "#52666d",
     "list.focusHighlightForeground": "#8f9894",
@@ -997,40 +996,45 @@
     // The Editor widget is shown in front of the editor content.
     // Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
 
+    // ## I split widgets into two groups; those that have shadows and those that don't. Those with
+    //    should use bg._2 with a bright border to float over the editor, those without should use
+    //    bg._0 with a dark boarder to sit within. The find/replace widget has a shadow and uses the
+    //    base editorWidget styles that the below specializations -- that don't have shadows --
+    //    inherit. As such, don't let the below inherit bg/border styles.
     "editorWidget.background": "#f0e4cc",
  // "editorWidget.foreground": null,
-    "editorWidget.border": "#0073d2",
+    "editorWidget.border": "#f00", // Seems that I've overridden every instance of this.
     "editorWidget.resizeBorder": "#928872",
 
     "editorSuggestWidget.background": "#fef3da",
-    "editorSuggestWidget.foreground": "#52666d",
-    "editorSuggestWidget.border": "#c5baa4",
+    "editorSuggestWidget.border": "#d6cbb4",
+ // "editorSuggestWidget.foreground": null,
 
     // ## Characters that match the current input.
     "editorSuggestWidget.highlightForeground": "#b38800",
 
-    "editorSuggestWidget.selectedBackground": "#f0e4cc",
- // "editorSuggestWidget.selectedForeground": null,
+    "editorSuggestWidget.selectedBackground": "#d6cbb4",
+    "editorSuggestWidget.selectedForeground": "#384c52",
  // "editorSuggestWidget.selectedIconForeground": null,
     // ## Characters on the selected line that match the current input.
     "editorSuggestWidget.focusHighlightForeground": "#9e7600",
 
     // "editorSuggestWidgetStatus.foreground": "",
 
+    "editorHoverWidget.background": "#fef3da",
+    "editorHoverWidget.border": "#d6cbb4",
  // "editorHoverWidget.foreground": null,
-    "editorHoverWidget.background": "#f0e4cc",
-    "editorHoverWidget.border": "#fff8e0",
     "editorHoverWidget.highlightForeground": "#b38800",
     "editorHoverWidget.statusBarBackground": "#f0e4cc",
 
-    // editorGhostText.border: Border color of the ghost text shown by inline completion providers and the suggest preview.
     // editorGhostText.background: Background color of the ghost text in the editor.
+    // editorGhostText.border: Border color of the ghost text shown by inline completion providers and the suggest preview.
     // editorGhostText.foreground: Foreground color of the ghost text shown by inline completion providers and the suggest preview.
 
     "editorStickyScroll.background": "#fef3daa0",
  // "editorStickyScroll.border": null,
     "editorStickyScroll.shadow": "#f0e4ccc0",
-    "editorStickyScrollHover.background": "#f0e4ccd8",
+    "editorStickyScrollHover.background": "#f0e4ccd0",
 
     // ** The editor marker view shows when navigating to errors and warnings in the editor (Go to
     //    Next Error or Warning command).
@@ -1164,9 +1168,10 @@
 
     // NB. Notifications entries inherit, among others, `list.hoverBackground`.
     //     To disable the hover effect, the background needs to match ^.
-    "notifications.foreground": "#465a60",
-    "notifications.background": "#d6cbb4",
+    //     But that doesn't disable the selected effect -_-
+    "notifications.background": "#d6cbb4a0",
     "notifications.border": "#d6cbb4",
+    "notifications.foreground": "#465a60",
 
     "notificationLink.foreground": "#0067c4",
 
