@@ -156,6 +156,7 @@ const little_moon = {
       _0: palette.light.bg__2,
       _2: palette.light.bg__1,
       br: palette.light.bg_1,
+      br2: palette.light.bg,
     },
     hl: {
       _0: {
@@ -222,7 +223,7 @@ const little_moon = {
       bg_hv: palette.light.blue_1,
     },
     shadow: {
-      _0: alpha(palette.light.bg__2, "c0"),
+      _0: alpha(palette.light.bg__2, "a0"),
       _2: alpha(palette.light.bg__3, "c0"),
       dim: alpha(palette.light.bg__1, "c0"),
     },
@@ -324,6 +325,7 @@ const little_moon = {
       _0: palette.dark.bg_2,
       _2: palette.dark.bg_1,
       br: palette.dark.bg__2,
+      br2: palette.dark.bg__1,
     },
     range: {
       sel: alpha(palette.dark.blue, "3c"),
@@ -390,7 +392,7 @@ const little_moon = {
       bg_hv: palette.dark.blue_1,
     },
     shadow: {
-      _0: alpha(palette.dark.bg__2, "c0"),
+      _0: alpha(palette.dark.bg__2, "a0"),
       _2: alpha(palette.dark.bg__3, "c0"),
       dim: alpha(palette.dark.bg__1, "c0"),
     },

@@ -318,7 +318,7 @@ permalink: /little-moon-dark-color-theme.json
     // ## The "Sash" is typically a thin vertical or horizontal line that you
     //    can click and drag to adjust the size of adjacent panels.
  // "sash.hoverBorder": null, // default: `fucusBorder`
-    "widget.border": "{{ little_moon.dark.border.br }}",
+    "widget.border": "{{ little_moon.dark.border.br2 }}",
     "widget.shadow": "{{ little_moon.dark.shadow._0 }}",
 
 
@@ -694,11 +694,11 @@ permalink: /little-moon-dark-color-theme.json
     "menu.selectionBackground": "{{ little_moon.dark.hl._0.focus }}",
  // "menu.selectionBorder": null,
     "menu.separatorBackground": "{{ little_moon.dark.rule.em }}",
-    "menu.border": "{{ little_moon.dark.border.br }}",
+    "menu.border": "{{ little_moon.dark.border.br2 }}",
 
     "menubar.selectionForeground": "{{ little_moon.dark.fg.em }}",
     "menubar.selectionBackground": "{{ little_moon.dark.hl._2.hover }}",
- // "menubar.selectionBorder": null,
+    "menubar.selectionBorder": "{{ little_moon.pure.transparent }}",
 
 
     // Status Bar
@@ -1002,14 +1002,29 @@ permalink: /little-moon-dark-color-theme.json
     // The Editor widget is shown in front of the editor content.
     // Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
 
-    // ## I split widgets into two groups; those that have shadows and those that don't. Those with
-    //    should use bg._2 with a bright border to float over the editor, those without should use
-    //    bg._0 with a dark boarder to sit within. The find/replace widget has a shadow and uses the
-    //    base editorWidget styles that the below specializations -- that don't have shadows --
-    //    inherit. As such, don't let the below inherit bg/border styles.
+    // ## Widgets are split by VS Code's implementation and by this theme's visual language into
+    //    N groups.
+    //    1. Widgets that exist above the rest of the window; ex. the command palette, the
+    //       find/replace widget.
+    //       VS Code gives these a larger shadow than other types (styled via `widget.shadow`) and
+    //       uses `widget.border` to styles their borders. This theme uses `bg._2` and `border.br2`
+    //       to lift them from the window.
+    //       NB. The `listFilterWidget` (ctrl+alt+f when the file explorer is focused) is a
+    //           specialization of this type, that seems to not share its configurations with any
+    //           other widgets.
+    //    2. Widgets that exist above the editor; ex. the quick fix widget, right-click menus (and,
+    //       oddly, title-bar menus).
+    //       The widgets still have shadows (still styled via `widget.shadow`) that are smaller than
+    //       the first type, and use `editorWidget.border` to style their borders. This theme
+    //       continues to use `bg._2` and `border.br2` to lift them off the editor.
+    //    3. Widgets that exist within the editor; ex. type-ahead suggestions, mouse-over hovers,
+    //       parameter hints.
+    //       These widgets have no shadow, and are styled with `bg._0` and `border._0` to leave them
+    //       as elements superimposed onto the editor.
+
     "editorWidget.background": "{{ little_moon.dark.bg._2 }}",
  // "editorWidget.foreground": null,
-    "editorWidget.border": "{{ little_moon.dark.border.br }}",
+    "editorWidget.border": "{{ little_moon.light.border.br2 }}",
     "editorWidget.resizeBorder": "{{ little_moon.dark.border.em2 }}",
 
     "editorSuggestWidget.background": "{{ little_moon.dark.bg._0 }}",

@@ -314,8 +314,8 @@
     // ## The "Sash" is typically a thin vertical or horizontal line that you
     //    can click and drag to adjust the size of adjacent panels.
  // "sash.hoverBorder": null, // default: `fucusBorder`
-    "widget.border": "#fff8e0",
-    "widget.shadow": "#d6cbb4c0",
+    "widget.border": "#fef3da",
+    "widget.shadow": "#d6cbb4a0",
 
 
     // Editor
@@ -690,11 +690,11 @@
     "menu.selectionBackground": "#d6cbb4",
  // "menu.selectionBorder": null,
     "menu.separatorBackground": "#c5baa4",
-    "menu.border": "#fff8e0",
+    "menu.border": "#fef3da",
 
     "menubar.selectionForeground": "#465a60",
     "menubar.selectionBackground": "#f0e4cc",
- // "menubar.selectionBorder": null,
+    "menubar.selectionBorder": "#ffffff00",
 
 
     // Status Bar
@@ -910,7 +910,7 @@
     // https://code.visualstudio.com/api/references/theme-color#scrollbar-control
 
     // ## The shadow applies to all scrolled panes; editor top/bottom, sidebar, list views etc.
-    "scrollbar.shadow": "#d6cbb4c0",
+    "scrollbar.shadow": "#d6cbb4a0",
     "scrollbarSlider.background": "#c5baa450",
     "scrollbarSlider.hoverBackground": "#c5baa470",
     "scrollbarSlider.activeBackground": "#c5baa490",
@@ -965,7 +965,7 @@
 
     "diffEditor.unchangedRegionBackground": "#f0e4cc",
     "diffEditor.unchangedRegionForeground": "#52666d",
-    "diffEditor.unchangedRegionShadow": "#d6cbb4c0",
+    "diffEditor.unchangedRegionShadow": "#d6cbb4a0",
 
     "diffEditor.insertedLineBackground": "#aae66080",
     "diffEditor.insertedTextBackground": "#43810020",
@@ -998,14 +998,29 @@
     // The Editor widget is shown in front of the editor content.
     // Examples are the Find/Replace dialog, the suggestion widget, and the editor hover.
 
-    // ## I split widgets into two groups; those that have shadows and those that don't. Those with
-    //    should use bg._2 with a bright border to float over the editor, those without should use
-    //    bg._0 with a dark boarder to sit within. The find/replace widget has a shadow and uses the
-    //    base editorWidget styles that the below specializations -- that don't have shadows --
-    //    inherit. As such, don't let the below inherit bg/border styles.
+    // ## Widgets are split by VS Code's implementation and by this theme's visual language into
+    //    N groups.
+    //    1. Widgets that exist above the rest of the window; ex. the command palette, the
+    //       find/replace widget.
+    //       VS Code gives these a larger shadow than other types (styled via `widget.shadow`) and
+    //       uses `widget.border` to styles their borders. This theme uses `bg._2` and `border.br2`
+    //       to lift them from the window.
+    //       NB. The `listFilterWidget` (ctrl+alt+f when the file explorer is focused) is a
+    //           specialization of this type, that seems to not share its configurations with any
+    //           other widgets.
+    //    2. Widgets that exist above the editor; ex. the quick fix widget, right-click menus (and,
+    //       oddly, title-bar menus).
+    //       The widgets still have shadows (still styled via `widget.shadow`) that are smaller than
+    //       the first type, and use `editorWidget.border` to style their borders. This theme
+    //       continues to use `bg._2` and `border.br2` to lift them off the editor.
+    //    3. Widgets that exist within the editor; ex. type-ahead suggestions, mouse-over hovers,
+    //       parameter hints.
+    //       These widgets have no shadow, and are styled with `bg._0` and `border._0` to leave them
+    //       as elements superimposed onto the editor.
+
     "editorWidget.background": "#f0e4cc",
  // "editorWidget.foreground": null,
-    "editorWidget.border": "#fff8e0",
+    "editorWidget.border": "#fef3da",
     "editorWidget.resizeBorder": "#928872",
 
     "editorSuggestWidget.background": "#fef3da",
