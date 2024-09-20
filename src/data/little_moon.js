@@ -355,17 +355,17 @@ const little_moon = {
     },
     hl: {
       _0: {
-        focus: palette.light.bg__2,
+        focus: palette.dark.bg__2,
         // TODO: Cheating w/ alpha to get another bg variant
-        hover: alpha(palette.light.bg__2, "a0"),
-        selected: palette.light.bg,
+        hover: alpha(palette.dark.bg__2, "a0"),
+        selected: palette.dark.bg,
         // TODO: Cheating w/ alpha to get another bg variant
-        selected_dim: alpha(palette.light.bg, "a0"),
-        ovr: alpha(palette.light.bg__1, "d0"),
+        selected_dim: alpha(palette.dark.bg, "a0"),
+        ovr: alpha(palette.dark.bg__1, "d0"),
       },
       _2: {
-        hover: palette.light.bg__1,
-        active: palette.light.bg,
+        hover: palette.dark.bg__1,
+        active: palette.dark.bg,
       }
     },
     drag_and_drop: {
