@@ -324,8 +324,8 @@ const little_moon = {
       em: palette.dark.bg_3,
       _0: palette.dark.bg_2,
       _2: palette.dark.bg_1,
-      br: palette.dark.bg__2,
-      br2: palette.dark.bg__1,
+      br: palette.dark.bg__1,
+      br2: palette.dark.bg,
     },
     range: {
       sel: alpha(palette.dark.blue, "3c"),
