@@ -314,7 +314,7 @@
     // ## The "Sash" is typically a thin vertical or horizontal line that you
     //    can click and drag to adjust the size of adjacent panels.
  // "sash.hoverBorder": null, // default: `fucusBorder`
-    "widget.border": "#003641",
+    "widget.border": "#053d48",
     "widget.shadow": "#002b36a0",
 
 
@@ -444,9 +444,9 @@
     // ## Highlights are passive. Requires enabling bracket pair colorization
     "editorBracketHighlight.foreground1": "#f176bd",
     "editorBracketHighlight.foreground2": "#0096f5",
-    "editorBracketHighlight.foreground3": "#80b83c",
-    "editorBracketHighlight.foreground4": "#39c7b9",
-    "editorBracketHighlight.foreground5": "#a58cec",
+    "editorBracketHighlight.foreground3": "#39c7b9",
+    "editorBracketHighlight.foreground4": "#a58cec",
+ // "editorBracketHighlight.foreground5": "",
  // "editorBracketHighlight.foreground6": "",
     "editorBracketHighlight.unexpectedBracket.foreground": "#fd564ec0",
 
@@ -691,7 +691,7 @@
     "menu.selectionBackground": "#002b36",
  // "menu.selectionBorder": null,
     "menu.separatorBackground": "#00202b",
-    "menu.border": "#003641",
+    "menu.border": "#053d48",
 
     "menubar.selectionForeground": "#b8c7c7",
     "menubar.selectionBackground": "#003641",
@@ -1021,7 +1021,7 @@
 
     "editorWidget.background": "#003641",
  // "editorWidget.foreground": null,
-    "editorWidget.border": "#003641",
+    "editorWidget.border": "#053d48",
     "editorWidget.resizeBorder": "#467987",
 
     "editorSuggestWidget.background": "#053d48",
@@ -1045,9 +1045,9 @@
     "editorHoverWidget.highlightForeground": "#e3b230",
     "editorHoverWidget.statusBarBackground": "#003641",
 
-    // editorGhostText.background: Background color of the ghost text in the editor.
-    // editorGhostText.border: Border color of the ghost text shown by inline completion providers and the suggest preview.
-    // editorGhostText.foreground: Foreground color of the ghost text shown by inline completion providers and the suggest preview.
+    "editorGhostText.background": "#e3b23020",
+    "editorGhostText.foreground": "#718b90",
+ // "editorGhostText.border": null,
 
     "editorStickyScroll.background": "#053d48a0",
  // "editorStickyScroll.border": null,
@@ -1105,7 +1105,7 @@
     "merge.currentContentBackground": "#4bd5c733",
     "merge.incomingHeaderBackground": "#21a6ff80",
     "merge.incomingContentBackground": "#21a6ff33",
-    "merge.border": "#002b36",
+    "merge.border": "#003641",
     // merge.commonContentBackground: Common ancestor content background in inline merge-conflicts.
     // merge.commonHeaderBackground: Common ancestor header background in inline merge-conflicts.
 
@@ -1136,7 +1136,7 @@
     // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
 
     "panel.background": "#003641",
-    "panel.border": "#002b36",
+    "panel.border": "#003641",
     // panel.dropBorder: Drag and drop feedback color for the panel titles.
 
     "panelTitle.activeBorder": "#376a78",
@@ -1323,8 +1323,8 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#debug-colors
 
-    // debugToolBar.background: Debug toolbar background color.
-    // debugToolBar.border: Debug toolbar border color.
+    "debugToolBar.background": "#003641",
+ // debugToolBar.border: null,
     // editor.stackFrameHighlightBackground: Background color of the top stack frame highlight in the editor.
     // editor.focusedStackFrameHighlightBackground: Background color of the focused stack frame highlight in the editor.
     // editor.inlineValuesForeground: Color for the debug inline value text.
@@ -1479,7 +1479,21 @@
     // Debug Icons
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#debug-icons-colors
-    // TODO: Consider looking at this section
+    // "debugIcon.breakpointCurrentStackframeForeground": "#bc8f00",
+    // "debugIcon.breakpointDisabledForeground": "#606d6e",
+    // "debugIcon.breakpointForeground": "#fd564e",
+    // "debugIcon.breakpointStackframeForeground": "#80b83c",
+    "debugIcon.breakpointUnverifiedForeground": "#606d6e",
+    "debugIcon.continueForeground": "#0096f5",
+    "debugIcon.disconnectForeground": "#fd564e",
+    "debugIcon.pauseForeground": "#0096f5",
+    "debugIcon.restartForeground": "#80b83c",
+    "debugIcon.startForeground": "#80b83c",
+    "debugIcon.stepBackForeground": "#0096f5",
+    "debugIcon.stepIntoForeground": "#0096f5",
+    "debugIcon.stepOutForeground": "#0096f5",
+    "debugIcon.stepOverForeground": "#0096f5",
+    "debugIcon.stopForeground": "#fd564e",
 
 
     // Notebook

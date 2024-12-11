@@ -444,9 +444,9 @@
     // ## Highlights are passive. Requires enabling bracket pair colorization
     "editorBracketHighlight.foreground1": "#cb4c99",
     "editorBracketHighlight.foreground2": "#0073d2",
-    "editorBracketHighlight.foreground3": "#539100",
-    "editorBracketHighlight.foreground4": "#009c8f",
-    "editorBracketHighlight.foreground5": "#7d64c5",
+    "editorBracketHighlight.foreground3": "#009c8f",
+    "editorBracketHighlight.foreground4": "#7d64c5",
+ // "editorBracketHighlight.foreground5": "",
  // "editorBracketHighlight.foreground6": "",
     "editorBracketHighlight.unexpectedBracket.foreground": "#d4212bc0",
 
@@ -1045,9 +1045,9 @@
     "editorHoverWidget.highlightForeground": "#b38800",
     "editorHoverWidget.statusBarBackground": "#f0e4cc",
 
-    // editorGhostText.background: Background color of the ghost text in the editor.
-    // editorGhostText.border: Border color of the ghost text shown by inline completion providers and the suggest preview.
-    // editorGhostText.foreground: Foreground color of the ghost text shown by inline completion providers and the suggest preview.
+    "editorGhostText.background": "#b3880020",
+    "editorGhostText.foreground": "#8f9894",
+ // "editorGhostText.border": null,
 
     "editorStickyScroll.background": "#fef3daa0",
  // "editorStickyScroll.border": null,
@@ -1323,8 +1323,8 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#debug-colors
 
-    // debugToolBar.background: Debug toolbar background color.
-    // debugToolBar.border: Debug toolbar border color.
+    "debugToolBar.background": "#f0e4cc",
+ // "debugToolBar.border": null,
     // editor.stackFrameHighlightBackground: Background color of the top stack frame highlight in the editor.
     // editor.focusedStackFrameHighlightBackground: Background color of the focused stack frame highlight in the editor.
     // editor.inlineValuesForeground: Color for the debug inline value text.
@@ -1479,8 +1479,21 @@
     // Debug Icons
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#debug-icons-colors
-    // TODO: Consider looking at this section
-
+    // "debugIcon.breakpointCurrentStackframeForeground": "#9e7600",
+    // "debugIcon.breakpointDisabledForeground": "#384c52",
+    // "debugIcon.breakpointForeground": "#d4212b",
+    // "debugIcon.breakpointStackframeForeground": "#539100",
+    "debugIcon.breakpointUnverifiedForeground": "#384c52",
+    "debugIcon.continueForeground": "#0073d2",
+    "debugIcon.disconnectForeground": "#d4212b",
+    "debugIcon.pauseForeground": "#0073d2",
+    "debugIcon.restartForeground": "#539100",
+    "debugIcon.startForeground": "#539100",
+    "debugIcon.stepBackForeground": "#0073d2",
+    "debugIcon.stepIntoForeground": "#0073d2",
+    "debugIcon.stepOutForeground": "#0073d2",
+    "debugIcon.stepOverForeground": "#0073d2",
+    "debugIcon.stopForeground": "#d4212b",
 
     // Notebook
     // =========================================================================
