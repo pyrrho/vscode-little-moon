@@ -70,6 +70,5 @@ Pending TODOs:
    - Welcome Page
    - Chat stuff
    - Settings; drop-down borders at least are off theme
-   - Consider not using yellow for the minimap gutter find highlights; too close to warnings. (crank up transparency?)
    - Dark: indentation guides are too strong (is this the same for light?)
 - Move off of the Solarized icon.png
