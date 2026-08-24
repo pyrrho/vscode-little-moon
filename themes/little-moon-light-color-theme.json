@@ -340,7 +340,7 @@
     // editorMultiCursor.secondary.background: The background color of secondary editor cursors when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.
 
     // ** The gutter contains the glyph margins and the line numbers
- // "editorGutter.background": null,
+    "editorGutter.background": "#f0e4cc33",
     // NB. Match the transparency add of e.g. `editorOverviewRuler.modifiedForeground`
     "editorGutter.modifiedBackground": "#0073d299",
     "editorGutter.modifiedSecondaryBackground":"#60d2ff99",
@@ -582,72 +582,110 @@
     // https://code.visualstudio.com/api/references/theme-color#editor-groups-tabs
     // NB. Order doesn't match the reference; the reference doesn't make sense.
 
-    // ## Background color of an empty editor group.
-    "editorGroup.emptyBackground": "#f0e4cc",
-    // ## Border color of an empty editor group that is focused.
- // "editorGroup.focusedEmptyBorder": "",
+    // Border between editor groups
+    "editorGroup.border": "#f0e4cc",
 
-    // ## Color to separate multiple editor groups from each other.
-    "editorGroup.border": "#d6cbb4",
-
-    "editorGroupHeader.noTabsBackground": "#d6cbb4",
-    // ## Background behind the tabs
-    "editorGroupHeader.tabsBackground": "#c5baa4",
-    // ## Border below the tabs section (between tabs and breadcrumbs (if enabled))
+    // Border color between tabs and breadcrumb (with `"breadcrumbs.enabled": true`)
+    // UNUSED by the Modern UI
  // "editorGroupHeader.tabsBorder": null,
-    // ## Border below breadcrumbs (if enabled)
+
+    // Border color between header and editor
  // "editorGroupHeader.border": null,
 
-    "tab.activeBackground": "#f0e4cc", // default: `editor.background`
-    "tab.activeForeground": "#384c52", // locked default, for reasons?
-    // tab.activeBorder: Bottom border for the active tab.
-    // tab.activeBorderTop: Top border for the active tab.
+    // Background color of the Tabs container (of the background, with `"workbench.editor.showTabs": "multiple"`)
+    // UNUSED by the Modern UI
+    "editorGroupHeader.tabsBackground": "#c5baa4",
+    // Background color of the Tabs container (of the tab, with `"workbench.editor.showTabs": "single"`)
+    // UNUSED by the Modern UI
+    "editorGroupHeader.noTabsBackground": "#d6cbb4",
 
-    "tab.inactiveBackground": "#d6cbb4",
+    // Background color of an empty editor group.
+    "editorGroup.emptyBackground": "#f0e4cc",
+    // Border color of an empty editor group that is focused.
+ // "editorGroup.focusedEmptyBorder": null
+
+    // Background color when dragging editors.
+    "editorGroup.dropBackground": "#c5baa480",
+
+    // Colors for text informs the user that they can hold shift to drop into the editor.
+ // "editorGroup.dropIntoPromptBackground": ..
+ // "editorGroup.dropIntoPromptBorder": ..
+ // "editorGroup.dropIntoPromptForeground": ..
+
+
+    // Border to separate Tabs from each other.
+    // UNUSED: by the Modern UI
+    "tab.border": "#c5baa4", // match `editorGroupHeader.tabsBackground`
+
+    // Border on the right of the last pinned editor to separate from unpinned editors.
+    // UNUSED: by the Modern UI
+    "tab.lastPinnedBorder": "#384c52a0",
+
+    // Border between tabs to indicate that a tab can be inserted between two tabs.
+    "tab.dragAndDropBorder": "#384c52a0",
+
+
+    // Active Group + Active Tab styling
+    "tab.activeBackground": "#f0e4cc",
+    "modernEditorTab.activeBackground": "#f0e4cc",
+    "tab.activeBorderTop": "#928872",
+    "tab.activeBorder": "#928872",
+    "tab.activeForeground": "#384c52",
+    "modernEditorTab.activeForeground": "#384c52",
+
+    // Active Group + Inactive Tab styling
+    "tab.inactiveBackground": "#f0e4cc",
+    "modernEditorTab.inactiveBackground": "#f0e4cc",
     "tab.inactiveForeground": "#52666d",
 
+    // Active Group + Hovered-over Tab styling
     "tab.hoverBackground": "#c5baa4",
-    // tab.hoverForeground: Tab foreground color when hovering
-    // tab.hoverBorder: Bottom border to highlight tabs when hovering
+ // "tab.hoverBorder": ..
+ // "tab.hoverForeground": ..
 
-    "tab.border": "#c5baa4", // match `editorGroupHeader.tabsBackground`
-    // tab.lastPinnedBorder: Border on the right of the last pinned editor to separate from unpinned editors.
+    // Inactive Group + Active Tab styling
+    "tab.unfocusedActiveBackground": "#f0e4cc",
+    "tab.unfocusedActiveBorderTop": "#c5baa4",
+    "tab.unfocusedActiveBorder": "#c5baa4",
+ // "tab.unfocusedActiveForeground": ..
 
-    // tab.unfocusedActiveBackground: Active Tab background color in an inactive editor group.
-    // tab.unfocusedActiveForeground: Active tab foreground color in an inactive editor group.
-    // tab.unfocusedActiveBorder: Bottom border for the active tab in an inactive editor group.
-    // tab.unfocusedActiveBorderTop: Top border for the active tab in an inactive editor group
-    // tab.unfocusedInactiveBackground: Inactive Tab background color in an unfocused group
-    // tab.unfocusedInactiveForeground: Inactive tab foreground color in an inactive editor group.
-    // tab.unfocusedHoverBackground: Tab background color in an unfocused group when hovering
-    // tab.unfocusedHoverForeground: Tab foreground color in an unfocused group when hovering
-    // tab.unfocusedHoverBorder: Border to highlight tabs in an unfocused group when hovering
+    // Inactive Group + Inactive Tab styling
+ // "tab.unfocusedInactiveBackground": ..
+ // "tab.unfocusedInactiveForeground": ..
 
-    // tab.selectedBorderTop: Border to the top of a selected tab.
-    // tab.selectedBackground: Background of a selected tab.
-    // tab.selectedForeground: Foreground of a selected tab.
+    // Inactive Group + Hovered Tab styling
+ // "tab.unfocusedHoverBackground": ..
+ // "tab.unfocusedHoverBorder": ..
+ // "tab.unfocusedHoverForeground": ..
 
-    // "tab.activeModifiedBorder": "",
-    // "tab.inactiveModifiedBorder": "",
-    // "tab.unfocusedActiveModifiedBorder": "",
-    // "tab.unfocusedInactiveModifiedBorder": "",
+    // Selected Tab styling
+    // wtf is a selected tab?
+    // UNUSED by the Modern UI
+ // "tab.selectedBackground": ..
+ // "tab.selectedBorderTop": ..
+ // "tab.selectedForeground": ..
 
-    // editorPane.background: Background color of the editor pane visible on the left and right side of the centered editor layout.
-    // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
-    // sideBySideEditor.verticalBorder: Color to separate two editors from each other when shown side by side in an editor group from left to right.
+    // Modified (dirty) tab styling
+    // UNUSED by the Modern UI
+ // "tab.activeModifiedBorder": ..
+ // "tab.inactiveModifiedBorder": ..
+ // "tab.unfocusedActiveModifiedBorder": ..
+ // "tab.unfocusedInactiveModifiedBorder": ..
 
-    "tab.dragAndDropBorder": "#384c52a0",
-    "editorGroup.dropBackground": "#c5baa480",
-    // editorGroup.dropIntoPromptForeground: Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
-    // editorGroup.dropIntoPromptBackground: Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
-    // editorGroup.dropIntoPromptBorder: Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+    // Background color of the editor pane visible on the left and right side of the centered editor layout.
+ // "editorPane.background": ..
+
+    // Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
+ // "sideBySideEditor.horizontalBorder": ..
+    // Color to separate two editors from each other when shown side by side in an editor group from left to right
+ // sideBySideEditor.verticalBorder:
 
 
     // Breadcrumbs
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#breadcrumbs-colors
 
- // "breadcrumb.foreground": null, // default: `foreground`cc
+ // "breadcrumb.foreground": null, // default: `cc
     "breadcrumb.background": "#f0e4cc",
     "breadcrumb.focusForeground": "#b38800",
     "breadcrumb.activeSelectionForeground": "#0067c4",
@@ -1030,15 +1068,16 @@
     // Chat
     // =========================================================================
     // NB. Robo-generated
-    "chat.editedFileForeground": "#0073d2",
-    "chat.linesAddedForeground": "#539100",
-    "chat.linesRemovedForeground": "#d4212b",
-    "chat.requestCodeBorder": "#d6cbb4",
-    "chat.requestBubbleBackground": "#d6cbb4",
-    "chat.requestBubbleHoverBackground": "#c5baa4",
-    "chat.checkpointSeparator": "#c5baa4",
-    "chat.thinkingShimmer": "#0073d2",
-    "chatManagement.sashBorder": "#c5baa4",
+ // "chat.editedFileForeground": "#0073d2",
+ // "chat.linesAddedForeground": "#539100",
+ // "chat.linesRemovedForeground": "#d4212b",
+ // "chat.requestCodeBorder": "#d6cbb4",
+ // "chat.requestBubbleBackground": "#d6cbb4",
+ // "chat.requestBubbleHoverBackground": "#c5baa4",
+ // "chat.checkpointSeparator": "#c5baa4",
+ // "chat.thinkingShimmer": "#0073d2",
+    // NOTE: Disallowed?
+ // "chatManagement.sashBorder": "#c5baa4",
 
 
     // Inline Chat
@@ -1683,14 +1722,15 @@
     // Gauge colors
     // =========================================================================
     // NB. Robo-generated
+    // NB. Disallowed
 
-    "gauge.background": "#f0e4cc",
-    "gauge.foreground": "#52666d",
-    "gauge.border": "#d6cbb4",
-    "gauge.warningBackground": "#b38800",
-    "gauge.warningForeground": "#fef3da",
-    "gauge.errorBackground": "#d4212b",
-    "gauge.errorForeground": "#fef3da",
+    // "gauge.background": "#f0e4cc",
+    // "gauge.foreground": "#52666d",
+    // "gauge.border": "#d6cbb4",
+    // "gauge.warningBackground": "#b38800",
+    // "gauge.warningForeground": "#fef3da",
+    // "gauge.errorBackground": "#d4212b",
+    // "gauge.errorForeground": "#fef3da",
 
 
     // Markdown
@@ -1712,6 +1752,7 @@
     "agentSessionSelectedBadge.border": "#c5baa4",
     "agentSessionSelectedUnfocusedBadge.border": "#d6cbb4",
     "agentStatusIndicator.background": "#0073d2",
-    "aiCustomizationManagement.sashBorder": "#c5baa4",
+    // NOTE: Disallowed
+ // "aiCustomizationManagement.sashBorder": "#c5baa4",
   }
 }

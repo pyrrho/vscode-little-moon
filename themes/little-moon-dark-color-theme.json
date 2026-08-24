@@ -5,10 +5,7 @@
   "tokenColors": [
     {
       "name": "Comments",
-      "scope": [
-        "comment",
-        "punctuation.definition.comment"
-      ],
+      "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "foreground": "#718b90",
         "fontStyle": "italic"
@@ -23,11 +20,7 @@
     },
     {
       "name": "Keyword, Storage",
-      "scope": [
-        "keyword",
-        "storage.type",
-        "storage.modifier"
-      ],
+      "scope": ["keyword", "storage.type", "storage.modifier"],
       "settings": {
         "foreground": "#f176bd"
       }
@@ -78,10 +71,7 @@
     },
     {
       "name": "Other Variable, String Link",
-      "scope": [
-        "support.other.variable",
-        "string.other.link"
-      ],
+      "scope": ["support.other.variable", "string.other.link"],
       "settings": {
         "foreground": "#ff675d"
       }
@@ -211,11 +201,7 @@
     },
     {
       "name": "URL",
-      "scope": [
-        "*url*",
-        "*link*",
-        "*uri*"
-      ],
+      "scope": ["*url*", "*link*", "*uri*"],
       "settings": {
         "fontStyle": "underline"
       }
@@ -295,7 +281,6 @@
     // https://code.visualstudio.com/api/references/theme-color#contrast-colors
     // Skipped; not a high-contrast font
 
-
     // Base
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#base-colors
@@ -313,10 +298,9 @@
     "focusBorder": "#46798740",
     // ## The "Sash" is typically a thin vertical or horizontal line that you
     //    can click and drag to adjust the size of adjacent panels.
- // "sash.hoverBorder": null, // default: `fucusBorder`
+    // "sash.hoverBorder": null, // default: `fucusBorder`
     "widget.border": "#053d48",
     "widget.shadow": "#002b36a0",
-
 
     // Editor
     // =========================================================================
@@ -340,7 +324,7 @@
     // editorMultiCursor.secondary.background: The background color of secondary editor cursors when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.
 
     // ** The gutter contains the glyph margins and the line numbers
- // "editorGutter.background": null,
+    // "editorGutter.background": null,
     // NB. Match the transparency add of e.g. `editorOverviewRuler.modifiedForeground`
     "editorGutter.modifiedBackground": "#0096f599",
     "editorGutter.modifiedSecondaryBackground": "#00449699",
@@ -362,14 +346,14 @@
     // ** Line numbers are in the gutter (but included in the base sectino?)
     "editorLineNumber.foreground": "#718b90a0",
     "editorLineNumber.activeForeground": "#adbcbcd0",
- // "editorLineNumber.dimmedForeground": null,
+    // "editorLineNumber.dimmedForeground": null,
 
     // ** Selection colors are visible when selecting one or more characters. In addition to the selection also all regions with the same content are highlighted.
     "editor.selectionBackground": "#0096f53c",
- // "editor.inactiveSelectionBackground": null, // default: `editor.inactiveSelectionBackground`80
+    // "editor.inactiveSelectionBackground": null, // default: `editor.inactiveSelectionBackground`80
     "editor.selectionHighlightBackground": "#0096f51c",
- // "editor.selectionHighlightBorder": null,
- // "editor.selectionForeground": null,
+    // "editor.selectionHighlightBorder": null,
+    // "editor.selectionForeground": null,
 
     // ** Search colors are used in the search viewlet's global search results.
     // search.resultsInfoForeground: Color of the text in the search viewlet's completion message. For example, this color is used in the text that says "{x} results in {y} files".
@@ -391,19 +375,19 @@
 
     // ** Search Editor colors highlight results in a Search Editor.
     // ## Search Editors are full editor tabs, spawned from the sidebar
- // "searchEditor.findMatchBackground": null, // default: `editor.findMatchHighlightBackground`a8
+    // "searchEditor.findMatchBackground": null, // default: `editor.findMatchHighlightBackground`a8
     // searchEditor.findMatchBorder: Border color of the editor's results.
- // "searchEditor.textInputBorder": null,
+    // "searchEditor.textInputBorder": null,
 
     // ** The range highlight is visible when selecting a search result.
     // ## e.g. when following a breadcrumb to a section, or cycling through Find results
     "editor.rangeHighlightBackground": "#e3b23020",
- // "editor.rangeHighlightBorder": null,
+    // "editor.rangeHighlightBorder": null,
 
     // ** The symbol highlight is visible when navigating to a symbol via a command such as
     //    Go to Definition.
     "editor.symbolHighlightBackground": "#39c7b930",
- // "editor.symbolHighlightBorder": null,
+    // "editor.symbolHighlightBorder": null,
 
     // ** Word highlight colors are visible when the cursor is inside a symbol or a word.
     // ## These settings are applicable to the Occurrence Highlight setting; only require the cursor
@@ -411,18 +395,18 @@
     "editor.wordHighlightBackground": "#80b83c30",
     "editor.wordHighlightStrongBackground": "#f176bd30",
     "editor.wordHighlightTextBackground": "#39c7b930",
- // "editor.wordHighlightBorder": null,
- // "editor.wordHighlightStrongBorder": null,
- // "editor.wordHighlightTextBorder": null,
+    // "editor.wordHighlightBorder": null,
+    // "editor.wordHighlightStrongBorder": null,
+    // "editor.wordHighlightTextBorder": null,
 
     // ** The current line is typically shown as either background highlight or a border (not both).
     "editor.lineHighlightBackground": "#00364180",
     "editor.inactiveLineHighlightBackground": "#00364140",
- // "editor.lineHighlightBorder": null,
+    // "editor.lineHighlightBorder": null,
 
     // ** The color for unicode highlights
     "editorUnicodeHighlight.border": "#ffffff00",
- // "editorUnicodeHighlight.background": null,
+    // "editorUnicodeHighlight.background": null,
 
     // ** The link color is visible when clicking on a link.
     "editorLink.activeForeground": "#007ad5",
@@ -452,8 +436,8 @@
     "editorBracketHighlight.foreground2": "#0096f5",
     "editorBracketHighlight.foreground3": "#39c7b9",
     "editorBracketHighlight.foreground4": "#a58cec",
- // "editorBracketHighlight.foreground5": "",
- // "editorBracketHighlight.foreground6": "",
+    // "editorBracketHighlight.foreground5": "",
+    // "editorBracketHighlight.foreground6": "",
     "editorBracketHighlight.unexpectedBracket.foreground": "#fd564ec0",
 
     // ## Colorization is a much heavier-weight Match. Seems to be a high contrast thing.
@@ -489,19 +473,19 @@
     //    - .background: Background color of error text in the editor.
     //    - .border: Color of double underlines for errors in the editor.
     "editorError.foreground": "#fd564e",
- // "editorError.border": null,
- // "editorError.background": null,
+    // "editorError.border": null,
+    // "editorError.background": null,
 
     "editorWarning.foreground": "#e3b230",
- // "editorWarning.border": null,
- // "editorWarning.background": null,
+    // "editorWarning.border": null,
+    // "editorWarning.background": null,
 
     "editorInfo.foreground": "#0096f5",
- // "editorInfo.border": null,
- // "editorInfo.background": null,
+    // "editorInfo.border": null,
+    // "editorInfo.background": null,
 
     "editorHint.foreground": "#39c7b9",
- // "editorHint.border": null,
+    // "editorHint.border": null,
 
     // problemsErrorIcon.foreground: The color used for the problems error icon.
     // problemsWarningIcon.foreground: The color used for the problems warning icon.
@@ -510,7 +494,7 @@
     // ** Overview ruler
     // ** This ruler is ~~located beneath~~ the scroll bar['s track] on the right edge of the editor
     //    and gives an overview of the decorations in the editor.
- // "editorOverviewRuler.background": null,
+    // "editorOverviewRuler.background": null,
     "editorOverviewRuler.border": "#003641",
 
     "editorOverviewRuler.findMatchForeground": "#e3b23080",
@@ -530,9 +514,9 @@
     "editorOverviewRuler.wordHighlightTextForeground": "#39c7b9c0",
 
     // ## Defaults are pulled from the `editorGutter.___Background` set; transparency of "99"
- // "editorOverviewRuler.modifiedForeground": "#0096f5",
- // "editorOverviewRuler.addedForeground": "#80b83c",
- // "editorOverviewRuler.deletedForeground": "#fd564e",
+    // "editorOverviewRuler.modifiedForeground": "#0096f5",
+    // "editorOverviewRuler.addedForeground": "#80b83c",
+    // "editorOverviewRuler.deletedForeground": "#fd564e",
 
     // ## Defaults to locked, editorWarning.foreground, and editorInfo.foreground.
     //    I'm guessing it's a bug that editorOverviewRuler.errorForeground doesn't default to
@@ -576,108 +560,140 @@
     "inlineEdit.tabWillAcceptModifiedBorder": "#8ec649",
     "inlineEdit.tabWillAcceptOriginalBorder": "#ff675d",
 
-
     // Editor Groups and Tabs
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#editor-groups-tabs
     // NB. Order doesn't match the reference; the reference doesn't make sense.
 
-    // ## Background color of an empty editor group.
-    "editorGroup.emptyBackground": "#003641",
-    // ## Border color of an empty editor group that is focused.
- // "editorGroup.focusedEmptyBorder": "",
+    // Border between editor groups
+    "editorGroup.border": "#0e4956",
 
-    // ## Color to separate multiple editor groups from each other.
-    "editorGroup.border": "#275b69",
+    // Border color between tabs and breadcrumb (with `"breadcrumbs.enabled": true`)
+    // UNUSED by the Modern UI
+    // "editorGroupHeader.tabsBorder": null,
 
-    "editorGroupHeader.noTabsBackground": "#002b36",
-    // ## Background behind the tabs
+    // Border color between header and editor
+    // "editorGroupHeader.border": null,
+
+    // Background color of the Tabs container (of the background, with `"workbench.editor.showTabs": "multiple"`)
+    // UNUSED by the Modern UI
     "editorGroupHeader.tabsBackground": "#00202b",
-    // ## Border below the tabs section (between tabs and breadcrumbs (if enabled))
- // "editorGroupHeader.tabsBorder": null,
-    // ## Border below breadcrumbs (if enabled)
- // "editorGroupHeader.border": null,
+    // Background color of the Tabs container (of the tab, with `"workbench.editor.showTabs": "single"`)
+    // UNUSED by the Modern UI
+    "editorGroupHeader.noTabsBackground": "#002b36",
 
-    "tab.activeBackground": "#003641", // default: `editor.background`
-    "tab.activeForeground": "#c8d7d8", // locked default, for reasons?
-    // tab.activeBorder: Bottom border for the active tab.
-    // tab.activeBorderTop: Top border for the active tab.
+    // Background color of an empty editor group.
+    "editorGroup.emptyBackground": "#003641",
+    // Border color of an empty editor group that is focused.
+    // "editorGroup.focusedEmptyBorder": null
 
-    "tab.inactiveBackground": "#002b36",
+    // Background color when dragging editors.
+    "editorGroup.dropBackground": "#00202b80",
+
+    // Colors for text informs the user that they can hold shift to drop into the editor.
+    // "editorGroup.dropIntoPromptBackground": ..
+    // "editorGroup.dropIntoPromptBorder": ..
+    // "editorGroup.dropIntoPromptForeground": ..
+
+    // Border to separate Tabs from each other.
+    // UNUSED: by the Modern UI
+    "tab.border": "#00202b", // match `editorGroupHeader.tabsBackground`
+
+    // Border on the right of the last pinned editor to separate from unpinned editors.
+    // UNUSED: by the Modern UI
+    "tab.lastPinnedBorder": "#606d6ea0",
+
+    // Border between tabs to indicate that a tab can be inserted between two tabs.
+    "tab.dragAndDropBorder": "#606d6ea0",
+
+    // Active Group + Active Tab styling
+    "tab.activeBackground": "#003641",
+    "modernEditorTab.activeBackground": "#003641",
+    "tab.activeBorderTop": "#467987",
+    "tab.activeBorder": "#467987",
+    "tab.activeForeground": "#c8d7d8",
+    "modernEditorTab.activeForeground": "#c8d7d8",
+
+    // Active Group + Inactive Tab styling
+    "tab.inactiveBackground": "#003641",
+    "modernEditorTab.inactiveBackground": "#003641",
     "tab.inactiveForeground": "#adbcbc",
 
+    // Active Group + Hovered-over Tab styling
     "tab.hoverBackground": "#00202b",
-    // tab.hoverForeground: Tab foreground color when hovering
-    // tab.hoverBorder: Bottom border to highlight tabs when hovering
+    // "tab.hoverBorder": ..
+    // "tab.hoverForeground": ..
 
-    "tab.border": "#00202b", // match `editorGroupHeader.tabsBackground`
-    // tab.lastPinnedBorder: Border on the right of the last pinned editor to separate from unpinned editors.
+    // Inactive Group + Active Tab styling
+    "tab.unfocusedActiveBackground": "#003641",
+    "tab.unfocusedActiveBorderTop": "#376a78",
+    "tab.unfocusedActiveBorder": "#376a78",
+    // "tab.unfocusedActiveForeground": ..
 
-    // tab.unfocusedActiveBackground: Active Tab background color in an inactive editor group.
-    // tab.unfocusedActiveForeground: Active tab foreground color in an inactive editor group.
-    // tab.unfocusedActiveBorder: Bottom border for the active tab in an inactive editor group.
-    // tab.unfocusedActiveBorderTop: Top border for the active tab in an inactive editor group
-    // tab.unfocusedInactiveBackground: Inactive Tab background color in an unfocused group
-    // tab.unfocusedInactiveForeground: Inactive tab foreground color in an inactive editor group.
-    // tab.unfocusedHoverBackground: Tab background color in an unfocused group when hovering
-    // tab.unfocusedHoverForeground: Tab foreground color in an unfocused group when hovering
-    // tab.unfocusedHoverBorder: Border to highlight tabs in an unfocused group when hovering
+    // Inactive Group + Inactive Tab styling
+    // "tab.unfocusedInactiveBackground": ..
+    // "tab.unfocusedInactiveForeground": ..
 
-    // tab.selectedBorderTop: Border to the top of a selected tab.
-    // tab.selectedBackground: Background of a selected tab.
-    // tab.selectedForeground: Foreground of a selected tab.
+    // Inactive Group + Hovered Tab styling
+    // "tab.unfocusedHoverBackground": ..
+    // "tab.unfocusedHoverBorder": ..
+    // "tab.unfocusedHoverForeground": ..
 
-    // "tab.activeModifiedBorder": "",
-    // "tab.inactiveModifiedBorder": "",
-    // "tab.unfocusedActiveModifiedBorder": "",
-    // "tab.unfocusedInactiveModifiedBorder": "",
+    // Selected Tab styling
+    // wtf is a selected tab?
+    // UNUSED by the Modern UI
+    // "tab.selectedBackground": ..
+    // "tab.selectedBorderTop": ..
+    // "tab.selectedForeground": ..
 
-    // editorPane.background: Background color of the editor pane visible on the left and right side of the centered editor layout.
-    // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
-    // sideBySideEditor.verticalBorder: Color to separate two editors from each other when shown side by side in an editor group from left to right.
+    // Modified (dirty) tab styling
+    // UNUSED by the Modern UI
+    // "tab.activeModifiedBorder": ..
+    // "tab.inactiveModifiedBorder": ..
+    // "tab.unfocusedActiveModifiedBorder": ..
+    // "tab.unfocusedInactiveModifiedBorder": ..
 
-    "tab.dragAndDropBorder": "#606d6ea0",
-    "editorGroup.dropBackground": "#00202b80",
-    // editorGroup.dropIntoPromptForeground: Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
-    // editorGroup.dropIntoPromptBackground: Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
-    // editorGroup.dropIntoPromptBorder: Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+    // Background color of the editor pane visible on the left and right side of the centered editor layout.
+    // "editorPane.background": ..
 
+    // Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
+    // "sideBySideEditor.horizontalBorder": ..
+    // Color to separate two editors from each other when shown side by side in an editor group from left to right
+    // sideBySideEditor.verticalBorder:
 
     // Breadcrumbs
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#breadcrumbs-colors
 
- // "breadcrumb.foreground": null, // default: `foreground`cc
+    // "breadcrumb.foreground": null, // default: `cc
     "breadcrumb.background": "#003641",
     "breadcrumb.focusForeground": "#e3b230",
     "breadcrumb.activeSelectionForeground": "#007ad5",
- // "breadcrumbPicker.background": null,
-
+    // "breadcrumbPicker.background": null,
 
     // Side Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#side-bar
 
     "sideBar.background": "#003641",
- // "sideBar.foreground": null,
+    // "sideBar.foreground": null,
     "sideBar.border": "#275b69",
     // "sideBar.dropBackground": "#00202b80",
 
- // "sideBarTitle.foreground": null,
- // "sideBarTitle.background": null,
+    // "sideBarTitle.foreground": null,
+    // "sideBarTitle.background": null,
     "sideBarTitle.border": "#275b69",
 
     "sideBarSectionHeader.background": "#002b36",
- // "sideBarSectionHeader.foreground": null,
- // "sideBarSectionHeader.border": null,
+    // "sideBarSectionHeader.foreground": null,
+    // "sideBarSectionHeader.border": null,
 
     // ## Is this unused?
     // "sideBarActivityBarTop.border": "#275b69",
 
     "sideBarStickyScroll.background": "#003641a0",
- // "sideBarStickyScroll.border": null,
+    // "sideBarStickyScroll.border": null,
     "sideBarStickyScroll.shadow": "#00202bc0",
-
 
     // Activity Bar
     // =========================================================================
@@ -685,7 +701,7 @@
 
     "activityBar.background": "#002b36",
     "activityBar.foreground": "#c8d7d8",
- // "activityBar.border": null,
+    // "activityBar.border": null,
     // "activityBar.inactiveForeground": "",
     // "activityBar.activeBackground": "#003641",
     "activityBar.activeBorder": "#467987",
@@ -705,7 +721,6 @@
     "activityErrorBadge.background": "#fd564e",
     "activityErrorBadge.foreground": "#053d48",
 
-
     // Title Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#title-bar-colors
@@ -716,23 +731,21 @@
     "titleBar.inactiveBackground": "#002b36",
     "titleBar.inactiveForeground": "#718b90",
 
-
     // Menu Bar
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#menu-bar-colors
 
- // "menu.background": null,
+    // "menu.background": null,
     "menu.foreground": "#718b90",
     "menu.selectionForeground": "#adbcbc",
     "menu.selectionBackground": "#002b36",
- // "menu.selectionBorder": null,
+    // "menu.selectionBorder": null,
     "menu.separatorBackground": "#00202b",
     "menu.border": "#053d48",
 
     "menubar.selectionForeground": "#b8c7c7",
     "menubar.selectionBackground": "#003641",
     "menubar.selectionBorder": "#ffffff00",
-
 
     // Status Bar
     // =========================================================================
@@ -741,21 +754,21 @@
     "statusBar.background": "#002b36",
     "statusBar.foreground": "#718b90",
     "statusBar.border": "#002b36", // match `statusBar.background`
- // "statusBar.focusBorder": null,
+    // "statusBar.focusBorder": null,
 
     "statusBar.debuggingBackground": "#ff9356",
     "statusBar.debuggingForeground": "#0e4956",
- // "statusBar.debuggingBorder": null,
+    // "statusBar.debuggingBorder": null,
 
     "statusBar.noFolderBackground": "#002b36",
     "statusBar.noFolderForeground": "#718b90",
- // "statusBar.noFolderBorder": null,
+    // "statusBar.noFolderBorder": null,
 
     "statusBarItem.hoverBackground": "#003641",
     // statusBarItem.compactHoverBackground: Status bar item background color when hovering an item that contains two hovers.
- // "statusBarItem.hoverForeground": null,
+    // "statusBarItem.hoverForeground": null,
     "statusBarItem.activeBackground": "#053d48",
- // "statusBarItem.focusBorder": null,
+    // "statusBarItem.focusBorder": null,
 
     "statusBarItem.prominentBackground": "#0096f5",
     "statusBarItem.prominentForeground": "#053d48",
@@ -783,14 +796,12 @@
     // statusBarItem.offlineHoverForeground: Status bar item foreground hover color when the workbench is offline.
     // statusBarItem.offlineHoverBackground: Status bar item background hover color when the workbench is offline.
 
-
     // Badge
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#badge
 
     "badge.background": "#bc8f00",
     "badge.foreground": "#053d48",
-
 
     // Button Control
     // =========================================================================
@@ -821,12 +832,10 @@
     // radio.inactiveBorder: Border color of the inactive radio option.
     // radio.inactiveHoverBackground: Background color of inactive active radio option when hovering.
 
-
     // Window Border
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#window-border
     // Skipped; Pop_OS! handles my window borders
-
 
     // Text
     // =========================================================================
@@ -843,19 +852,17 @@
     // "textPreformat.border": "#275b69",
     // "textSeparator.foreground": "#f00", // TODO: Wrong
 
-
     // Action
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#action-colors
 
     "toolbar.hoverBackground": "#003641",
- // "toolbar.hoverOutline": null,
+    // "toolbar.hoverOutline": null,
     "toolbar.activeBackground": "#053d48",
     // "editorActionList.background": "#fd564e",
     // "editorActionList.foreground": "#0096f5",
     // editorActionList.focusForeground: Action List foreground color for the focused item.
     // editorActionList.focusBackground: Action List background color for the focused item.
-
 
     // Dropdown Control
     // =========================================================================
@@ -865,7 +872,6 @@
     "dropdown.listBackground": "#003641",
     // "dropdown.border": "#275b69",
     // "dropdown.foreground": "[object Object]",
-
 
     // Input Control
     // =========================================================================
@@ -899,7 +905,6 @@
 
     // "progressBar.background": "",
 
-
     // Lists and Trees
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
@@ -914,12 +919,12 @@
     "list.hoverBackground": "#002b36a0",
     "list.hoverForeground": "#adbcbc",
 
- // "list.inactiveFocusBackground": null,
- // "list.inactiveFocusOutline": null,
+    // "list.inactiveFocusBackground": null,
+    // "list.inactiveFocusOutline": null,
     "list.focusBackground": "#002b36",
     "list.focusOutline": "#0e4956", // default: `focusBorder`
     "list.focusAndSelectionOutline": "#376a78",
- // "list.focusForeground": null,
+    // "list.focusForeground": null,
 
     "list.highlightForeground": "#adbcbc",
     "list.focusHighlightForeground": "#718b90",
@@ -929,8 +934,8 @@
     "list.errorForeground": "#fd564e",
     "list.warningForeground": "#e3b230",
 
- // "listFilterWidget.background": "",
- // "listFilterWidget.outline": "",
+    // "listFilterWidget.background": "",
+    // "listFilterWidget.outline": "",
     // "listFilterWidget.noMatchesOutline": "#0096f5",
     "listFilterWidget.shadow": "#00202bc0",
     // list.filterMatchBackground: Background color of the filtered matches in lists and trees.
@@ -945,7 +950,6 @@
     // "list.dropBackground": "#00202b80",
     "list.dropBetweenBackground": "#606d6ea0",
 
-
     // Scrollbar Control
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#scrollbar-control
@@ -956,7 +960,6 @@
     "scrollbarSlider.background": "#00202b50",
     "scrollbarSlider.hoverBackground": "#00202b70",
     "scrollbarSlider.activeBackground": "#00202b90",
-
 
     // Minimap
     // =========================================================================
@@ -985,11 +988,10 @@
     "minimapSlider.activeBackground": "#00202b90",
 
     // ## These Default to the similarly named `editorGutter.___Background` styles.
- // "minimapGutter.addedBackground": null,
- // "minimapGutter.modifiedBackground": null,
- // "minimapGutter.deletedBackground": null,
+    // "minimapGutter.addedBackground": null,
+    // "minimapGutter.modifiedBackground": null,
+    // "minimapGutter.deletedBackground": null,
     "editorMinimap.inlineChatInserted": "#80b83c",
-
 
     // Diff Editor
     // =========================================================================
@@ -1026,7 +1028,6 @@
     // multiDiffEditor.background: The background color of the multi file diff editor
     // multiDiffEditor.border: The border color of the multi file diff editor
 
-
     // Chat
     // =========================================================================
     // NB. Robo-generated
@@ -1039,7 +1040,6 @@
     "chat.checkpointSeparator": "#00202b",
     "chat.thinkingShimmer": "#0096f5",
     "chatManagement.sashBorder": "#376a78",
-
 
     // Inline Chat
     // =========================================================================
@@ -1054,12 +1054,10 @@
     // inlineChatDiff.inserted: Background color of inserted text in the interactive editor input.
     // inlineChatDiff.removed: Background color of removed text in the interactive editor input.
 
-
     // Panel Chat
     // =========================================================================
     // interactive.activeCodeBorder: The border color for the current interactive code cell when the editor has focus.
     // interactive.inactiveCodeBorder: The border color for the current interactive code cell when the editor does not have focus.
-
 
     // Editor Widget
     // =========================================================================
@@ -1088,20 +1086,20 @@
     //       as elements superimposed onto the editor.
 
     "editorWidget.background": "#003641",
- // "editorWidget.foreground": null,
+    // "editorWidget.foreground": null,
     "editorWidget.border": "#053d48",
     "editorWidget.resizeBorder": "#467987",
 
     "editorSuggestWidget.background": "#053d48",
     "editorSuggestWidget.border": "#275b69",
- // "editorSuggestWidget.foreground": null,
+    // "editorSuggestWidget.foreground": null,
 
     // ## Characters that match the current input.
     "editorSuggestWidget.highlightForeground": "#e3b230",
 
     "editorSuggestWidget.selectedBackground": "#002b36",
     "editorSuggestWidget.selectedForeground": "#c8d7d8",
- // "editorSuggestWidget.selectedIconForeground": null,
+    // "editorSuggestWidget.selectedIconForeground": null,
     // ## Characters on the selected line that match the current input.
     "editorSuggestWidget.focusHighlightForeground": "#f2bf3f",
 
@@ -1109,16 +1107,16 @@
 
     "editorHoverWidget.background": "#053d48",
     "editorHoverWidget.border": "#275b69",
- // "editorHoverWidget.foreground": null,
+    // "editorHoverWidget.foreground": null,
     "editorHoverWidget.highlightForeground": "#e3b230",
     "editorHoverWidget.statusBarBackground": "#003641",
 
     "editorGhostText.background": "#e3b23020",
     "editorGhostText.foreground": "#718b90",
- // "editorGhostText.border": null,
+    // "editorGhostText.border": null,
 
     "editorStickyScroll.background": "#053d48a0",
- // "editorStickyScroll.border": null,
+    // "editorStickyScroll.border": null,
     "editorStickyScroll.shadow": "#003641c0",
     "editorStickyScrollGutter.background": "#003641a0",
     "editorStickyScrollHover.background": "#003641d0",
@@ -1136,7 +1134,6 @@
     "editorMarkerNavigationInfo.background": "#0096f5",
     "editorMarkerNavigationInfo.headerBackground": "#004496c0",
 
-
     // Peek View
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#peek-view-colors
@@ -1148,16 +1145,16 @@
     "peekView.border": "#376a78",
 
     "peekViewEditor.background": "#053d48",
-    "peekViewEditorGutter.background": "#053d48",
+    "peekViewEditorGutter.background": "#00364133",
     "peekViewEditor.matchHighlightBackground": "#e3b23030",
- // "peekViewEditor.matchHighlightBorder": null,
+    // "peekViewEditor.matchHighlightBorder": null,
 
     "peekViewEditorStickyScroll.background": "#053d48a0",
     "peekViewEditorStickyScrollGutter.background": "#003641a0",
 
     "peekViewResult.background": "#003641",
- // "peekViewResult.fileForeground": null,
- // "peekViewResult.lineForeground": null,
+    // "peekViewResult.fileForeground": null,
+    // "peekViewResult.lineForeground": null,
     "peekViewResult.matchHighlightBackground": "#e3b23080",
     "peekViewResult.selectionBackground": "#053d48",
     "peekViewResult.selectionForeground": "#adbcbc",
@@ -1165,7 +1162,6 @@
     // ** The Debug Exception widget is a peek view that shows in the editor when debug stops at an exception.
     // "debugExceptionWidget.background": "",
     // "debugExceptionWidget.border": "",
-
 
     // Merge Conflicts
     // =========================================================================
@@ -1199,7 +1195,6 @@
     // mergeEditor.conflict.input1.background: The background color of decorations in input 1.
     // mergeEditor.conflict.input2.background: The background color of decorations in input 2.
 
-
     // Panel
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#panel-colors
@@ -1226,12 +1221,11 @@
     // panelSection.dropBackground: Drag and drop feedback color for the panel sections. The color should have transparency so that the panel sections can still shine through.
 
     "panelStickyScroll.background": "#053d48a0",
- // "panelStickyScroll.border": null,
+    // "panelStickyScroll.border": null,
     "panelStickyScroll.shadow": "#00202bc0",
 
     "outputView.background": "#053d48",
     "outputViewStickyScroll.background": "#053d48a0",
-
 
     // Command Center
     // =========================================================================
@@ -1247,14 +1241,13 @@
     // commandCenter.activeBorder: Active border color of the Command Center.
     // commandCenter.debuggingBackground: Command Center background color when a program is being debugged.
 
-
     // Notification
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#notification-colors
 
     "notificationCenterHeader.foreground": "#718b90",
     "notificationCenterHeader.background": "#053d48",
- // "notificationCenter.border": null,
+    // "notificationCenter.border": null,
     // "notificationToast.border": "",
 
     // NB. Notifications entries inherit, among others, `list.hoverBackground`.
@@ -1266,7 +1259,6 @@
 
     "notificationLink.foreground": "#007ad5",
 
-
     // Banner
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#banner-colors
@@ -1275,7 +1267,6 @@
     "banner.background": "#007ad5",
     "banner.foreground": "#003641",
     "banner.iconForeground": "#0096f5",
-
 
     // Extensions
     // =========================================================================
@@ -1298,7 +1289,6 @@
     // "extensionIcon.privateForeground": "#a58cec",
     // "mcpIcon.starForeground": "#e3b230",
 
-
     // Quick Picker
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#quick-picker-colors
@@ -1313,12 +1303,11 @@
     // quickInput.foreground: Quick input foreground color.
 
     // ## This is for arrow-key controls; e.g. `list.hoverBackground` is for mouse interaction.
- // "quickInputList.focusBackground": null, // default: `list.activeSelectionBackground`
+    // "quickInputList.focusBackground": null, // default: `list.activeSelectionBackground`
     // quickInputList.focusForeground: Quick picker foreground color for the focused item.
     // quickInputList.focusIconForeground: Quick picker icon foreground color for the focused item.
 
     // quickInputTitle.background: Quick picker title background color.
-
 
     // Keybinding Label
     // =========================================================================
@@ -1331,10 +1320,9 @@
     // - The Keyboard Shortcuts recorder modal
     // - The "feature contribution" section of an extension's marketplace page
     "keybindingLabel.background": "#053d48",
- // "keybindingLabel.foreground": null,
+    // "keybindingLabel.foreground": null,
     "keybindingLabel.border": "#275b69",
     "keybindingLabel.bottomBorder": "#275b69",
-
 
     // Keyboard Shortcut Table
     // =========================================================================
@@ -1342,7 +1330,6 @@
 
     // keybindingTable.headerBackground: Background color for the keyboard shortcuts table header.
     // keybindingTable.rowsBackground: Background color for the keyboard shortcuts table alternating rows.
-
 
     // Integrated Terminal
     // =========================================================================
@@ -1414,13 +1401,12 @@
     // terminalSymbolIcon.symbolText:                   symbolIcon.fileForeground
     // terminalSymbolIcon.inlineSuggestionForeground:   null (falls back to the default foreground)
 
-
     // Debug colors
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#debug-colors
 
     "debugToolBar.background": "#003641",
- // debugToolBar.border: null,
+    // debugToolBar.border: null,
     // editor.stackFrameHighlightBackground: Background color of the top stack frame highlight in the editor.
     // editor.focusedStackFrameHighlightBackground: Background color of the focused stack frame highlight in the editor.
     // editor.inlineValuesForeground: Color for the debug inline value text.
@@ -1437,7 +1423,6 @@
     // debugTokenExpression.number: Foreground color for numbers in debug views.
     // debugTokenExpression.error: Foreground color for expression errors in debug views.
     // debugTokenExpression.type: Foreground color for the token types shown in the debug views (ie. the Variables or Watch view).
-
 
     // Testing colors
     // =========================================================================
@@ -1476,7 +1461,6 @@
     // testing.message.error.badgeBorder: Border color of test error messages shown inline in the editor.
     // testing.message.error.badgeForeground: Text color of test error messages shown inline in the editor.
 
-
     // Welcome Page
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#welcome-page-colors
@@ -1491,7 +1475,6 @@
     // "welcomePage.buttonHoverBackground": "", // TODO: Not a settings?
     // "walkThrough.embeddedEditorBackground": "",
     // walkthrough.stepTitle.foreground: Foreground color of the heading of each walkthrough step.
-
 
     // Git
     // =========================================================================
@@ -1510,7 +1493,6 @@
 
     "gitDecoration.submoduleResourceForeground": "#f176bd",
     "git.blame.editorDecorationForeground": "#718b90",
-
 
     // Source Control Graph colors
     // =========================================================================
@@ -1531,7 +1513,6 @@
     "scmGraph.historyItemBaseRefColor": "#a58cec",
     "scmGraph.historyItemHoverDefaultLabelForeground": "#adbcbc",
     "scmGraph.historyItemHoverDefaultLabelBackground": "#002b36a0",
-
 
     // Settings Editor
     // =========================================================================
@@ -1559,7 +1540,6 @@
     // settings.sashBorder: The color of the Settings editor splitview sash border.
     // settings.settingsHeaderHoverForeground: The foreground color for a section header or hovered title.
 
-
     // Snippets
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#snippets-colors
@@ -1567,11 +1547,10 @@
     // ## TODO: probably want to use a semanitc .range for this?
     // ## TODO: Figure out what a good color might be? default is #0a326433
     "editor.snippetTabstopHighlightBackground": "#bc8f0020",
- // "editor.snippetTabstopHighlightBorder": null,
+    // "editor.snippetTabstopHighlightBorder": null,
     // ## TODO: Should this be semantic?
     "editor.snippetFinalTabstopHighlightBackground": "#adbcbca0",
- // "editor.snippetFinalTabstopHighlightBorder": null,
-
+    // "editor.snippetFinalTabstopHighlightBorder": null,
 
     // Symbol Icons
     // =========================================================================
@@ -1612,7 +1591,6 @@
     // symbolIcon.unitForeground: The foreground color for unit symbols.
     // symbolIcon.variableForeground: The foreground color for variable symbols.
 
-
     // Debug Icons
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#debug-icons-colors
@@ -1632,11 +1610,9 @@
     "debugIcon.stepOverForeground": "#0096f5",
     "debugIcon.stopForeground": "#fd564e",
 
-
     // Notebook
     // =========================================================================
     // Not interested in notebooks
-
 
     // Chart colors
     // =========================================================================
@@ -1655,12 +1631,10 @@
     // chart.axis: Axis color for the chart.
     // chart.guide: Guide line for the chart.
 
-
     // Ports
     // =========================================================================
     // Ports?
     // ports.iconRunningProcessForeground: The color of the icon for a port that has an associated running process.
-
 
     // Comments View colors
     // =========================================================================
@@ -1668,18 +1642,15 @@
     // commentsView.resolvedIcon: Icon color for resolved comments.
     // commentsView.unresolvedIcon: Icon color for unresolved comments.
 
-
     // Action Bar colors
     // =========================================================================
     // What's the action bar?
     // actionBar.toggledBackground: Background color for toggled action items in action bar.
 
-
     // Simple Find Widget colors
     // =========================================================================
     // I think this was ctrl+i in sublime?
     // simpleFindWidget.sashBorder: Border color of the sash border.
-
 
     // Gauge colors
     // =========================================================================
@@ -1693,7 +1664,6 @@
     "gauge.errorBackground": "#fd564e",
     "gauge.errorForeground": "#053d48",
 
-
     // Markdown
     // =========================================================================
     // NB. Robo-generated
@@ -1704,7 +1674,6 @@
     "markdownAlert.warning.foreground": "#e3b230",
     "markdownAlert.caution.foreground": "#fd564e",
 
-
     // Agent Session colors
     // =========================================================================
     // NB. Robo-generated
@@ -1713,6 +1682,6 @@
     "agentSessionSelectedBadge.border": "#376a78",
     "agentSessionSelectedUnfocusedBadge.border": "#275b69",
     "agentStatusIndicator.background": "#0096f5",
-    "aiCustomizationManagement.sashBorder": "#376a78",
+    "aiCustomizationManagement.sashBorder": "#376a78"
   }
 }

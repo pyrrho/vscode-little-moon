@@ -586,72 +586,110 @@ permalink: /little-moon-dark-color-theme.json
     // https://code.visualstudio.com/api/references/theme-color#editor-groups-tabs
     // NB. Order doesn't match the reference; the reference doesn't make sense.
 
-    // ## Background color of an empty editor group.
-    "editorGroup.emptyBackground": "{{ little_moon.dark.bg._2 }}",
-    // ## Border color of an empty editor group that is focused.
- // "editorGroup.focusedEmptyBorder": "",
+    // Border between editor groups
+    "editorGroup.border": "{{ little_moon.dark.border._2 }}",
 
-    // ## Color to separate multiple editor groups from each other.
-    "editorGroup.border": "{{ little_moon.dark.border._0 }}",
-
-    "editorGroupHeader.noTabsBackground": "{{ little_moon.dark.bg._3 }}",
-    // ## Background behind the tabs
-    "editorGroupHeader.tabsBackground": "{{ little_moon.dark.bg._4 }}",
-    // ## Border below the tabs section (between tabs and breadcrumbs (if enabled))
+    // Border color between tabs and breadcrumb (with `"breadcrumbs.enabled": true`)
+    // UNUSED by the Modern UI
  // "editorGroupHeader.tabsBorder": null,
-    // ## Border below breadcrumbs (if enabled)
+
+    // Border color between header and editor
  // "editorGroupHeader.border": null,
 
-    "tab.activeBackground": "{{ little_moon.dark.bg._2 }}", // default: `editor.background`
-    "tab.activeForeground": "{{ little_moon.dark.fg.em2 }}", // locked default, for reasons?
-    // tab.activeBorder: Bottom border for the active tab.
-    // tab.activeBorderTop: Top border for the active tab.
+    // Background color of the Tabs container (of the background, with `"workbench.editor.showTabs": "multiple"`)
+    // UNUSED by the Modern UI
+    "editorGroupHeader.tabsBackground": "{{ little_moon.dark.bg._4 }}",
+    // Background color of the Tabs container (of the tab, with `"workbench.editor.showTabs": "single"`)
+    // UNUSED by the Modern UI
+    "editorGroupHeader.noTabsBackground": "{{ little_moon.dark.bg._3 }}",
 
-    "tab.inactiveBackground": "{{ little_moon.dark.bg._3 }}",
+    // Background color of an empty editor group.
+    "editorGroup.emptyBackground": "{{ little_moon.dark.bg._2 }}",
+    // Border color of an empty editor group that is focused.
+ // "editorGroup.focusedEmptyBorder": null
+
+    // Background color when dragging editors.
+    "editorGroup.dropBackground": "{{ little_moon.dark.drag_and_drop.bg }}",
+
+    // Colors for text informs the user that they can hold shift to drop into the editor.
+ // "editorGroup.dropIntoPromptBackground": ..
+ // "editorGroup.dropIntoPromptBorder": ..
+ // "editorGroup.dropIntoPromptForeground": ..
+
+
+    // Border to separate Tabs from each other.
+    // UNUSED: by the Modern UI
+    "tab.border": "{{ little_moon.dark.bg._4 }}", // match `editorGroupHeader.tabsBackground`
+
+    // Border on the right of the last pinned editor to separate from unpinned editors.
+    // UNUSED: by the Modern UI
+    "tab.lastPinnedBorder": "{{ little_moon.dark.drag_and_drop.em }}",
+
+    // Border between tabs to indicate that a tab can be inserted between two tabs.
+    "tab.dragAndDropBorder": "{{ little_moon.dark.drag_and_drop.em }}",
+
+
+    // Active Group + Active Tab styling
+    "tab.activeBackground": "{{ little_moon.dark.bg._2 }}",
+    "modernEditorTab.activeBackground": "{{ little_moon.dark.bg._2 }}",
+    "tab.activeBorderTop": "{{ little_moon.dark.border.em2 }}",
+    "tab.activeBorder": "{{ little_moon.dark.border.em2 }}",
+    "tab.activeForeground": "{{ little_moon.dark.fg.em2 }}",
+    "modernEditorTab.activeForeground": "{{ little_moon.dark.fg.em2 }}",
+
+    // Active Group + Inactive Tab styling
+    "tab.inactiveBackground": "{{ little_moon.dark.bg._2 }}",
+    "modernEditorTab.inactiveBackground": "{{ little_moon.dark.bg._2 }}",
     "tab.inactiveForeground": "{{ little_moon.dark.fg._0 }}",
 
+    // Active Group + Hovered-over Tab styling
     "tab.hoverBackground": "{{ little_moon.dark.bg._4 }}",
-    // tab.hoverForeground: Tab foreground color when hovering
-    // tab.hoverBorder: Bottom border to highlight tabs when hovering
+ // "tab.hoverBorder": ..
+ // "tab.hoverForeground": ..
 
-    "tab.border": "{{ little_moon.dark.bg._4 }}", // match `editorGroupHeader.tabsBackground`
-    // tab.lastPinnedBorder: Border on the right of the last pinned editor to separate from unpinned editors.
+    // Inactive Group + Active Tab styling
+    "tab.unfocusedActiveBackground": "{{ little_moon.dark.bg._2 }}",
+    "tab.unfocusedActiveBorderTop": "{{ little_moon.dark.border.em }}",
+    "tab.unfocusedActiveBorder": "{{ little_moon.dark.border.em }}",
+ // "tab.unfocusedActiveForeground": ..
 
-    // tab.unfocusedActiveBackground: Active Tab background color in an inactive editor group.
-    // tab.unfocusedActiveForeground: Active tab foreground color in an inactive editor group.
-    // tab.unfocusedActiveBorder: Bottom border for the active tab in an inactive editor group.
-    // tab.unfocusedActiveBorderTop: Top border for the active tab in an inactive editor group
-    // tab.unfocusedInactiveBackground: Inactive Tab background color in an unfocused group
-    // tab.unfocusedInactiveForeground: Inactive tab foreground color in an inactive editor group.
-    // tab.unfocusedHoverBackground: Tab background color in an unfocused group when hovering
-    // tab.unfocusedHoverForeground: Tab foreground color in an unfocused group when hovering
-    // tab.unfocusedHoverBorder: Border to highlight tabs in an unfocused group when hovering
+    // Inactive Group + Inactive Tab styling
+ // "tab.unfocusedInactiveBackground": ..
+ // "tab.unfocusedInactiveForeground": ..
 
-    // tab.selectedBorderTop: Border to the top of a selected tab.
-    // tab.selectedBackground: Background of a selected tab.
-    // tab.selectedForeground: Foreground of a selected tab.
+    // Inactive Group + Hovered Tab styling
+ // "tab.unfocusedHoverBackground": ..
+ // "tab.unfocusedHoverBorder": ..
+ // "tab.unfocusedHoverForeground": ..
 
-    // "tab.activeModifiedBorder": "{{ little_moon.dark .blue }}",
-    // "tab.inactiveModifiedBorder": "{{ little_moon.dark .blue_1 }}",
-    // "tab.unfocusedActiveModifiedBorder": "{{ little_moon.dark .blue }}",
-    // "tab.unfocusedInactiveModifiedBorder": "{{ little_moon.dark .blue_1 }}",
+    // Selected Tab styling
+    // wtf is a selected tab?
+    // UNUSED by the Modern UI
+ // "tab.selectedBackground": ..
+ // "tab.selectedBorderTop": ..
+ // "tab.selectedForeground": ..
 
-    // editorPane.background: Background color of the editor pane visible on the left and right side of the centered editor layout.
-    // sideBySideEditor.horizontalBorder: Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
-    // sideBySideEditor.verticalBorder: Color to separate two editors from each other when shown side by side in an editor group from left to right.
+    // Modified (dirty) tab styling
+    // UNUSED by the Modern UI
+ // "tab.activeModifiedBorder": ..
+ // "tab.inactiveModifiedBorder": ..
+ // "tab.unfocusedActiveModifiedBorder": ..
+ // "tab.unfocusedInactiveModifiedBorder": ..
 
-    "tab.dragAndDropBorder": "{{ little_moon.dark.drag_and_drop.em }}",
-    "editorGroup.dropBackground": "{{ little_moon.dark.drag_and_drop.bg }}",
-    // editorGroup.dropIntoPromptForeground: Foreground color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
-    // editorGroup.dropIntoPromptBackground: Background color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
-    // editorGroup.dropIntoPromptBorder: Border color of text shown over editors when dragging files. This text informs the user that they can hold shift to drop into the editor.
+    // Background color of the editor pane visible on the left and right side of the centered editor layout.
+ // "editorPane.background": ..
+
+    // Color to separate two editors from each other when shown side by side in an editor group from top to bottom.
+ // "sideBySideEditor.horizontalBorder": ..
+    // Color to separate two editors from each other when shown side by side in an editor group from left to right
+ // sideBySideEditor.verticalBorder:
 
 
     // Breadcrumbs
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#breadcrumbs-colors
 
- // "breadcrumb.foreground": null, // default: `foreground`cc
+ // "breadcrumb.foreground": null, // default: `{{foreground}}cc
     "breadcrumb.background": "{{ little_moon.dark.bg._2 }}",
     "breadcrumb.focusForeground": "{{ little_moon.dark.fg.hl }}",
     "breadcrumb.activeSelectionForeground": "{{ little_moon.dark.palette.blue__1 }}",
@@ -1152,7 +1190,7 @@ permalink: /little-moon-dark-color-theme.json
     "peekView.border": "{{ little_moon.dark.border.em }}",
 
     "peekViewEditor.background": "{{ little_moon.dark.bg._0 }}",
-    "peekViewEditorGutter.background": "{{ little_moon.dark.bg._0 }}",
+    "peekViewEditorGutter.background": "{{ little_moon.dark.bg._2 }}33",
     "peekViewEditor.matchHighlightBackground": "{{ little_moon.dark.range.find_3 }}",
  // "peekViewEditor.matchHighlightBorder": null,
 
