@@ -329,6 +329,7 @@ permalink: /little-moon-light-color-theme.json
     "editor.background": "{{ little_moon.light.bg._0 }}",
     "editor.foreground": "{{ little_moon.light.fg._0 }}",
     // editor.placeholder.foreground: Foreground color of the placeholder text in the editor.
+    "editor.compositionBorder": "{{ little_moon.light.border.em2 }}",
 
     // ** Unused source code
     // editorUnnecessaryCode.border: Border color of unnecessary (unused) source code in the editor.
@@ -346,8 +347,11 @@ permalink: /little-moon-light-color-theme.json
  // "editorGutter.background": null,
     // NB. Match the transparency add of e.g. `editorOverviewRuler.modifiedForeground`
     "editorGutter.modifiedBackground": "{{ little_moon.light.git.modified }}99",
+    "editorGutter.modifiedSecondaryBackground":"{{ little_moon.light.git.modified_bg }}99",
     "editorGutter.addedBackground": "{{ little_moon.light.git.added }}99",
+    "editorGutter.addedSecondaryBackground":"{{ little_moon.light.git.added_bg }}99",
     "editorGutter.deletedBackground": "{{ little_moon.light.git.deleted }}99",
+    "editorGutter.deletedSecondaryBackground":"{{ little_moon.light.git.deleted_bg }}99",
 
     // TODO: Reused from `range.result` (`.find_2`?). Should also be used for ghost text?
     "editorGutter.commentRangeForeground": "{{ little_moon.light.palette.yellow }}30",
@@ -355,6 +359,9 @@ permalink: /little-moon-light-color-theme.json
     // editorGutter.commentUnresolvedGlyphForeground: Editor gutter decoration color for commenting glyphs for unresolved comment threads.
 
     "editorGutter.foldingControlForeground": "{{ little_moon.light.fg._0 }}",
+    "editorGutter.itemGlyphForeground": "{{ little_moon.light.fg._0 }}",
+    "editorGutter.itemBackground": "{{ little_moon.light.bg._3 }}",
+    "editorGutter.commentDraftGlyphForeground": "{{ little_moon.light.palette.yellow }}",
 
     // ** Line numbers are in the gutter (but included in the base sectino?)
     "editorLineNumber.foreground": "{{ little_moon.light.fg._2 }}a0",
@@ -414,10 +421,8 @@ permalink: /little-moon-light-color-theme.json
 
     // ** The current line is typically shown as either background highlight or a border (not both).
     "editor.lineHighlightBackground": "{{ little_moon.light.bg._2 }}80",
+    "editor.inactiveLineHighlightBackground": "{{ little_moon.light.bg._2 }}40",
  // "editor.lineHighlightBorder": null,
-
-    // ** The color for the editor watermark
-    // editorWatermark.foreground: Foreground color for the labels in the editor watermark.
 
     // ** The color for unicode highlights
     "editorUnicodeHighlight.border": "{{ little_moon.pure.transparent }}",
@@ -444,6 +449,7 @@ permalink: /little-moon-light-color-theme.json
     // ## Matches are paired with what's under the cursor
     "editorBracketMatch.background": "{{ little_moon.light.bg._3 }}c0",
     "editorBracketMatch.border": "{{ little_moon.pure.transparent }}",
+    "editorBracketMatch.foreground": "{{ little_moon.light.fg.em2 }}",
 
     // ## Highlights are passive. Requires enabling bracket pair colorization
     "editorBracketHighlight.foreground1": "{{ little_moon.light.palette.magenta }}",
@@ -541,6 +547,7 @@ permalink: /little-moon-light-color-theme.json
 
     // editorOverviewRuler.inlineChatInserted: Overview ruler marker color for inline chat inserted content.
     // editorOverviewRuler.inlineChatRemoved: Overview ruler marker color for inline chat removed content.
+    // editorOverviewRuler.commentDraftForeground: Editor overview ruler decoration color for comment threads with draft comments. This color should be opaque.
 
     // ** The editor comments widget can be seen when reviewing pull requests
     // editorCommentsWidget.resolvedBorder: Color of borders and arrow for resolved comments.
@@ -548,6 +555,30 @@ permalink: /little-moon-light-color-theme.json
     // editorCommentsWidget.rangeBackground: Color of background for comment ranges.
     // editorCommentsWidget.rangeActiveBackground: Color of background for currently selected or hovered comment range.
     // editorCommentsWidget.replyInputBackground: Background color for comment reply input box.
+
+    // ** Editor inline edits can be seen when using Copilot to suggest the next change to make.
+    // NB. Robo-generated
+    "inlineEdit.gutterIndicator.primaryBorder": "{{ little_moon.light.git.modified }}",
+    "inlineEdit.gutterIndicator.primaryForeground": "{{ little_moon.light.fg._0 }}",
+    "inlineEdit.gutterIndicator.primaryBackground": "{{ little_moon.light.git.modified_bg }}",
+    "inlineEdit.gutterIndicator.secondaryBorder": "{{ little_moon.light.border.em }}",
+    "inlineEdit.gutterIndicator.secondaryForeground": "{{ little_moon.light.fg._0 }}",
+    "inlineEdit.gutterIndicator.secondaryBackground": "{{ little_moon.light.bg._2 }}",
+    "inlineEdit.gutterIndicator.successfulBorder": "{{ little_moon.light.git.added }}",
+    "inlineEdit.gutterIndicator.successfulForeground": "{{ little_moon.light.fg._0 }}",
+    "inlineEdit.gutterIndicator.successfulBackground": "{{ little_moon.light.git.added_bg }}",
+    "inlineEdit.gutterIndicator.background": "{{ little_moon.light.bg._2 }}",
+
+    "inlineEdit.originalBackground": "{{ little_moon.light.git.deleted_bg }}80",
+    "inlineEdit.modifiedBackground": "{{ little_moon.light.git.added_bg }}80",
+    "inlineEdit.originalChangedLineBackground": "{{ little_moon.light.git.deleted_bg }}80",
+    "inlineEdit.originalChangedTextBackground": "{{ little_moon.light.git.deleted_em }}20",
+    "inlineEdit.modifiedChangedLineBackground": "{{ little_moon.light.git.added_bg }}80",
+    "inlineEdit.modifiedChangedTextBackground": "{{ little_moon.light.git.added_em }}20",
+    "inlineEdit.originalBorder": "{{ little_moon.light.git.deleted }}",
+    "inlineEdit.modifiedBorder": "{{ little_moon.light.git.added }}",
+    "inlineEdit.tabWillAcceptModifiedBorder": "{{ little_moon.light.palette.green_1 }}",
+    "inlineEdit.tabWillAcceptOriginalBorder": "{{ little_moon.light.palette.red_1 }}",
 
 
     // Editor Groups and Tabs
@@ -638,6 +669,7 @@ permalink: /little-moon-light-color-theme.json
 
  // "sideBarTitle.foreground": null,
  // "sideBarTitle.background": null,
+    "sideBarTitle.border": "{{ little_moon.light.border._0 }}",
 
     "sideBarSectionHeader.background": "{{ little_moon.light.bg._3 }}",
  // "sideBarSectionHeader.foreground": null,
@@ -672,6 +704,10 @@ permalink: /little-moon-light-color-theme.json
 
     "activityBarBadge.background": "{{ little_moon.light.badge.bg }}",
     "activityBarBadge.foreground": "{{ little_moon.light.fg.i._0 }}",
+    "activityWarningBadge.background": "{{ little_moon.light.badge.warn }}",
+    "activityWarningBadge.foreground": "{{ little_moon.light.fg.i._0 }}",
+    "activityErrorBadge.background": "{{ little_moon.light.badge.err }}",
+    "activityErrorBadge.foreground": "{{ little_moon.light.fg.i._0 }}",
 
 
     // Title Bar
@@ -773,8 +809,11 @@ permalink: /little-moon-light-color-theme.json
     // button.secondaryForeground: Secondary button foreground color.
     // button.secondaryBackground: Secondary button background color.
     // button.secondaryHoverBackground: Secondary button background color when hovering.
+    // "button.secondaryBorder": "{{ little_moon.light.border._0 }}",
     // checkbox.background: Background color of checkbox widget.
     // checkbox.foreground: Foreground color of checkbox widget.
+    // "checkbox.disabled.background": "{{ little_moon.light.bg._3 }}",
+    // "checkbox.disabled.foreground": "{{ little_moon.light.fg._2 }}",
     // checkbox.border: Border color of checkbox widget.
     // checkbox.selectBackground: Background color of checkbox widget when the element it's in is selected.
     // checkbox.selectBorder: Border color of checkbox widget when the element it's in is selected.
@@ -795,7 +834,7 @@ permalink: /little-moon-light-color-theme.json
 
     // Text
     // =========================================================================
-    // https://code.visualstudio.com/api/references/theme-color#sc-colors
+    // https://code.visualstudio.com/api/references/theme-color#text-colors
 
     // ## TODO:
     // "textBlockQuote.background": "{{ little_moon.light .bg__2 }}",
@@ -805,6 +844,7 @@ permalink: /little-moon-light-color-theme.json
     // "textLink.foreground": "{{ little_moon.light .blue }}",
     // "textPreformat.foreground": "{{ little_moon.light .cyan }}",
     // textPreformat.background: Background color for preformatted text segments.
+    // "textPreformat.border": "{{ little_moon.light.border._0 }}",
     // "textSeparator.foreground": "{{ little_moon.pure.red }}", // TODO: Wrong
 
 
@@ -915,6 +955,7 @@ permalink: /little-moon-light-color-theme.json
     // https://code.visualstudio.com/api/references/theme-color#scrollbar-control
 
     // ## The shadow applies to all scrolled panes; editor top/bottom, sidebar, list views etc.
+    "scrollbar.background": "{{ little_moon.pure.transparent }}",
     "scrollbar.shadow": "{{ little_moon.light.shadow._0 }}",
     "scrollbarSlider.background": "{{ little_moon.light.scroll._0 }}",
     "scrollbarSlider.hoverBackground": "{{ little_moon.light.scroll.hv }}",
@@ -941,6 +982,7 @@ permalink: /little-moon-light-color-theme.json
     "minimap.errorHighlight": "{{ little_moon.light.level.err }}",
     "minimap.warningHighlight": "{{ little_moon.light.level.warn }}",
     "minimap.infoHighlight": "{{ little_moon.light.level.info }}",
+    "minimap.chatEditHighlight": "{{ little_moon.light.git.modified }}",
 
     "minimapSlider.background": "{{ little_moon.light.scroll._2 }}",
     "minimapSlider.hoverBackground": "{{ little_moon.light.scroll.hv }}",
@@ -950,6 +992,7 @@ permalink: /little-moon-light-color-theme.json
  // "minimapGutter.addedBackground": null,
  // "minimapGutter.modifiedBackground": null,
  // "minimapGutter.deletedBackground": null,
+    "editorMinimap.inlineChatInserted": "{{ little_moon.light.git.added }}",
 
 
     // Diff Editor
@@ -990,11 +1033,36 @@ permalink: /little-moon-light-color-theme.json
 
     // Chat
     // =========================================================================
+    // NB. Robo-generated
+    "chat.editedFileForeground": "{{ little_moon.light.git.modified }}",
+    "chat.linesAddedForeground": "{{ little_moon.light.git.added }}",
+    "chat.linesRemovedForeground": "{{ little_moon.light.git.deleted }}",
+    "chat.requestCodeBorder": "{{ little_moon.light.border._0 }}",
+    "chat.requestBubbleBackground": "{{ little_moon.light.bg._3 }}",
+    "chat.requestBubbleHoverBackground": "{{ little_moon.light.bg._4 }}",
+    "chat.checkpointSeparator": "{{ little_moon.light.rule.em }}",
+    "chat.thinkingShimmer": "{{ little_moon.light.palette.blue }}",
+    "chatManagement.sashBorder": "{{ little_moon.light.border.em }}",
+
+
     // Inline Chat
     // =========================================================================
+    // inlineChat.background: Background color of the interactive editor widget.
+    // inlineChat.foreground: Foreground color of the interactive editor widget
+    // inlineChat.border: Border color of the interactive editor widget.
+    // inlineChat.shadow: Shadow color of the interactive editor widget.
+    // inlineChatInput.border: Border color of the interactive editor input.
+    // inlineChatInput.focusBorder: Border color of the interactive editor input when focused.
+    // inlineChatInput.placeholderForeground: Foreground color of the interactive editor input placeholder.
+    // inlineChatInput.background: Background color of the interactive editor input.
+    // inlineChatDiff.inserted: Background color of inserted text in the interactive editor input.
+    // inlineChatDiff.removed: Background color of removed text in the interactive editor input.
+
+
     // Panel Chat
     // =========================================================================
-    // I am uninterested in all things chat
+    // interactive.activeCodeBorder: The border color for the current interactive code cell when the editor has focus.
+    // interactive.inactiveCodeBorder: The border color for the current interactive code cell when the editor does not have focus.
 
 
     // Editor Widget
@@ -1056,6 +1124,7 @@ permalink: /little-moon-light-color-theme.json
     "editorStickyScroll.background": "{{ little_moon.light.bg.ovr }}",
  // "editorStickyScroll.border": null,
     "editorStickyScroll.shadow": "{{ little_moon.light.shadow.dim }}",
+    "editorStickyScrollGutter.background": "{{ little_moon.light.bg.ovr2 }}",
     "editorStickyScrollHover.background": "{{ little_moon.light.hl._0.ovr }}",
 
     // ** The editor marker view shows when navigating to errors and warnings in the editor (Go to
@@ -1088,6 +1157,7 @@ permalink: /little-moon-light-color-theme.json
  // "peekViewEditor.matchHighlightBorder": null,
 
     "peekViewEditorStickyScroll.background": "{{ little_moon.light.bg.ovr }}",
+    "peekViewEditorStickyScrollGutter.background": "{{ little_moon.light.bg.ovr2 }}",
 
     "peekViewResult.background": "{{ little_moon.light.bg._2 }}",
  // "peekViewResult.fileForeground": null,
@@ -1140,12 +1210,15 @@ permalink: /little-moon-light-color-theme.json
     // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
 
     "panel.background": "{{ little_moon.light.bg._2 }}",
-    "panel.border": "{{ little_moon.light.border.br }}",
+    "panel.border": "{{ little_moon.light.border._0 }}",
     // panel.dropBorder: Drag and drop feedback color for the panel titles.
 
     "panelTitle.activeBorder": "{{ little_moon.light.border.em }}",
     "panelTitle.activeForeground": "{{ little_moon.light.fg._0 }}",
     "panelTitle.inactiveForeground": "{{ little_moon.light.fg._2 }}",
+    "panelTitle.border": "{{ little_moon.light.border._0 }}",
+    "panelTitleBadge.background": "{{ little_moon.light.badge.bg }}",
+    "panelTitleBadge.foreground": "{{ little_moon.light.fg.i._0 }}",
 
     "panelInput.border": "{{ little_moon.light.border._0 }}",
 
@@ -1219,12 +1292,15 @@ permalink: /little-moon-light-color-theme.json
     // extensionButton.foreground: Button foreground color for extension actions.
     // extensionButton.hoverBackground: Button background hover color for extension actions.
     // extensionButton.separator: Button separator color for extension actions.
+    // "extensionButton.border": "{{ little_moon.light.border._0 }}",
     // extensionBadge.remoteBackground: Background color for the remote badge in the extensions view.
     // extensionBadge.remoteForeground: Foreground color for the remote badge in the extensions view.
     // extensionIcon.starForeground: The icon color for extension ratings.
     // extensionIcon.verifiedForeground: The icon color for extension verified publisher.
     // extensionIcon.preReleaseForeground: The icon color for pre-release extension.
     // extensionIcon.sponsorForeground: The icon color for extension sponsor.
+    // "extensionIcon.privateForeground": "{{ little_moon.light.palette.violet }}",
+    // "mcpIcon.starForeground": "{{ little_moon.light.palette.yellow }}",
 
 
     // Quick Picker
@@ -1322,6 +1398,26 @@ permalink: /little-moon-light-color-theme.json
     // terminalOverviewRuler.border: The overview ruler left-side border color.
     // terminalCommandGuide.foreground: The foreground color of the terminal command guide that appears to the left of a command and its output on hover.
 
+    // terminalSymbolIcon.aliasForeground:              symbolIcon.methodForeground
+    // terminalSymbolIcon.flagForeground:               symbolIcon.enumeratorForeground
+    // terminalSymbolIcon.optionForeground:             symbolIcon.enumeratorForeground
+    // terminalSymbolIcon.optionValueForeground:        symbolIcon.enumeratorMemberForeground
+    // terminalSymbolIcon.methodForeground:             symbolIcon.methodForeground
+    // terminalSymbolIcon.argumentForeground:           symbolIcon.variableForeground
+    // terminalSymbolIcon.fileForeground:               symbolIcon.fileForeground
+    // terminalSymbolIcon.folderForeground:             symbolIcon.folderForeground
+    // terminalSymbolIcon.symbolicLinkFileForeground:   symbolIcon.fileForeground
+    // terminalSymbolIcon.symbolicLinkFolderForeground: symbolIcon.folderForeground
+    // terminalSymbolIcon.commitForeground:             symbolIcon.fileForeground
+    // terminalSymbolIcon.branchForeground:             symbolIcon.fileForeground
+    // terminalSymbolIcon.tagForeground:                symbolIcon.fileForeground
+    // terminalSymbolIcon.stashForeground:              symbolIcon.fileForeground
+    // terminalSymbolIcon.remoteForeground:             symbolIcon.fileForeground
+    // terminalSymbolIcon.pullRequestForeground:        symbolIcon.fileForeground
+    // terminalSymbolIcon.pullRequestDoneForeground:    symbolIcon.fileForeground
+    // terminalSymbolIcon.symbolText:                   symbolIcon.fileForeground
+    // terminalSymbolIcon.inlineSuggestionForeground:   null (falls back to the default foreground)
+
 
     // Debug colors
     // =========================================================================
@@ -1366,7 +1462,6 @@ permalink: /little-moon-light-color-theme.json
     // testing.iconSkipped.retired: Retired color for the 'Skipped' icon in the test explorer.
     // testing.peekBorder: Color of the peek view borders and arrow.
     // testing.peekHeaderBackground: Color of the peek view borders and arrow.
-    // testing.message.error.decorationForeground: Text color of test error messages shown inline in the editor.
     // testing.message.error.lineBackground: Margin color beside error messages shown inline in the editor.
     // testing.message.info.decorationForeground: Text color of test info messages shown inline in the editor.
     // testing.message.info.lineBackground: Margin color beside info messages shown inline in the editor.
@@ -1381,6 +1476,9 @@ permalink: /little-moon-light-color-theme.json
     // testing.uncoveredGutterBackground: Gutter color of regions where code not covered.
     // testing.coverCountBadgeBackground: Background for the badge indicating execution count
     // testing.coverCountBadgeForeground: Foreground for the badge indicating execution count
+    // testing.message.error.badgeBackground: Background color of test error messages shown inline in the editor.
+    // testing.message.error.badgeBorder: Border color of test error messages shown inline in the editor.
+    // testing.message.error.badgeForeground: Text color of test error messages shown inline in the editor.
 
 
     // Welcome Page
@@ -1415,22 +1513,28 @@ permalink: /little-moon-light-color-theme.json
     "gitDecoration.conflictingResourceForeground": "{{ little_moon.light.git.conflicting }}",
 
     "gitDecoration.submoduleResourceForeground": "{{ little_moon.light.git.submodule }}",
+    "git.blame.editorDecorationForeground": "{{ little_moon.light.fg._2 }}",
 
 
     // Source Control Graph colors
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#source-control-graph-colors
-
     // What does "scm" stand for?
-    // scmGraph.historyItemGroupLocal: Local history item group color.
-    // scmGraph.historyItemGroupRemote: Remote history item group color.
-    // scmGraph.historyItemGroupBase: Base history item group color.
-    // scmGraph.historyItemHoverLabelForeground: History item hover label foreground color.
-    // scmGraph.foreground1: Source control graph foreground color (1).
-    // scmGraph.foreground2: Source control graph foreground color (2).
-    // scmGraph.foreground3: Source control graph foreground color (3).
-    // scmGraph.historyItemHoverAdditionsForeground: History item hover additions foreground color.
-    // scmGraph.historyItemHoverDeletionsForeground: History item hover deletions foreground color.
+    // NB. Robo-generated
+
+    "scmGraph.historyItemHoverLabelForeground": "{{ little_moon.light.fg._0 }}",
+    "scmGraph.foreground1": "{{ little_moon.light.palette.blue }}",
+    "scmGraph.foreground2": "{{ little_moon.light.palette.green }}",
+    "scmGraph.foreground3": "{{ little_moon.light.palette.yellow }}",
+    "scmGraph.foreground4": "{{ little_moon.light.palette.magenta }}",
+    "scmGraph.foreground5": "{{ little_moon.light.palette.cyan }}",
+    "scmGraph.historyItemHoverAdditionsForeground": "{{ little_moon.light.git.added }}",
+    "scmGraph.historyItemHoverDeletionsForeground": "{{ little_moon.light.git.deleted }}",
+    "scmGraph.historyItemRefColor": "{{ little_moon.light.palette.blue }}",
+    "scmGraph.historyItemRemoteRefColor": "{{ little_moon.light.palette.cyan }}",
+    "scmGraph.historyItemBaseRefColor": "{{ little_moon.light.palette.violet }}",
+    "scmGraph.historyItemHoverDefaultLabelForeground": "{{ little_moon.light.fg._0 }}",
+    "scmGraph.historyItemHoverDefaultLabelBackground": "{{ little_moon.light.hl._0.hover }}",
 
 
     // Settings Editor
@@ -1477,7 +1581,40 @@ permalink: /little-moon-light-color-theme.json
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#symbol-icons-colors
     // The theme colors for symbol icons that appears in the Outline view, breadcrumb navigation, and suggest widget
-    // TODO: Consider looking at this section
+
+    // symbolIcon.arrayForeground: The foreground color for array symbols.
+    // symbolIcon.booleanForeground: The foreground color for boolean symbols.
+    // symbolIcon.classForeground: The foreground color for class symbols.
+    // symbolIcon.colorForeground: The foreground color for color symbols.
+    // symbolIcon.constantForeground: The foreground color for constant symbols.
+    // symbolIcon.constructorForeground: The foreground color for constructor symbols.
+    // symbolIcon.enumeratorForeground: The foreground color for enumerator symbols.
+    // symbolIcon.enumeratorMemberForeground: The foreground color for enumerator member symbols.
+    // symbolIcon.eventForeground: The foreground color for event symbols.
+    // symbolIcon.fieldForeground: The foreground color for field symbols.
+    // symbolIcon.fileForeground: The foreground color for file symbols.
+    // symbolIcon.folderForeground: The foreground color for folder symbols.
+    // symbolIcon.functionForeground: The foreground color for function symbols.
+    // symbolIcon.interfaceForeground: The foreground color for interface symbols.
+    // symbolIcon.keyForeground: The foreground color for key symbols.
+    // symbolIcon.keywordForeground: The foreground color for keyword symbols.
+    // symbolIcon.methodForeground: The foreground color for method symbols.
+    // symbolIcon.moduleForeground: The foreground color for module symbols.
+    // symbolIcon.namespaceForeground: The foreground color for namespace symbols.
+    // symbolIcon.nullForeground: The foreground color for null symbols.
+    // symbolIcon.numberForeground: The foreground color for number symbols.
+    // symbolIcon.objectForeground: The foreground color for object symbols.
+    // symbolIcon.operatorForeground: The foreground color for operator symbols.
+    // symbolIcon.packageForeground: The foreground color for package symbols.
+    // symbolIcon.propertyForeground: The foreground color for property symbols.
+    // symbolIcon.referenceForeground: The foreground color for reference symbols.
+    // symbolIcon.snippetForeground: The foreground color for snippet symbols.
+    // symbolIcon.stringForeground: The foreground color for string symbols.
+    // symbolIcon.structForeground: The foreground color for struct symbols.
+    // symbolIcon.textForeground: The foreground color for text symbols.
+    // symbolIcon.typeParameterForeground: The foreground color for type parameter symbols.
+    // symbolIcon.unitForeground: The foreground color for unit symbols.
+    // symbolIcon.variableForeground: The foreground color for variable symbols.
 
 
     // Debug Icons
@@ -1517,6 +1654,9 @@ permalink: /little-moon-light-color-theme.json
     // charts.orange: Color for orange elements in charts.
     // charts.green: Color for green elements in charts.
     // charts.purple: Color for purple elements in charts.
+    // chart.line: Line color for the chart.
+    // chart.axis: Axis color for the chart.
+    // chart.guide: Guide line for the chart.
 
 
     // Ports
@@ -1538,18 +1678,44 @@ permalink: /little-moon-light-color-theme.json
     // actionBar.toggledBackground: Background color for toggled action items in action bar.
 
 
-    // Simple Find Widget
+    // Simple Find Widget colors
     // =========================================================================
     // I think this was ctrl+i in sublime?
     // simpleFindWidget.sashBorder: Border color of the sash border.
 
 
-    // SCM
+    // Gauge colors
     // =========================================================================
-    // But not the SCM graph?
-    // scm.historyItemAdditionsForeground: History item additions foreground color.
-    // scm.historyItemDeletionsForeground: History item deletions foreground color.
-    // scm.historyItemStatisticsBorder: History item statistics border color.
-    // scm.historyItemSelectedStatisticsBorder: History item selected statistics border color.
+    // NB. Robo-generated
+
+    "gauge.background": "{{ little_moon.light.bg._2 }}",
+    "gauge.foreground": "{{ little_moon.light.fg._0 }}",
+    "gauge.border": "{{ little_moon.light.border._0 }}",
+    "gauge.warningBackground": "{{ little_moon.light.level.warn }}",
+    "gauge.warningForeground": "{{ little_moon.light.fg.i._0 }}",
+    "gauge.errorBackground": "{{ little_moon.light.level.err }}",
+    "gauge.errorForeground": "{{ little_moon.light.fg.i._0 }}",
+
+
+    // Markdown
+    // =========================================================================
+    // NB. Robo-generated
+
+    "markdownAlert.note.foreground": "{{ little_moon.light.palette.blue }}",
+    "markdownAlert.tip.foreground": "{{ little_moon.light.palette.green }}",
+    "markdownAlert.important.foreground": "{{ little_moon.light.palette.magenta }}",
+    "markdownAlert.warning.foreground": "{{ little_moon.light.palette.yellow }}",
+    "markdownAlert.caution.foreground": "{{ little_moon.light.palette.red }}",
+
+
+    // Agent Session colors
+    // =========================================================================
+    // NB. Robo-generated
+
+    "agentSessionReadIndicator.foreground": "{{ little_moon.light.fg._2 }}",
+    "agentSessionSelectedBadge.border": "{{ little_moon.light.border.em }}",
+    "agentSessionSelectedUnfocusedBadge.border": "{{ little_moon.light.border._0 }}",
+    "agentStatusIndicator.background": "{{ little_moon.light.palette.blue }}",
+    "aiCustomizationManagement.sashBorder": "{{ little_moon.light.border.em }}",
   }
 }

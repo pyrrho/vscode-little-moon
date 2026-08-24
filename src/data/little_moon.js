@@ -217,6 +217,10 @@ const little_moon = {
     badge: {
       bg: palette.light.yellow,
       bg_hv: palette.light.yellow_1,
+      warn: palette.light.orange,
+      warn_hv: palette.light.orange_1,
+      err: palette.light.red,
+      err_hv: palette.light.red_1,
     },
     button: {
       bg: palette.light.blue,
@@ -386,6 +390,10 @@ const little_moon = {
     badge: {
       bg: palette.dark.yellow__1,
       bg_hv: palette.dark.yellow,
+      warn: palette.dark.orange,
+      warn_hv: palette.dark.orange_1,
+      err: palette.dark.red,
+      err_hv: palette.dark.red_1,
     },
     button: {
       bg: palette.dark.blue,

@@ -325,6 +325,7 @@
     "editor.background": "#fef3da",
     "editor.foreground": "#52666d",
     // editor.placeholder.foreground: Foreground color of the placeholder text in the editor.
+    "editor.compositionBorder": "#928872",
 
     // ** Unused source code
     // editorUnnecessaryCode.border: Border color of unnecessary (unused) source code in the editor.
@@ -342,8 +343,11 @@
  // "editorGutter.background": null,
     // NB. Match the transparency add of e.g. `editorOverviewRuler.modifiedForeground`
     "editorGutter.modifiedBackground": "#0073d299",
+    "editorGutter.modifiedSecondaryBackground":"#60d2ff99",
     "editorGutter.addedBackground": "#53910099",
+    "editorGutter.addedSecondaryBackground":"#aae66099",
     "editorGutter.deletedBackground": "#d4212b99",
+    "editorGutter.deletedSecondaryBackground":"#ff918199",
 
     // TODO: Reused from `range.result` (`.find_2`?). Should also be used for ghost text?
     "editorGutter.commentRangeForeground": "#b3880030",
@@ -351,6 +355,9 @@
     // editorGutter.commentUnresolvedGlyphForeground: Editor gutter decoration color for commenting glyphs for unresolved comment threads.
 
     "editorGutter.foldingControlForeground": "#52666d",
+    "editorGutter.itemGlyphForeground": "#52666d",
+    "editorGutter.itemBackground": "#d6cbb4",
+    "editorGutter.commentDraftGlyphForeground": "#b38800",
 
     // ** Line numbers are in the gutter (but included in the base sectino?)
     "editorLineNumber.foreground": "#8f9894a0",
@@ -410,10 +417,8 @@
 
     // ** The current line is typically shown as either background highlight or a border (not both).
     "editor.lineHighlightBackground": "#f0e4cc80",
+    "editor.inactiveLineHighlightBackground": "#f0e4cc40",
  // "editor.lineHighlightBorder": null,
-
-    // ** The color for the editor watermark
-    // editorWatermark.foreground: Foreground color for the labels in the editor watermark.
 
     // ** The color for unicode highlights
     "editorUnicodeHighlight.border": "#ffffff00",
@@ -440,6 +445,7 @@
     // ## Matches are paired with what's under the cursor
     "editorBracketMatch.background": "#d6cbb4c0",
     "editorBracketMatch.border": "#ffffff00",
+    "editorBracketMatch.foreground": "#384c52",
 
     // ## Highlights are passive. Requires enabling bracket pair colorization
     "editorBracketHighlight.foreground1": "#cb4c99",
@@ -537,6 +543,7 @@
 
     // editorOverviewRuler.inlineChatInserted: Overview ruler marker color for inline chat inserted content.
     // editorOverviewRuler.inlineChatRemoved: Overview ruler marker color for inline chat removed content.
+    // editorOverviewRuler.commentDraftForeground: Editor overview ruler decoration color for comment threads with draft comments. This color should be opaque.
 
     // ** The editor comments widget can be seen when reviewing pull requests
     // editorCommentsWidget.resolvedBorder: Color of borders and arrow for resolved comments.
@@ -544,6 +551,30 @@
     // editorCommentsWidget.rangeBackground: Color of background for comment ranges.
     // editorCommentsWidget.rangeActiveBackground: Color of background for currently selected or hovered comment range.
     // editorCommentsWidget.replyInputBackground: Background color for comment reply input box.
+
+    // ** Editor inline edits can be seen when using Copilot to suggest the next change to make.
+    // NB. Robo-generated
+    "inlineEdit.gutterIndicator.primaryBorder": "#0073d2",
+    "inlineEdit.gutterIndicator.primaryForeground": "#52666d",
+    "inlineEdit.gutterIndicator.primaryBackground": "#60d2ff",
+    "inlineEdit.gutterIndicator.secondaryBorder": "#c5baa4",
+    "inlineEdit.gutterIndicator.secondaryForeground": "#52666d",
+    "inlineEdit.gutterIndicator.secondaryBackground": "#f0e4cc",
+    "inlineEdit.gutterIndicator.successfulBorder": "#539100",
+    "inlineEdit.gutterIndicator.successfulForeground": "#52666d",
+    "inlineEdit.gutterIndicator.successfulBackground": "#aae660",
+    "inlineEdit.gutterIndicator.background": "#f0e4cc",
+
+    "inlineEdit.originalBackground": "#ff918180",
+    "inlineEdit.modifiedBackground": "#aae66080",
+    "inlineEdit.originalChangedLineBackground": "#ff918180",
+    "inlineEdit.originalChangedTextBackground": "#c4012020",
+    "inlineEdit.modifiedChangedLineBackground": "#aae66080",
+    "inlineEdit.modifiedChangedTextBackground": "#43810020",
+    "inlineEdit.originalBorder": "#d4212b",
+    "inlineEdit.modifiedBorder": "#539100",
+    "inlineEdit.tabWillAcceptModifiedBorder": "#69a61f",
+    "inlineEdit.tabWillAcceptOriginalBorder": "#f1413f",
 
 
     // Editor Groups and Tabs
@@ -634,6 +665,7 @@
 
  // "sideBarTitle.foreground": null,
  // "sideBarTitle.background": null,
+    "sideBarTitle.border": "#d6cbb4",
 
     "sideBarSectionHeader.background": "#d6cbb4",
  // "sideBarSectionHeader.foreground": null,
@@ -668,6 +700,10 @@
 
     "activityBarBadge.background": "#b38800",
     "activityBarBadge.foreground": "#fef3da",
+    "activityWarningBadge.background": "#c75d20",
+    "activityWarningBadge.foreground": "#fef3da",
+    "activityErrorBadge.background": "#d4212b",
+    "activityErrorBadge.foreground": "#fef3da",
 
 
     // Title Bar
@@ -769,8 +805,11 @@
     // button.secondaryForeground: Secondary button foreground color.
     // button.secondaryBackground: Secondary button background color.
     // button.secondaryHoverBackground: Secondary button background color when hovering.
+    // "button.secondaryBorder": "#d6cbb4",
     // checkbox.background: Background color of checkbox widget.
     // checkbox.foreground: Foreground color of checkbox widget.
+    // "checkbox.disabled.background": "#d6cbb4",
+    // "checkbox.disabled.foreground": "#8f9894",
     // checkbox.border: Border color of checkbox widget.
     // checkbox.selectBackground: Background color of checkbox widget when the element it's in is selected.
     // checkbox.selectBorder: Border color of checkbox widget when the element it's in is selected.
@@ -791,7 +830,7 @@
 
     // Text
     // =========================================================================
-    // https://code.visualstudio.com/api/references/theme-color#sc-colors
+    // https://code.visualstudio.com/api/references/theme-color#text-colors
 
     // ## TODO:
     // "textBlockQuote.background": "",
@@ -801,6 +840,7 @@
     // "textLink.foreground": "",
     // "textPreformat.foreground": "",
     // textPreformat.background: Background color for preformatted text segments.
+    // "textPreformat.border": "#d6cbb4",
     // "textSeparator.foreground": "#f00", // TODO: Wrong
 
 
@@ -911,6 +951,7 @@
     // https://code.visualstudio.com/api/references/theme-color#scrollbar-control
 
     // ## The shadow applies to all scrolled panes; editor top/bottom, sidebar, list views etc.
+    "scrollbar.background": "#ffffff00",
     "scrollbar.shadow": "#d6cbb4a0",
     "scrollbarSlider.background": "#c5baa450",
     "scrollbarSlider.hoverBackground": "#c5baa470",
@@ -937,6 +978,7 @@
     "minimap.errorHighlight": "#d4212b",
     "minimap.warningHighlight": "#b38800",
     "minimap.infoHighlight": "#0073d2",
+    "minimap.chatEditHighlight": "#0073d2",
 
     "minimapSlider.background": "#c5baa460",
     "minimapSlider.hoverBackground": "#c5baa470",
@@ -946,6 +988,7 @@
  // "minimapGutter.addedBackground": null,
  // "minimapGutter.modifiedBackground": null,
  // "minimapGutter.deletedBackground": null,
+    "editorMinimap.inlineChatInserted": "#539100",
 
 
     // Diff Editor
@@ -986,11 +1029,36 @@
 
     // Chat
     // =========================================================================
+    // NB. Robo-generated
+    "chat.editedFileForeground": "#0073d2",
+    "chat.linesAddedForeground": "#539100",
+    "chat.linesRemovedForeground": "#d4212b",
+    "chat.requestCodeBorder": "#d6cbb4",
+    "chat.requestBubbleBackground": "#d6cbb4",
+    "chat.requestBubbleHoverBackground": "#c5baa4",
+    "chat.checkpointSeparator": "#c5baa4",
+    "chat.thinkingShimmer": "#0073d2",
+    "chatManagement.sashBorder": "#c5baa4",
+
+
     // Inline Chat
     // =========================================================================
+    // inlineChat.background: Background color of the interactive editor widget.
+    // inlineChat.foreground: Foreground color of the interactive editor widget
+    // inlineChat.border: Border color of the interactive editor widget.
+    // inlineChat.shadow: Shadow color of the interactive editor widget.
+    // inlineChatInput.border: Border color of the interactive editor input.
+    // inlineChatInput.focusBorder: Border color of the interactive editor input when focused.
+    // inlineChatInput.placeholderForeground: Foreground color of the interactive editor input placeholder.
+    // inlineChatInput.background: Background color of the interactive editor input.
+    // inlineChatDiff.inserted: Background color of inserted text in the interactive editor input.
+    // inlineChatDiff.removed: Background color of removed text in the interactive editor input.
+
+
     // Panel Chat
     // =========================================================================
-    // I am uninterested in all things chat
+    // interactive.activeCodeBorder: The border color for the current interactive code cell when the editor has focus.
+    // interactive.inactiveCodeBorder: The border color for the current interactive code cell when the editor does not have focus.
 
 
     // Editor Widget
@@ -1052,6 +1120,7 @@
     "editorStickyScroll.background": "#fef3daa0",
  // "editorStickyScroll.border": null,
     "editorStickyScroll.shadow": "#f0e4ccc0",
+    "editorStickyScrollGutter.background": "#f0e4cca0",
     "editorStickyScrollHover.background": "#f0e4ccd0",
 
     // ** The editor marker view shows when navigating to errors and warnings in the editor (Go to
@@ -1084,6 +1153,7 @@
  // "peekViewEditor.matchHighlightBorder": null,
 
     "peekViewEditorStickyScroll.background": "#fef3daa0",
+    "peekViewEditorStickyScrollGutter.background": "#f0e4cca0",
 
     "peekViewResult.background": "#f0e4cc",
  // "peekViewResult.fileForeground": null,
@@ -1136,12 +1206,15 @@
     // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
 
     "panel.background": "#f0e4cc",
-    "panel.border": "#fff8e0",
+    "panel.border": "#d6cbb4",
     // panel.dropBorder: Drag and drop feedback color for the panel titles.
 
     "panelTitle.activeBorder": "#c5baa4",
     "panelTitle.activeForeground": "#52666d",
     "panelTitle.inactiveForeground": "#8f9894",
+    "panelTitle.border": "#d6cbb4",
+    "panelTitleBadge.background": "#b38800",
+    "panelTitleBadge.foreground": "#fef3da",
 
     "panelInput.border": "#d6cbb4",
 
@@ -1215,12 +1288,15 @@
     // extensionButton.foreground: Button foreground color for extension actions.
     // extensionButton.hoverBackground: Button background hover color for extension actions.
     // extensionButton.separator: Button separator color for extension actions.
+    // "extensionButton.border": "#d6cbb4",
     // extensionBadge.remoteBackground: Background color for the remote badge in the extensions view.
     // extensionBadge.remoteForeground: Foreground color for the remote badge in the extensions view.
     // extensionIcon.starForeground: The icon color for extension ratings.
     // extensionIcon.verifiedForeground: The icon color for extension verified publisher.
     // extensionIcon.preReleaseForeground: The icon color for pre-release extension.
     // extensionIcon.sponsorForeground: The icon color for extension sponsor.
+    // "extensionIcon.privateForeground": "#7d64c5",
+    // "mcpIcon.starForeground": "#b38800",
 
 
     // Quick Picker
@@ -1318,6 +1394,26 @@
     // terminalOverviewRuler.border: The overview ruler left-side border color.
     // terminalCommandGuide.foreground: The foreground color of the terminal command guide that appears to the left of a command and its output on hover.
 
+    // terminalSymbolIcon.aliasForeground:              symbolIcon.methodForeground
+    // terminalSymbolIcon.flagForeground:               symbolIcon.enumeratorForeground
+    // terminalSymbolIcon.optionForeground:             symbolIcon.enumeratorForeground
+    // terminalSymbolIcon.optionValueForeground:        symbolIcon.enumeratorMemberForeground
+    // terminalSymbolIcon.methodForeground:             symbolIcon.methodForeground
+    // terminalSymbolIcon.argumentForeground:           symbolIcon.variableForeground
+    // terminalSymbolIcon.fileForeground:               symbolIcon.fileForeground
+    // terminalSymbolIcon.folderForeground:             symbolIcon.folderForeground
+    // terminalSymbolIcon.symbolicLinkFileForeground:   symbolIcon.fileForeground
+    // terminalSymbolIcon.symbolicLinkFolderForeground: symbolIcon.folderForeground
+    // terminalSymbolIcon.commitForeground:             symbolIcon.fileForeground
+    // terminalSymbolIcon.branchForeground:             symbolIcon.fileForeground
+    // terminalSymbolIcon.tagForeground:                symbolIcon.fileForeground
+    // terminalSymbolIcon.stashForeground:              symbolIcon.fileForeground
+    // terminalSymbolIcon.remoteForeground:             symbolIcon.fileForeground
+    // terminalSymbolIcon.pullRequestForeground:        symbolIcon.fileForeground
+    // terminalSymbolIcon.pullRequestDoneForeground:    symbolIcon.fileForeground
+    // terminalSymbolIcon.symbolText:                   symbolIcon.fileForeground
+    // terminalSymbolIcon.inlineSuggestionForeground:   null (falls back to the default foreground)
+
 
     // Debug colors
     // =========================================================================
@@ -1362,7 +1458,6 @@
     // testing.iconSkipped.retired: Retired color for the 'Skipped' icon in the test explorer.
     // testing.peekBorder: Color of the peek view borders and arrow.
     // testing.peekHeaderBackground: Color of the peek view borders and arrow.
-    // testing.message.error.decorationForeground: Text color of test error messages shown inline in the editor.
     // testing.message.error.lineBackground: Margin color beside error messages shown inline in the editor.
     // testing.message.info.decorationForeground: Text color of test info messages shown inline in the editor.
     // testing.message.info.lineBackground: Margin color beside info messages shown inline in the editor.
@@ -1377,6 +1472,9 @@
     // testing.uncoveredGutterBackground: Gutter color of regions where code not covered.
     // testing.coverCountBadgeBackground: Background for the badge indicating execution count
     // testing.coverCountBadgeForeground: Foreground for the badge indicating execution count
+    // testing.message.error.badgeBackground: Background color of test error messages shown inline in the editor.
+    // testing.message.error.badgeBorder: Border color of test error messages shown inline in the editor.
+    // testing.message.error.badgeForeground: Text color of test error messages shown inline in the editor.
 
 
     // Welcome Page
@@ -1411,22 +1509,28 @@
     "gitDecoration.conflictingResourceForeground": "#c75d20",
 
     "gitDecoration.submoduleResourceForeground": "#cb4c99",
+    "git.blame.editorDecorationForeground": "#8f9894",
 
 
     // Source Control Graph colors
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#source-control-graph-colors
-
     // What does "scm" stand for?
-    // scmGraph.historyItemGroupLocal: Local history item group color.
-    // scmGraph.historyItemGroupRemote: Remote history item group color.
-    // scmGraph.historyItemGroupBase: Base history item group color.
-    // scmGraph.historyItemHoverLabelForeground: History item hover label foreground color.
-    // scmGraph.foreground1: Source control graph foreground color (1).
-    // scmGraph.foreground2: Source control graph foreground color (2).
-    // scmGraph.foreground3: Source control graph foreground color (3).
-    // scmGraph.historyItemHoverAdditionsForeground: History item hover additions foreground color.
-    // scmGraph.historyItemHoverDeletionsForeground: History item hover deletions foreground color.
+    // NB. Robo-generated
+
+    "scmGraph.historyItemHoverLabelForeground": "#52666d",
+    "scmGraph.foreground1": "#0073d2",
+    "scmGraph.foreground2": "#539100",
+    "scmGraph.foreground3": "#b38800",
+    "scmGraph.foreground4": "#cb4c99",
+    "scmGraph.foreground5": "#009c8f",
+    "scmGraph.historyItemHoverAdditionsForeground": "#539100",
+    "scmGraph.historyItemHoverDeletionsForeground": "#d4212b",
+    "scmGraph.historyItemRefColor": "#0073d2",
+    "scmGraph.historyItemRemoteRefColor": "#009c8f",
+    "scmGraph.historyItemBaseRefColor": "#7d64c5",
+    "scmGraph.historyItemHoverDefaultLabelForeground": "#52666d",
+    "scmGraph.historyItemHoverDefaultLabelBackground": "#d6cbb4a0",
 
 
     // Settings Editor
@@ -1473,7 +1577,40 @@
     // =========================================================================
     // https://code.visualstudio.com/api/references/theme-color#symbol-icons-colors
     // The theme colors for symbol icons that appears in the Outline view, breadcrumb navigation, and suggest widget
-    // TODO: Consider looking at this section
+
+    // symbolIcon.arrayForeground: The foreground color for array symbols.
+    // symbolIcon.booleanForeground: The foreground color for boolean symbols.
+    // symbolIcon.classForeground: The foreground color for class symbols.
+    // symbolIcon.colorForeground: The foreground color for color symbols.
+    // symbolIcon.constantForeground: The foreground color for constant symbols.
+    // symbolIcon.constructorForeground: The foreground color for constructor symbols.
+    // symbolIcon.enumeratorForeground: The foreground color for enumerator symbols.
+    // symbolIcon.enumeratorMemberForeground: The foreground color for enumerator member symbols.
+    // symbolIcon.eventForeground: The foreground color for event symbols.
+    // symbolIcon.fieldForeground: The foreground color for field symbols.
+    // symbolIcon.fileForeground: The foreground color for file symbols.
+    // symbolIcon.folderForeground: The foreground color for folder symbols.
+    // symbolIcon.functionForeground: The foreground color for function symbols.
+    // symbolIcon.interfaceForeground: The foreground color for interface symbols.
+    // symbolIcon.keyForeground: The foreground color for key symbols.
+    // symbolIcon.keywordForeground: The foreground color for keyword symbols.
+    // symbolIcon.methodForeground: The foreground color for method symbols.
+    // symbolIcon.moduleForeground: The foreground color for module symbols.
+    // symbolIcon.namespaceForeground: The foreground color for namespace symbols.
+    // symbolIcon.nullForeground: The foreground color for null symbols.
+    // symbolIcon.numberForeground: The foreground color for number symbols.
+    // symbolIcon.objectForeground: The foreground color for object symbols.
+    // symbolIcon.operatorForeground: The foreground color for operator symbols.
+    // symbolIcon.packageForeground: The foreground color for package symbols.
+    // symbolIcon.propertyForeground: The foreground color for property symbols.
+    // symbolIcon.referenceForeground: The foreground color for reference symbols.
+    // symbolIcon.snippetForeground: The foreground color for snippet symbols.
+    // symbolIcon.stringForeground: The foreground color for string symbols.
+    // symbolIcon.structForeground: The foreground color for struct symbols.
+    // symbolIcon.textForeground: The foreground color for text symbols.
+    // symbolIcon.typeParameterForeground: The foreground color for type parameter symbols.
+    // symbolIcon.unitForeground: The foreground color for unit symbols.
+    // symbolIcon.variableForeground: The foreground color for variable symbols.
 
 
     // Debug Icons
@@ -1513,6 +1650,9 @@
     // charts.orange: Color for orange elements in charts.
     // charts.green: Color for green elements in charts.
     // charts.purple: Color for purple elements in charts.
+    // chart.line: Line color for the chart.
+    // chart.axis: Axis color for the chart.
+    // chart.guide: Guide line for the chart.
 
 
     // Ports
@@ -1534,18 +1674,44 @@
     // actionBar.toggledBackground: Background color for toggled action items in action bar.
 
 
-    // Simple Find Widget
+    // Simple Find Widget colors
     // =========================================================================
     // I think this was ctrl+i in sublime?
     // simpleFindWidget.sashBorder: Border color of the sash border.
 
 
-    // SCM
+    // Gauge colors
     // =========================================================================
-    // But not the SCM graph?
-    // scm.historyItemAdditionsForeground: History item additions foreground color.
-    // scm.historyItemDeletionsForeground: History item deletions foreground color.
-    // scm.historyItemStatisticsBorder: History item statistics border color.
-    // scm.historyItemSelectedStatisticsBorder: History item selected statistics border color.
+    // NB. Robo-generated
+
+    "gauge.background": "#f0e4cc",
+    "gauge.foreground": "#52666d",
+    "gauge.border": "#d6cbb4",
+    "gauge.warningBackground": "#b38800",
+    "gauge.warningForeground": "#fef3da",
+    "gauge.errorBackground": "#d4212b",
+    "gauge.errorForeground": "#fef3da",
+
+
+    // Markdown
+    // =========================================================================
+    // NB. Robo-generated
+
+    "markdownAlert.note.foreground": "#0073d2",
+    "markdownAlert.tip.foreground": "#539100",
+    "markdownAlert.important.foreground": "#cb4c99",
+    "markdownAlert.warning.foreground": "#b38800",
+    "markdownAlert.caution.foreground": "#d4212b",
+
+
+    // Agent Session colors
+    // =========================================================================
+    // NB. Robo-generated
+
+    "agentSessionReadIndicator.foreground": "#8f9894",
+    "agentSessionSelectedBadge.border": "#c5baa4",
+    "agentSessionSelectedUnfocusedBadge.border": "#d6cbb4",
+    "agentStatusIndicator.background": "#0073d2",
+    "aiCustomizationManagement.sashBorder": "#c5baa4",
   }
 }
